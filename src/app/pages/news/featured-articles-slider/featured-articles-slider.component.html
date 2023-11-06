@@ -1,0 +1,12 @@
+<h3 class="most-popular-title">Most popular</h3>
+<div class="most-popular-slider">
+  <div *ngFor="let article of articles" class="most-popular-article" (click)="selectArticle(article)">
+    <h5>
+      {{getTimeAgo(article.published)}} in
+      <h4 [style.background]="'-webkit-' + getCategoryColorById(article.categoryId)">
+        {{getCategoryNameById(article.categoryId)}}
+      </h4>
+    </h5>
+    <h2>{{article.title}}</h2>
+  </div>
+</div>

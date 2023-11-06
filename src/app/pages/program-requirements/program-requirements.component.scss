@@ -1,0 +1,17 @@
+ol li,ul li, a, b
+{
+    font-family: Cabin;
+    font-size: 18px;
+}
+@media  (max-width: 992px) {
+    
+.container
+{
+    padding: 0 !important;
+    width: 90%;
+}
+ol li, ul li, a, b
+{
+    font-size: 14px;
+}
+}

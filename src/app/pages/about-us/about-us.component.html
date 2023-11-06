@@ -1,0 +1,107 @@
+<app-navbar></app-navbar>
+
+<div class="page-bg">
+  <div class="container header d-flex">
+    <div class="w-50 me-3 justify-content-end d-none d-lg-flex">
+      <img src="assets/about-us/header-img.png"/>
+    </div>
+    <div class="header-text">
+      <div class="position-relative">
+        <h1>About us</h1>
+        <hr class="hr-header">
+      </div>
+      <p>
+        Creative Hub is a transformational hub focused on providing individuals the core elements of success: job-ready
+        skills and well being.<br><br>
+
+        We are providing a combination of real-world skills and workout sessions for aspiring professionals in the areas
+        of front-end development, digital marketing, graphic design, web design, data science, e-commerce, etc.<br><br>
+
+        Our success is based on the individual-tailored help that we give to each student upon graduation of the
+        bootcamp.<br><br>
+
+        Our team is fully committed not only to provide you with skills but through our hiring & learning process to
+        match you with internship opportunities or jobs.<br><br>
+
+        Our mission is to help 1 000 000 individuals to improve their life, by gaining the right skills, being in the
+        right body-mind balance, and find the career that will never feel like a job.
+      </p>
+    </div>
+  </div>
+  <div class="header-info d-flex w-100 align-items-center">
+    <div class="header-red-block">
+      <h2>4 Academy tracks</h2>
+      <p>Every year</p>
+    </div>
+    <div class="header-green-block">
+      <h2>97%</h2>
+      <p>Graduation rate</p>
+    </div>
+    <div class="header-blue-block">
+      <h2>5 countries</h2>
+      <p>with transformational hubs </p>
+    </div>
+  </div>
+
+  <div class="d-flex w-100 justify-content-center">
+    <div class="position-relative our-history-text-wrapper">
+      <h2 class="our-history-text">OUR HISTORY</h2>
+      <div class="our-history-text-bg"></div>
+    </div>
+  </div>
+
+  <div class="our-history-bg">
+    <img class="img-fluid" src="assets/about-us/our-history-graph.svg"/>
+  </div>
+
+  <h2 class="our-mission-text">Our mission</h2>
+  <div class="our-mission-block position-relative">
+    <div class="mission-yellow-block"></div>
+    <p>
+      We are on the journey of helping you change your career. Through a carefully designed modules, feedback system,
+      one-on-one mentorship, peer-to-peer learning you will get the skills for the career of your dreams. Then through
+      our Hiring and parternships program we will help you get on interviews and land on your dream job.
+      <br><br>
+      No experience? No problem. You can always start internship in Creative Hub and grow your confidence.
+      We’ve been there and we are confident that with the right direction you can achieve any goal.
+    </p>
+  </div>
+
+  <h2 class="our-team-text">Meet our team</h2>
+  <div class="our-team container d-flex justify-content-center flex-wrap gap-3">
+    <ng-container *ngFor="let member of ourTeam">
+      <div class="d-flex flex-column member-card">
+        <img width="288px" height="318px" [src]="member.image"/>
+        <h3>{{member.name}}</h3>
+        <p>{{member.title}}</p>
+      </div>
+    </ng-container>
+  </div>
+
+  <!-- <h2 class="your-future-text">Let's discuss your future</h2>
+  <div class="your-future-block position-relative">
+    <p>
+      Meet us for coffee in Brickell and let us know how we can<br> help you achieve your goals.
+    </p>
+  </div> -->
+
+  <div class="d-flex w-100 justify-content-center">
+    <div class="position-relative your-company-box">
+      <img class="your-company-img img-fluid" src="assets/hackathons/your-company-bg.png"/>
+      <div class="your-company-text">
+        <p class="your-company-title">You a company?</p>
+        <p class="your-company-desc">
+          Become our partner in changing the world.<br>
+          Be the first to hire our students!
+        </p>
+        <button class="btn your-company-btn" data-bs-toggle="modal" data-bs-target="#exampleModal12">
+          <p>Write to us</p>
+        </button>
+        <app-register-company></app-register-company>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer [subscribeBorder]="footerBorder" [arrowBg]="arrowBg"></app-footer>
+

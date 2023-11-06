@@ -1,0 +1,19 @@
+<app-navbar></app-navbar>
+
+<div class="page-wrapper">
+  <app-page-loader *ngIf="!articles.length"></app-page-loader>
+
+  <ng-container *ngIf="articles.length">
+    <div class="container">
+      <h1 class="category-title">{{selectedCategory?.title}}</h1>
+      <hr class="title-hr">
+      <div class="d-flex flex-wrap gap-3">
+        <ng-container *ngFor="let article of articles">
+          <app-article class="article" [article]="article"></app-article>
+        </ng-container>
+      </div>
+    </div>
+
+    <app-footer [subscribeBorder]="footerBorder" [arrowBg]="arrowBg"></app-footer>
+  </ng-container>
+</div>

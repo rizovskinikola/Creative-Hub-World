@@ -1,0 +1,140 @@
+<app-navbar></app-navbar>
+
+<div class="page-bg">
+  <div class="header-bg fixed-navbar-padding">
+    <div class="container position-relative">
+      <div class="d-flex justify-content-center">
+        <img class="img-fluid title-img d-none d-xl-block" src="assets/bootcamp/header-img-1.png"/>
+
+        <div class="bootcamp-title">
+          <img class="green-title-circle" src="assets/bootcamp/green-title-circle.png"/>
+          <img class="pink-title-circle" src="assets/bootcamp/pink-title-circle.png"/>
+          We are eager to<br> help people find<br> their <span><b>dream</b><hr></span> job
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center justify-content-xl-between header-images">
+        <div class="d-none d-xl-flex flex-column merged-title-img">
+          <img class="mb-3" src="assets/bootcamp/header-img-2.png"/>
+          <img src="assets/bootcamp/header-img-3.png"/>
+        </div>
+        <img class="img-fluid" src="assets/bootcamp/header-img-4.png"/>
+        <img class="right-header-img d-none d-xl-block" src="assets/bootcamp/header-img-5.png"/>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex scroll-down mobile-hide mt-6">
+    <div class="horizontal-line"></div>
+    <div class="scroll-down-arrow pulsate-down"></div>
+    <div class="second-horizontal-line"></div>
+  </div>
+
+  <div class="d-flex flex-column align-items-center mt-8">
+    <h1 class="our-bootcamp-title position-relative mb-7">
+      OUR <b>< / BOOTCAMPS ></b>
+      <img class="our-bootcamp-rectangle" src="assets/bootcamp/rectangle.svg"/>
+    </h1>
+
+    <p class="color-grey mb-5">
+      Discover some of the many benefits you will enjoy when<br> you add us to your favorite online learning platform
+    </p>
+  </div>
+
+  <div class="container d-flex flex-wrap justify-content-center gap-3">
+    <app-bootcamp-academy-card [academyOptions]="graphicDesignAcademyOptions"></app-bootcamp-academy-card>
+    <app-bootcamp-academy-card [academyOptions]="dataScienceAcademyOptions"></app-bootcamp-academy-card>
+    <app-bootcamp-academy-card [academyOptions]="frontendAcademyOptions"></app-bootcamp-academy-card>
+  </div>
+
+  <div class="position-relative learn-block">
+    <img class="learn-bg" src="assets/bootcamp/learn-bg.png"/>
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-center">
+      <div class="learn-text">
+        <h5>Learn from industry leading <br> guest speakers</h5>
+        <p>Rakhi Voria,<br>SVP, Sales Operations IBM<br>Guest Speaker, Women in Marketing Summit</p>
+      </div>
+      <div>
+        <img class="img-fluid" src="assets/bootcamp/learn-img.png"/>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2 class="recent-guests-text text-center">RECENT INDUSTRY GUESTS</h2>
+    <div class="d-flex flex-wrap justify-content-center gap-3">
+      <div class="recent-guests-wrapper">
+        <div class="recent-guests-inner">
+          <img src="assets/bootcamp/akash-mehta.png"/>
+          <p>
+            <b>Akash Mehta</b><br>
+            Global Digital Manager, Dior<br>
+            CEO & Co-founder, Fable & Mane
+          </p>
+        </div>
+      </div>
+
+      <div class="recent-guests-wrapper">
+        <div class="recent-guests-inner">
+          <img src="assets/bootcamp/allesandro-capoccia.png"/>
+          <p>
+            <b>Alessandro Capoccia</b><br>
+            Photographer, Condé Nast Traveler
+          </p>
+        </div>
+      </div>
+
+      <div class="recent-guests-wrapper">
+        <div class="recent-guests-inner">
+          <img src="assets/bootcamp/maria-belits.png"/>
+          <p>
+            <b>Maria Belitskaya</b><br>
+            Senior Creative Project Manager,<br>
+            The North Face
+          </p>
+        </div>
+      </div>
+
+      <div class="recent-guests-wrapper">
+        <div class="recent-guests-inner">
+          <img src="assets/bootcamp/julie-zwissler.png"/>
+          <p>
+            <b>Julie Zwissler</b><br>
+            CMO, Fabric
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="networking position-relative d-none d-md-block">
+    <div class="networking-title d-none d-lg-flex">
+      <p>
+        PEER-TO-PEER<br>
+        NETWORKING
+      </p>
+    </div>
+    <div class="container-lg networking-map"></div>
+  </div>
+
+  <div class="position-relative get-started">
+    <img class="get-started-bg" src="assets/bootcamp/get-started-bg.png"/>
+    <div class="d-flex align-items-center justify-content-center">
+      <div class="z-index-1 get-started-text-block">
+        <h2 class="get-started-text">
+          Get started on your<br>
+          changing career<br>
+          journey today
+        </h2>
+
+        <button class="btn get-started-btn">Get started</button>
+      </div>
+
+      <div class="z-index-1">
+        <img class="img-fluid d-none d-md-block" src="assets/bootcamp/get-started-img.png"/>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer [subscribeBorder]="footerBorder" [arrowBg]="arrowBg" ></app-footer>

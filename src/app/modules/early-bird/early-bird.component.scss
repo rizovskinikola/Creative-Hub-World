@@ -1,0 +1,29 @@
+.main-holder-bird{
+    width: 100%;
+    height: 27px;
+    background: #FFBD11;
+    text-align: center;
+    padding-top: 5px;
+    position: relative;
+    span{
+        margin-right: 35px;
+    }
+    img{
+        position: absolute;
+        right: 120px;
+    }
+    img:hover
+    {
+        cursor: pointer;
+    }
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+    .main-holder-bird{
+        span{
+           font-size: 12px;
+        }
+        img{
+            right: 5px;
+        }
+    }
+}

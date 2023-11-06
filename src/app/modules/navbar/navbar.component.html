@@ -1,0 +1,70 @@
+<header class="d-none d-lg-block header-navbar">
+  <div class="container navbar pb-0">
+    <div class="navbar-logo" routerLink="/"><div>
+      <img src="../../../assets/ch-logo.svg" class="responsive" alt="Creative Hub logo">
+      <div class="enterprise"    [ngStyle]="from_where === 'enterprise' ? {'display' : 'block'} : {'display' : 'none'} ">Enterprise</div>
+    </div>
+      <span  [ngStyle]="from_where === 'enterprise' ? {'margin-top' : '-15px'} : {'margin-top' : '0'} ">| Successful careers made possible.</span> 
+    </div>
+    <div (mouseover)="dropDown()" (mouseout)="hideDropDown()" class="navbar-item" routerLinkActive="active-link">
+      Courses
+      <div #bootcampDropDown class="bootcamp-dropdown">
+        <div class="dropdown-item" routerLinkActive="active-link" routerLink="/graphic-design-bootcamp">Graphic Design</div>
+        <div class="dropdown-item" routerLinkActive="active-link" routerLink="/data-science-bootcamp">Data Science </div>
+        <div class="dropdown-item" routerLinkActive="active-link" routerLink="/front-end-bootcamp">Front-End</div>
+        <div class="dropdown-item" routerLinkActive="active-link" routerLink="/digital-marketing">Digital marketing</div>
+      </div>
+    </div>
+    
+    <div class="navbar-item" routerLinkActive="active-link" routerLink="/enterprise">Enterprise</div>
+    <div class="navbar-item" routerLinkActive="active-link" routerLink="/news">News</div>
+    <!-- <div class="navbar-item" routerLinkActive="active-link" routerLink="/about-us">About us</div> -->
+    <!-- <div class="apply" routerLinkActive="active-link" routerLink="/under-construction">Apply now</div>
+    <div class="navbar-item" routerLinkActive="active-link" routerLink="/under-construction">Sign in</div> -->
+  </div>
+</header>
+
+<header class="d-lg-none">
+  <div #mainMobileMenu class="overlay">
+    <div class="menu-overlay-header">
+      <div class="d-flex align-items-center justify-content-between m-3">
+        <img routerLinkActive="active-link" routerLink="/" src="../../../assets/logo-mobile.svg"/>
+        <img (click)="closeNav()" class="close-menu-btn" src="../../../assets/close-btn.svg"/>
+      </div>
+      <div class="navbar-item-mobile">
+        <div routerLinkActive="active-link" routerLink="/graphic-design-bootcamp">Graphic Design</div>
+      </div>
+      <div class="navbar-item-mobile">
+        <div routerLinkActive="active-link" routerLink="/front-end-bootcamp">Front-end</div>
+      </div>
+      <div class="navbar-item-mobile">
+        <div routerLinkActive="active-link" routerLink="/data-science-bootcamp">Data Scinece</div>
+      </div>
+      <div class="navbar-item-mobile">
+        <div routerLinkActive="active-link" routerLink="/digital-marketing">Digital-marketing</div>
+      </div>
+      <div class="navbar-item-mobile">
+        <div routerLinkActive="active-link" routerLink="/enterprise">Enterprise</div>
+      </div>
+      <div class="navbar-item-mobile">
+        <div routerLinkActive="active-link" routerLink="/news">News</div>
+      </div>
+      <div class="navbar-item-mobile">
+        <!-- <div routerLinkActive="active-link" routerLink="/about-us">About us</div> -->
+      </div>
+      <!-- <div class="navbar-item-mobile apply-mobile">
+        <div routerLinkActive="active-link" routerLink="/under-construction">Apply now</div>
+      </div> -->
+      <!-- <div class="navbar-item-mobile">
+        <div routerLinkActive="active-link" routerLink="/under-construction">Sign in</div>
+      </div> -->
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-between navbar-mobile"
+       [style.background]="showLightNavbar ? blackNavbarBg : whiteNavbarBg">
+    <img routerLink="/" [src]="showLightNavbar ? blackCircleLogo : whiteCircleLogo" alt="Logo mobile">
+    <img [src]="showLightNavbar ? blackHamburgerIcon : whiteHamburgerIcon" alt="Hamburger Menu" (click)="openNav()">
+  </div>
+</header>
+

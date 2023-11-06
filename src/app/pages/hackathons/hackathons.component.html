@@ -1,0 +1,143 @@
+<app-navbar></app-navbar>
+
+<div class="page-bg">
+  <div class="header fixed-navbar-padding d-flex flex-column align-items-center">
+    <h1>All tools developed on our <span>Bootcamps</span></h1>
+    <p>This is where we practice our skills, learn new<br> technologies, win awards, make friends ...</p>
+
+    <button class="btn deep-dive-btn">Take a deep dive</button>
+  </div>
+
+  <div class="d-flex position-relative">
+    <div class="our-partners">
+      Our partners
+    </div>
+
+    <div class="d-flex align empowering-block position-relative">
+      <div class="empowering-text d-flex flex-column justify-content-center w-50">
+        <p>
+          Empowering the next<br>
+          generation of freelancers?
+        </p>
+
+        <p>
+          43% of our students begin working as freelancers and have a high reputation on upwork, fiverr, or
+          freelancer.com after the program. We host visits from successful freelancers to assist students in
+          developing
+          their freelance profiles so they can get started faster during the course.
+        </p>
+      </div>
+
+      <div class="d-flex flex-column header-logos position-relative ms-7">
+        <div class="d-flex">
+          <img class="fiver" src="assets/hackathons/fiverr-logo.png"/>
+          <img class="upwork" src="assets/hackathons/upwork-logo.png"/>
+        </div>
+        <div class="d-flex">
+          <img class="freelance" src="assets/hackathons/freelancer-logo.png"/>
+          <img class="orange" src="assets/hackathons/orange-logo.png"/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="our-chapters text-center">
+    <h2>Our chapters</h2>
+    <p>
+      Join the inter-world connected teams during your bootcamp and hop on a joint research project.<br>
+      During each cohort, students get to put into practice their skills by participating in real projects from our
+      partner companies.<br>
+      This helps them build their portfolio and experience working in international teams.<br><br>
+
+      Book a call to learn more about the projects
+    </p>
+  </div>
+
+  <div class="d-flex flex-wrap justify-content-center gap-3">
+    <div class="chapter-card-wrapper">
+      <div class="chapter-card-inner">
+        <img class="img-fluid" src="assets/hackathons/chapter-img-1.png"/>
+        <p class="chapter-title">Qarterly Report for Production Plan</p>
+        <p class="chapter-desc">
+          Using the knowledge of the subject of Power BI & SQL, the students have created a report of their choice with
+          country specifications, sales agent, product, and production plant.<br><br>
+
+          The report used data for the cost of goods sold, revenues and profits.<br><br>
+
+          Additionally, they have created visuals for a cart cost of goods sold by country, sales unit by country, total
+          sale by segment, etc.
+
+        </p>
+      </div>
+    </div>
+
+    <div class="chapter-card-wrapper">
+      <div class="chapter-card-inner">
+        <img class="img-fluid" src="assets/hackathons/chapter-img-2.png"/>
+        <p class="chapter-title">Strategic Report for Unemployment Rate Q1 2021</p>
+        <p class="chapter-desc">
+          The students had a task to make a report analyzing a large set of data according to the number of unemployed
+          by industries and index.<br><br>
+
+          Using functions they have sorted the data and produced a visual and automated analysis that can be used for
+          strategic purposes.
+        </p>
+      </div>
+    </div>
+
+    <div class="chapter-card-wrapper">
+      <div class="chapter-card-inner">
+        <img class="img-fluid" src="assets/hackathons/chapter-img-3.png"/>
+        <p class="chapter-title">Coding with Purpose</p>
+        <p class="chapter-desc">
+          24-hour marathon where our students created 20 landing pages for small businesses that needed digital
+          presence. Helping the community is a way to start building your portfolio.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex w-100 justify-content-center">
+    <div class="position-relative your-company-box">
+      <img class="your-company-img img-fluid" src="assets/hackathons/your-company-bg.png"/>
+      <div class="your-company-text">
+        <p class="your-company-title">Your company needs a bright new idea?</p>
+        <p class="your-company-desc">
+          Our students have them all! Come to us with anything you vane on mind, and we’ll work on it together. We’ll be
+          expecting you.
+        </p>
+        <button class="btn your-company-btn" data-bs-toggle="modal" data-bs-target="#hackathonsFormModal">
+          <p>Write to us</p>
+        </button>
+        <app-hackathons-form></app-hackathons-form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container d-flex flex-wrap justify-content-center">
+    <div class="hire-box">
+      <div class="hire-text position-relative">
+        <img class="left-top-border" src="assets/hackathons/border-cut.png"/>
+        <img class="left-bottom-border" src="assets/hackathons/border-cut.png"/>
+        <img class="right-top-border" src="assets/hackathons/border-cut.png"/>
+        <img class="right-bottom-border" src="assets/hackathons/border-cut.png"/>
+        <h2>GET <span>HIRED</span> OR</h2>
+        <h2 class="second-text"><span>HIRE</span> THROUGH US</h2>
+      </div>
+
+      <p class="hire-desc">
+        After the graduation join our <b>HIRING PLATFORM!</b><br><br>
+
+        And connect with <b>100+</b> hiring companies
+      </p>
+
+      <button class="btn hire-btn">Register your company</button>
+    </div>
+
+    <div>
+      <img class="img-fluid" src="assets/hackathons/hire-img.png"/>
+    </div>
+  </div>
+</div>
+
+<app-footer [subscribeBorder]="footerBorder" [arrowBg]="arrowBg"></app-footer>

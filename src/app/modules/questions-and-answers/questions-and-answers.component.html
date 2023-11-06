@@ -1,0 +1,19 @@
+<div [style.background]="mainBackground">
+    <div class="qa-wrapper">
+      <div class="card-title questions-title" [style.color]="titleColor">Q&A</div>
+      <div *ngFor="let question of questions; let i = index;" class="p-2">
+        <div class="accordion-item" [style.background]="borderColor">
+          <div class="accordion-item-inner" [style.background]="accordionBg">
+            <button class="accordion position-relative" [id]="'accordion' + i"
+              (click)="toggleAccordion('accordion' + i)" [ngClass]="{'active': i === 0}">
+              <div class="pe-4 question" [style.color]="questionColor">{{question.question}}</div>
+            </button>
+            <div class="panel"  [ngStyle]="i === 0 ? {'max-height': '120px'} : {'max-height': '0px'}">
+              <br>
+              <p class="m-0 answer" [innerHTML]="question.answer"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

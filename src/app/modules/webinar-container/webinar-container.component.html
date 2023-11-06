@@ -1,0 +1,73 @@
+<div class="webinar-container">
+
+<div class="did-you-know">
+    <div class="d-flex">
+        <img src="assets/webinars/lamp.svg" alt="Lamp">
+        <h3 class="cabin">Did you know?</h3>
+    </div>
+    <p [innerHTML]="didYouKnow"></p>
+</div>
+
+    <h2>{{firstListTitle}}</h2>
+    <div class="register-benefits">
+        <ul>
+            <li *ngFor="let requirement of array_of_requirements">
+                <p>{{requirement}}</p>
+            </li>
+        </ul>
+    </div>
+
+    <h2 class="py-5">ABOUT THE LECTURER</h2>
+
+    <div class="lecturer-card">
+        <img class="lecturer-img" [src]="lecturerImg" alt="Lecturer
+            Card">
+        <div class="lecturer-info">
+            <div class="lecturer-1">
+                {{array_of_lecturer_card_info[0].lecturer_name}} <br>
+                <span class="d-flex"><img
+                        [src]="array_of_lecturer_card_info[0].certified_logo"
+                        alt="Adobe logo">{{array_of_lecturer_card_info[0].certified_text}}</span>
+            </div>
+            <ul>
+                <li *ngFor="let skills of array_of_skills_list"><p>{{skills}}</p></li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>TESTIMONIALS</h2>
+
+    <div class="testemonial-cards">
+        <div class="testemonial-card">
+            <img [src]="array_of_testemonial[0].testemonial_img"
+                alt="Testemonial">
+            <p [innerHTML]="array_of_testemonial[0].testemonial_text">
+            </p>
+        </div>
+        <div class="testemonial-card">
+            <img src="assets/webinars/testemonial1.png"
+                [src]="array_of_testemonial[1].testemonial_img"
+                alt="Testemonial">
+            <p [innerHTML]="array_of_testemonial[1].testemonial_text">
+            </p>`
+        </div>
+        <div class="testemonial-card">
+            <img src="assets/webinars/testemonial1.png"
+                [src]="array_of_testemonial[2].testemonial_img"
+                alt="Testemonial">
+            <p [innerHTML]="array_of_testemonial[2].testemonial_text">
+            </p>
+        </div>
+    </div>
+
+    <h2>Register for the webinar today and:</h2>
+    <div class="register-benefits">
+        <ul>
+            <li *ngFor="let benefit of array_of_benefits"><p>{{benefit}}</p></li>
+        </ul>
+    </div>
+
+    <h2 class="bottom">For those that want to learn more 👇</h2>
+
+</div>
+

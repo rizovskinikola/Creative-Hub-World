@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+* {
+    font-family: "Manrope", sans-serif;
+    font-style: normal;
+}
+.intro {
+    height: 100vh;
+    .intro-wrapper {
+        background: url(../../../../assets/reusable/intro-courses-bg.svg), #f4f3ec;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        height: 94%;
+        padding-top: 6%;
+    }
+    .container-section {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        .intro-left {
+            width: 50%;
+            color: #2b2b2b;
+            padding-top: 5%;
+            a {
+                text-decoration: none;
+                font-size: 16px;
+                line-height: 22px;
+                display: flex;
+                align-items: center;
+                color: #2b2b2b;
+                img {
+                    margin-right: 5px;
+                }
+            }
+            h2 {
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 55px;
+            }
+            h1 {
+                font-size: 64px;
+                line-height: 87px;
+                font-weight: 800;
+            }
+            h3 {
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 44px;
+            }
+        }
+        .intro-right {
+            width: 50%;
+            color: #555555;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 8%;
+            p {
+                font-size: 24px;
+                line-height: 33px;
+            }
+            form {
+                background: #d5d5d5;
+                border-radius: 18px;
+                padding: 16px 32px;
+                label {
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+                input {
+                    background: #ffffff;
+                    border-radius: 12px;
+                    color: #ababab;
+                    // padding: 8px 8px 8px 16px;
+                    padding: 2%;
+                    width: 94%;
+                    border: none;
+                    margin-bottom: 10px;
+                }
+                button {
+                    background: linear-gradient(162.44deg, #5162ff 0%, #778dff 100%);
+                    border-radius: 12px;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 29px;
+                    color: #FFFFFF;
+                    border: none;
+                    width: 98%;
+                    padding: 2%;
+                    transition: transform 0.3s;
+                }
+                button:hover {
+                    transform: scale(0.97);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 992px) {
+    .intro {
+        .intro-wrapper {
+            height: 100%;
+            padding-top: 12%;
+        }
+        .container-section {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            .intro-left {
+                width: 100%;
+                padding-top: 5%;
+                a {
+                    font-size: 16px;
+                    line-height: 22px;
+                    img {
+                        margin-right: 5px;
+                    }
+                }
+                h2 {
+                    font-size: 32px;
+                    line-height: 44px;
+                }
+                h1 {
+                    font-size: 40px;
+                    line-height: 55px;
+                }
+                h3 {
+                    font-size: 24px;
+                    line-height: 33px;
+                }
+            }
+            .intro-right {
+                width: 100%;
+                color: #555555;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-top: 8%;
+                p {
+                    font-size: 18px;
+                    line-height: 120%;
+                }
+                form {
+                    padding: 16px;
+                    label {
+                        font-size: 20px;
+                        line-height: 24px;
+                        margin-bottom: 5px;
+                    }
+                    input {
+                        background: #ffffff;
+                        border-radius: 12px;
+                        color: #ababab;
+                        // padding: 8px 8px 8px 16px;
+                        padding: 4%;
+                        width: 92%;
+                        border: none;
+                        margin-bottom: 20px;
+                    }
+                    button {
+                        background: linear-gradient(162.44deg, #5162ff 0%, #778dff 100%);
+                        border-radius: 12px;
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 29px;
+                        color: #FFFFFF;
+                        border: none;
+                        width: 98%;
+                        padding: 2%;
+                        transition: transform 0.3s;
+                    }
+                    button:hover {
+                        transform: scale(0.97);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

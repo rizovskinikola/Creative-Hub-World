@@ -1,0 +1,258 @@
+.calc-main{
+    margin-top: 175px;
+    height: 260px;
+
+
+    background: #ffffff;
+}
+.calculator-title span
+    {
+        font-size: 32px;
+    }
+
+    .calculator-title p
+    {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .choose-academy p
+    {
+        font-size: 16px;
+    }
+
+    .choose-installments p
+    {
+        font-size: 16px;
+    }
+
+    /* .price-calculator
+    {
+        padding-top: 15%;
+        margin-bottom: 18%;
+    } */
+
+    .price-calculator p
+    {
+        font-size: 24px;
+        /* width: 80%; */
+    }
+
+    .price-calculator p span
+    {
+        font-size: 16px;
+    }
+    .price-calculator
+    {
+        width: 276px;
+        height: 120px;
+
+        /* padding-left: 20%; */
+        /* padding-top: 5%; */
+    }
+
+
+    .price-calculator p
+    {
+        font-size: 42px;
+        background-color: white;
+        border-radius: 10px;
+        /* border: 4px solid rgb(146, 128, 224); */
+        color: black;
+        font-weight: 900;
+        padding: 1%;
+        text-align: center;
+    }
+
+    .price-calculator p span
+    {
+        color: #9B9B9B;
+        font-size: 24px;
+    }
+
+    .calculator-title
+    {
+        /* width: 100%; */
+         height: 30px;
+         text-align: center;
+         position: relative;
+    }
+    .line {
+        position: absolute;
+        height: 4px;
+        top: -1px;
+        background: linear-gradient(90deg, rgba(0,255,224,1) 0%, rgba(0,209,255,1) 35%, rgba(250,0,255,1) 100%);
+        content: '';
+        border-radius: 32px;
+        width: 100%;
+      }
+
+    .calculator-title span
+    {
+        font-size: 43px;
+
+         border-radius: 12px;
+         color: white;
+         font-weight: 900;
+         padding: 1%;
+         position: relative;
+         z-index: 99;
+
+        width: 225px;
+        height: 65px;
+    }
+
+    .calculator-title p
+    {
+        font-size: 18px;
+        font-weight: 600;
+        padding: 2%;
+    }
+
+    .choose-academy p, .choose-installments p
+
+    {
+        color: #9B9B9B;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .choose-academy div, .choose-installments div
+    {
+        background-color: #606060;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 15px;
+        border-radius: 15px;
+        font-weight: 700;
+
+    }
+
+    .choose-academy span, .choose-installments span
+    {
+        color: white;
+        padding: 5px 10px;
+        /* border-radius: 10px; */
+    }
+
+    .choose-academy span:hover, .choose-installments span:hover
+    {
+        cursor: pointer;
+    }
+
+    .active
+    {
+        background-color: white;
+        padding: 5px 10px;
+        border-radius: 10px;
+    }
+
+    .price-calculator
+    {
+        width: 276px;
+        height: 120px;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        /* border-bottom: 4px solid rgb(146, 128, 224); */
+        /* padding-left: 20%; */
+        /* padding-top: 5%; */
+    }
+
+    .price-calculator p
+    {
+        font-size: 42px;
+        background-color: white;
+        border-radius: 10px;
+        border: 4px solid rgb(146, 128, 224);
+        color: black;
+        font-weight: 900;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+        place-content: center;
+        align-items: start;
+        flex-direction: column;
+        display: flex;
+        padding-left: 32px;
+    }
+
+    .price-calculator p span
+    {
+        color: #9B9B9B;
+        font-size: 16px;
+    }
+
+
+
+
+    @media only screen and (max-width: 1424px) {
+        .calc-main{
+            height: 100%;
+        }
+        .price span
+        {
+            font-size: 24px;
+        }
+
+        .price
+        {
+            font-size: 12px;
+        }
+
+        .calculator-title span
+        {
+            font-size: 24px;
+        }
+        .choose-academy div{
+            flex-wrap: wrap;
+            width: 95%;
+            padding: 0;
+        }
+        .choose-academy span{
+            width: 90%;
+            margin: 10px 0;
+            text-align: center;
+        }
+        .calculator-title::after {
+            position: absolute;
+            top: 18px; bottom: 0px;
+            left: -4px; right: -4px;
+          }
+
+          .calculator-title span
+          {
+              font-size: 32px;
+              line-height: 32px;
+               border-radius: 12px;
+               color: white;
+               font-weight: 900;
+               padding: 3%;
+               position: relative;
+               z-index: 99;
+               top: -10px;
+              height: 65px;
+          }
+          .choose-installments div{
+            padding: 15px 0;
+            width: 95%;
+          }
+          .price-calculator{
+              position: relative;
+              top: 60px;
+              margin-top: 0px;
+              margin-left: 0px;
+              margin: auto;
+          }
+          .price-calculator p
+          {
+              /* width: 80%; */
+              font-size: 24px;
+          }
+
+          .price-calculator
+          {
+              /* padding-top: 15%; */
+          }
+    }

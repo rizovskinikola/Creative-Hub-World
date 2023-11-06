@@ -1,0 +1,55 @@
+.porto-montenegro {
+    display: flex;
+    align-items: center;
+    .porto-montenegro-left {
+        h1 span {
+            background: linear-gradient(231.38deg, #7d42ff -5.3%, #08fcff 119.03%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .ul-wrapper {
+            background: linear-gradient(231.38deg, #7d42ff -5.3%, #08fcff 119.03%);
+            padding: 3px;
+            position: relative;
+            border-radius: 32px;
+            width: 150%;
+            .ul-inner {
+                background: #f4f3ec;
+                border-radius: 32px;
+                padding: 3%;
+            }
+        }
+        p {
+            color: #555555;
+        }
+    }
+    .img-right {
+        position: absolute;
+        right: 120px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .porto-montenegro {
+        display: flex;
+        flex-direction: column;
+        .porto-montenegro-left {
+            width: 90%;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+        .ul-wrapper {
+            width: 100% !important;
+            margin-bottom: -15% !important;
+            .ul-inner {
+                padding: 3% 3% 20% 3% !important;
+                //    margin-bottom: -20%;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 1918px) {
+    .img-right {
+        position: absolute !important;
+        right: 220px !important;
+    }
+}

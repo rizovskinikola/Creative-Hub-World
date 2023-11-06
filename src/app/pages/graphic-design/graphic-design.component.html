@@ -1,0 +1,769 @@
+<app-navbar [showLightNavbar]="true"></app-navbar>
+<div class="bg fixed-navbar-padding">
+
+    <div class="header">
+        <div class="header-left">
+            <h1>Graphic Design Academy</h1>
+            <p>A 6-month bootcamp that will jumpstart your <br>
+                career as a designer and unleash your creativity. <br> <br>
+
+                Earn a CPD degree, build a portfolio, and let our <br>
+                recruiters help you get hired after completing the program.</p>
+        </div>
+        <img src="../../../assets/graphic-design/header-img.svg" class="d-none
+            d-lg-block" alt="Graphic
+            design">
+        <img src="../../../assets/graphic-design/header-mobile-img.png"
+            class="d-block d-lg-none" alt="Graphic
+            design">
+        <div class="underline-title"></div>
+    </div>
+    <div class="under-header">
+        <div class="possibilities">
+            <span>Career possibilities: </span> <br> <br>
+            Graphic designer || Photographer || Illustrator <br>
+            Art Director || Creative Director
+        </div>
+        <div class="acquire">
+            <span>You’ll acquire:</span> <br> <br class="d-none d-lg-block">
+            <div class="d-flex justify-content-between">
+                <div class="d-flex align-items-center">
+                    <img src="../../../assets/reusable/portfolio.svg"
+                        alt="Portfolio">
+                    <p class="m-0">Designer portfolio</p>
+                </div>
+                <div class="d-flex align-items-center">
+                    <img src="../../../assets/reusable/cpd.svg"
+                        alt="Portfolio">
+                    <p class="m-0">CPD Certificate</p>
+                </div>
+                <div class="d-flex align-items-center">
+                    <img src="../../../assets/reusable/practical.svg"
+                        alt="Portfolio">
+                    <p class="m-0">Practical work</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-down d-none d-lg-flex">
+        <div class="horizontal-line">
+
+        </div>
+        <div class="scroll-down-arrow pulsate-down">
+
+        </div>
+        <div class="second-horizontal-line">
+
+        </div>
+    </div>
+
+
+
+    <div class="benefits container-section section-m">
+        <div class="benefits-bg">
+            <h2>What are the benefits of studying at Creative Hub?</h2>
+            <h4>
+                Because we have a personalized approach for each
+                student, and it's not
+                everything...
+            </h4>
+
+
+            <div class="bubble-holder">
+                <div class="expert-mentors bubble">
+                    Beginner friendly
+                </div>
+
+                <div class="perfomance bubble">
+                    Fast to learn
+                </div>
+                <div class="certificates bubble">
+                    Applicable <br>
+                    anywhere <br>
+                    in the world
+                </div>
+
+                <div class="student-care bubble">
+                    Gives you <br>
+                    freedom to <br>
+                    work from <br>
+                    “home” forever
+                </div>
+                <div class="community bubble">
+                    Does not require <br>
+                    substantial <br>
+                    financial <br>
+                    commitment
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-section section-m">
+        <h2>Who is this for?</h2>
+        <div class="d-flex align-items-lg-center align-items-start my-4
+            my-lg-2">
+            <img src="../../../assets/graphic-design/blue-gradient-thick.svg"
+                class="me-4 me-lg-2" alt="Thick">
+            <h4 class="cabin fw-normal my-0 my-lg-2">This course is for anybody
+                seeking to
+                alter their career and begin a new one in the field of graphic
+                design.
+            </h4>
+        </div>
+        <div class="d-flex align-items-lg-center align-items-start my-4
+            my-lg-2">
+            <img src="../../../assets/graphic-design/blue-gradient-thick.svg"
+                class="me-4 me-lg-2" alt="Thick">
+            <h4 class="cabin fw-normal my-0 my-lg-2">Whether you have prior
+                experience or
+                not, you'll be given 40 weeks to master all there is to know
+                about design and create an original portfolio.
+            </h4>
+        </div>
+    </div>
+
+    <div class="container-section section-m">
+        <h2>What DO you need?</h2>
+        <div class="what-you-need-wrapper">
+            <div class="what-you-need-card">
+                <div class="what-you-need-inner">
+                    <img class="gradient-bg"
+                        src="../../../assets/graphic-design/what-you-need1.svg"
+                        alt="Gradient">
+                    <img src="../../../assets/graphic-design/love.svg"
+                        class="m-3"
+                        alt="Love">
+                    <div class="d-flex align-items-start">
+                        <img
+                            src="../../../assets/graphic-design/pink-gradient-thick.svg"
+                            alt="Thick" class="me-2">
+                        <h4 class="cabin">A burning desire to get started and
+                            passion for graphic
+                            design.</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="what-you-need-card">
+                <div class="what-you-need-inner">
+                    <img class="second-gradient-bg"
+                        src="../../../assets/graphic-design/what-you-need2.svg"
+                        alt="Gradient">
+                    <img src="../../../assets/graphic-design/growth.svg"
+                        class="m-3" alt="Love">
+                    <div class="d-flex align-items-start">
+                        <img
+                            src="../../../assets/graphic-design/pink-gradient-thick.svg"
+                            alt="Thick" class="me-2">
+                        <h4 class="cabin">A goal plan that you will want to
+                            achieve for yourself in the following year, with a
+                            committed partner like us by your side.</h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container-section section-m">
+        <h2>WHAT OUR STUDENTS SAY</h2>
+
+        <owl-carousel-o [options]="studentCarusel">
+            <ng-template carouselSlide>
+                <div class="student-card">
+                    <img src="../../../assets/graphic-design/student1.png"
+                        class="responsive" alt="Creative Hub student">
+                    <p>
+                        <span class="fw-bold cabin">Tamara</span> <br>
+                        During my high school years, in 2018, I took the
+                        Creative Hub Graphic Design Bootcamp.
+                        The curriculum equipped me with the knowledge I needed
+                        to be accepted into Miami Ad School Berlin's creative
+                        program and now work as a freelance Art Director in
+                        Berlin.
+
+                    </p>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="student-card">
+                    <img src="../../../assets/graphic-design/student2.png"
+                        class="responsive" alt="Creative Hub student">
+                    <p>
+                        <span class="fw-bold cabin">Sandra</span> <br>
+                        I graduated from Creative Hub Bootcamp in 2021, and
+                        Ariana noticed my portfolio and invited me to join the
+                        Creative Hub Team as a junior designer.
+                        I've been working for Creative Hub for almost 8 months
+                        now, and I'm repaying my bootcamp tuition.
+                    </p>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="student-card">
+                    <img src="../../../assets/graphic-design/student3.png"
+                        class="responsive" alt="Creative Hub student">
+                    <p>
+                        <span class="fw-bold cabin">Sarah</span> <br>
+                        I got enrolled in the Graphic Design Bootcamp when I
+                        wanted to change my career.
+                        What I remember the most is the
+                        “Black & White” Exhibition we did.
+                        I learned a lot on the program and I recommend it to
+                        anyone.
+                    </p>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="student-card">
+                    <img src="../../../assets/graphic-design/student4.png"
+                        class="responsive" alt="Creative Hub student">
+                    <p>
+                        <span class="fw-bold cabin">Melissa</span> <br>
+                        I had no previous experience with design prior to
+                        joining the bootcamp.
+                        What I liked most about the course is that we did a lot
+                        of practical projects after each topic, which helped me
+                        develop my portfolio.
+                        I was fortunate enough to get an internship one month
+                        after completing the Bootcamp, thanks to the recruitment
+                        team at Creative Hub.
+                    </p>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="student-card">
+                    <img src="../../../assets/graphic-design/student5.png"
+                        class="responsive" alt="Creative Hub student">
+                    <p>
+                        <span class="fw-bold cabin">Ariana</span> <br>
+                        “I made a wrong University choice and I took the Graphic
+                        Design Academy to change my career into a more creative
+                        one. Through the Creative Hub Partners Program I got
+                        hired at XYZ and started working as a designer.“
+                    </p>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="student-card">
+                    <img src="../../../assets/graphic-design/student6.png"
+                        class="responsive" alt="Creative Hub student">
+                    <p>
+                        <span class="fw-bold cabin">Endrit</span> <br>
+                        “I was a last year Architecture student and I took
+                        Graphic Design Academy. Creative Hub helped me get 3
+                        internships and to start my career.“
+                    </p>
+                </div>
+            </ng-template>
+
+
+        </owl-carousel-o>
+    </div>
+    <div class="container-section section-m">
+        <div class="up-work">
+            <div class="upwork-text-holder">
+                <div class="guess">Can you guess?</div>
+                <span>
+                    How much do lead designers <br> earn on average on Upwork?
+                </span>
+
+                <div class="radio-buttons">
+                    <mat-radio-group>
+                        <mat-radio-button value="20"> $20 per hour
+                        </mat-radio-button>
+
+                        <mat-radio-button value="35"> $35 per hour
+                        </mat-radio-button>
+
+                        <mat-radio-button value="75"> $75 per hour
+                        </mat-radio-button>
+                    </mat-radio-group>
+                </div>
+                <div class="find-out-btn" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+
+                    <span> Find out</span>
+                </div>
+                <app-upwork-lead-graphic></app-upwork-lead-graphic>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-section section-m">
+        <h2>OUR PROGRAM</h2>
+        <div class="d-flex flex-column">
+            <button class="accordion d-flex">
+                <div class="program-item-number">1.</div>
+                <div class="program-item-name w-100">Introduction to Graphic
+                    Design</div>
+            </button>
+            <div class="program-active-description">
+                <ul class="blue-checkmark-list program-active-list">
+                    <li>Program placeholder text</li>
+                    <li>Program placeholder text</li>
+                    <li>Program placeholder text</li>
+                </ul>
+            </div>
+        </div>
+        <hr class="program-hr">
+        <div class="d-flex flex-column">
+            <button class="accordion d-flex">
+                <div class="program-item-number">2.</div>
+                <div class="program-item-name w-100">Adobe Photoshop</div>
+            </button>
+            <div class="program-active-description">
+                <ul class="blue-checkmark-list program-active-list">
+                    <li>Program placeholder text</li>
+                    <li>Program placeholder text</li>
+                    <li>Program placeholder text</li>
+                </ul>
+            </div>
+        </div>
+        <hr class="program-hr">
+        <div class="d-flex flex-column">
+            <button class="accordion d-flex">
+                <div class="program-item-number">3.</div>
+                <div class="program-item-name w-100">Adobe Illustrator</div>
+            </button>
+            <div class="program-active-description">
+                <ul class="blue-checkmark-list program-active-list">
+                    <li>Program placeholder text</li>
+                    <li>Program placeholder text</li>
+                    <li>Program placeholder text</li>
+                </ul>
+            </div>
+        </div>
+        <hr class="program-hr">
+        <div class="d-flex flex-column">
+            <button class="accordion d-flex">
+                <div class="program-item-number">4.</div>
+                <div class="program-item-name w-100">Adobe Indesign</div>
+            </button>
+            <div class="program-active-description">
+                <ul class="blue-checkmark-list program-active-list">
+                    <li>Program placeholder text</li>
+                    <li>Program placeholder text</li>
+                    <li>Program placeholder text</li>
+                </ul>
+            </div>
+        </div>
+        <hr class="program-hr">
+        <div class="d-flex flex-column">
+            <button class="accordion d-flex">
+                <div class="program-item-number">5.</div>
+                <div class="program-item-name w-100">Typography & font creation
+                    (optional)</div>
+            </button>
+            <div class="program-active-description">
+                <ul class="blue-checkmark-list program-active-list">
+                    <li>Program placeholder text</li>
+                    <li>Program placeholder text</li>
+                    <li>Program placeholder text</li>
+                </ul>
+            </div>
+        </div>
+        <hr class="program-hr">
+        <div class="d-flex flex-column">
+            <button class="accordion d-flex">
+                <div class="program-item-number">6.</div>
+                <div class="program-item-name w-100">Print materials production</div>
+            </button>
+            <div class="program-active-description">
+                <ul class="blue-checkmark-list program-active-list">
+                    <li>Program placeholder text</li>
+                    <li>Program placeholder text</li>
+                    <li>Program placeholder text</li>
+                </ul>
+            </div>
+        </div>
+        <hr class="program-hr">
+        <div class="d-flex flex-column">
+            <button class="accordion d-flex">
+                <div class="program-item-number">7.</div>
+                <div class="program-item-name w-100">Creating a Behance
+                    portfolio</div>
+            </button>
+            <div class="program-active-description">
+                <ul class="blue-checkmark-list program-active-list">
+                    <li>Program placeholder text</li>
+                    <li>Program placeholder text</li>
+                    <li>Program placeholder text</li>
+                </ul>
+            </div>
+        </div>
+        <hr class="program-hr">
+        <div class="d-flex flex-column">
+            <button class="accordion d-flex">
+                <div class="program-item-number">8.</div>
+                <div class="program-item-name w-100">How to become a freelancer?</div>
+            </button>
+            <div class="program-active-description">
+                <ul class="blue-checkmark-list program-active-list">
+                    <li>Program placeholder text</li>
+                    <li>Program placeholder text</li>
+                    <li>Program placeholder text</li>
+                </ul>
+            </div>
+        </div>
+        <hr class="program-hr">
+        <div class="d-flex flex-column">
+            <button class="accordion d-flex">
+                <div class="program-item-number">9.</div>
+                <div class="program-item-name w-100">Visit of Print studio</div>
+            </button>
+            <div class="program-active-description">
+                <ul class="blue-checkmark-list program-active-list">
+                    <li>Program placeholder text</li>
+                    <li>Program placeholder text</li>
+                    <li>Program placeholder text</li>
+                </ul>
+            </div>
+        </div>
+        <hr class="program-hr">
+        <div class="d-flex flex-column">
+            <button class="accordion d-flex">
+                <div class="program-item-number">10.</div>
+                <div class="program-item-name w-100">Visit of Creative Agency</div>
+            </button>
+            <div class="program-active-description">
+                <ul class="blue-checkmark-list program-active-list">
+                    <li>Program placeholder text</li>
+                    <li>Program placeholder text</li>
+                    <li>Program placeholder text</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-section section-m">
+        <h2 class="text-left text-lg-center">
+            the knowledge you’ll gain will <span class="recognized">be recognized</span>
+        </h2>
+        <div class="cpd-wrapper">
+            <div class="cpd-inner">
+                <div class="d-flex align-items-center justify-content-between">
+                    <h4>Obtain Industry-Recognized Certificate</h4>
+                    <img src="../../../assets/graphic-design/cpd.png" alt="CPD">
+                </div>
+                <p>
+                    CPD accreditation ensures that the Graphic Design Bootcamp
+                    at <br class="d-none d-lg-block">
+                    <span>Creative Hub</span> is a quality program. <br> <br>
+
+                    You'll get an internationally recognized certificate to put
+                    on your LinkedIn profile and portfolio, which will land you
+                    your new job.
+
+                </p>
+                <button>Learn more</button>
+            </div>
+        </div>
+    </div>
+    <app-porto-montenegro></app-porto-montenegro>
+
+    <div class="pricing-holder">
+        <div class="pricing-title">
+            <div class="title">
+                Choose the track that best meets your needs
+            </div>
+            <div class="top-horizontal-gardient-line">
+
+            </div>
+        </div>
+        <app-pricing [array_of_pricing_header]="array_of_pricing_header"
+            [array_of_pricing]="array_of_pricing"
+            [array_of_bootcamp]="array_of_bootcamp"
+            [array_of_cpd]="array_of_cpd"
+            [pricingTextBg]="pricingTextBg"
+            [array_of_transformation]="array_of_transformation"
+            [from_where]="from_where"
+            [workoutSessionColor]="workoutSessionColor"  [payJustAcademy]="payJustAcademy" [payTravelAcademy]="payTravelAcademy" [payTotalAcademy]="payTotalAcademy"></app-pricing>
+    </div>
+
+
+    <div class="container-section section-m">
+        <h2>HOW AND WHEN WILL THE ACADEMY OCCUR?</h2>
+        <div class="how-and-when">
+            <div class="date">
+                <h4 class="cabin my-1">Next group strarting date</h4>
+                <div class="d-flex align-items-center">
+                    <img src="../../../assets/graphic-design/play-green.svg"
+                        class="me-2" alt="Play button">
+                    <h3 class="cabin my-1"> 5<span class="cabin">th</span>
+                        November, 2022</h3>
+                </div>
+                <div class="d-flex align-items-center mt-5">
+                    <img src="../../../assets/graphic-design/time.svg"
+                        class="me-2" alt="Time">
+                    <p class="m-0">Few seats left available</p>
+                </div>
+                <!-- <img src="../../../assets/graphic-design/date-bottom.svg" class="date-bottom" alt="Colours"> -->
+            </div>
+            <div class="how">
+
+                <div class="how-element w-100 d-flex align-items-center my-0
+                    my-lg-2">
+                    <img src="../../../assets/graphic-design/clock.svg"
+                        alt="Clock">
+                    <p>12:00 - 15:00 PM on mondays and wednesdays</p>
+                </div>
+                <div class="d-block d-lg-flex w-100 justify-content-between my-0
+                    my-lg-2">
+                    <div class="how-element">
+                        <img src="../../../assets/graphic-design/clock.svg"
+                            alt="Clock">
+                        <p>2,5 hrs twice a week</p>
+                    </div>
+                    <div class="how-element">
+                        <img
+                            src="../../../assets/graphic-design/codesandbox.svg"
+                            alt="Clock">
+                        <p>120 hours in total</p>
+                    </div>
+                </div>
+                <div class="d-block d-lg-flex w-100 justify-content-between my-0
+                    my-lg-2">
+                    <div class="how-element">
+                        <img src="../../../assets/graphic-design/video.svg"
+                            alt="Clock">
+                        <p>120 hours in total</p>
+                    </div>
+                    <div class="how-element">
+                        <img src="../../../assets/graphic-design/hat.svg"
+                            alt="Clock">
+                        <p>9 months</p>
+                    </div>
+                </div>
+                <div class="d-block d-lg-flex w-100 justify-content-between my-0
+                    my-lg-2">
+                    <div class="how-element">
+                        <img src="../../../assets/graphic-design/repeat.svg"
+                            alt="Clock">
+                        <p>mentor feedback</p>
+                    </div>
+                    <div class="how-element">
+                        <img src="../../../assets/graphic-design/pen-tool.svg"
+                            alt="Clock">
+                        <p>HOMEWORKS</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="projects-wrapper section-m d-none d-lg-block">
+        <div class="container">
+            <div class="d-flex">
+                <div class="student-project">
+                    <img src="../../../assets/graphic-design/project1.png"
+                        class="responsive" alt="Student Project">
+                    <div>Magazine cover design</div>
+                    <p>Tatjana Simonova</p>
+                </div>
+                <div class="student-project">
+                    <img src="../../../assets/graphic-design/project2.png"
+                        class="responsive" alt="Student Project">
+                    <div>Packaging redesign</div>
+                    <p>Sandra Naumcheva</p>
+                </div>
+                <div class="student-project">
+                    <img src="../../../assets/graphic-design/project3.png"
+                        class="responsive" alt="Student Project">
+                    <div>Digital portrait</div>
+                    <p>Hristina Mazneska</p>
+                </div>
+                <div class="student-project">
+                    <img src="../../../assets/graphic-design/project4.png"
+                        class="responsive" alt="Student Project">
+                    <div>Illustration</div>
+                    <p>Sandra Naumcheva</p>
+                </div>
+            </div>
+            <div class="d-flex">
+                <div class="student-project">
+                    <img src="../../../assets/graphic-design/project5.png"
+                        class="responsive" alt="Student Project">
+                    <div>Poster design</div>
+                    <p>Irena Vangelovska</p>
+                </div>
+                <div class="student-project">
+                    <img src="../../../assets/graphic-design/project6.png"
+                        class="responsive" alt="Student Project">
+                    <div>Packaging design</div>
+                    <p>Elena Cvetanoska</p>
+                </div>
+                <div class="student-project">
+                    <img src="../../../assets/graphic-design/project7.png"
+                        class="responsive" alt="Student Project">
+                    <div>Cover design</div>
+                    <p>Tatjana Simonova</p>
+                </div>
+                <div class="student-project">
+                    <img src="../../../assets/graphic-design/project8.png"
+                        class="responsive" alt="Student Project">
+                    <div>Packaging design</div>
+                    <p>Viktorija Mirchevska</p>
+                </div>
+            </div>
+            <div class="d-flex">
+                <div class="student-project">
+                    <img src="../../../assets/graphic-design/project9.png"
+                        class="responsive" alt="Student Project">
+                    <div>Label design</div>
+                    <p>Frosina Volcheska</p>
+                </div>
+                <div class="student-project">
+                    <img src="../../../assets/graphic-design/project10.png"
+                        class="responsive" alt="Student Project">
+                    <div>Catalogue design</div>
+                    <p>Jenny Neziri</p>
+                </div>
+                <div class="student-project">
+                    <img src="../../../assets/graphic-design/project11.png"
+                        class="responsive" alt="Student Project">
+                    <div>iStock photographies</div>
+                    <p>Viktorija Mirchevska</p>
+                </div>
+                <div class="student-project">
+                    <img src="../../../assets/graphic-design/project12.png"
+                        class="responsive" alt="Student Project">
+                    <div>Packaging design</div>
+                    <p>Tatjana Simonova</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="projects-mobile-wrapper container-section section-m d-block
+        d-lg-none">
+        <owl-carousel-o [options]="customOptions">
+            <ng-template carouselSlide>
+                <div class="student-project">
+                    <img src="../../../assets/graphic-design/project1.png"
+                        class="responsive" alt="Student Project">
+                    <div>Magazine cover design</div>
+                    <p>Tatjana Simonova</p>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="student-project">
+                    <img src="../../../assets/graphic-design/project2.png"
+                        class="responsive" alt="Student Project">
+                    <div>Packaging redesign</div>
+                    <p>Sandra Naumcheva</p>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="student-project">
+                    <img src="../../../assets/graphic-design/project3.png"
+                        class="responsive" alt="Student Project">
+                    <div>Digital portrait</div>
+                    <p>Hristina Mazneska</p>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="student-project">
+                    <img src="../../../assets/graphic-design/project4.png"
+                        class="responsive" alt="Student Project">
+                    <div>Illustration</div>
+                    <p>Sandra Naumcheva</p>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide> <div class="student-project">
+                    <img src="../../../assets/graphic-design/project5.png"
+                        class="responsive" alt="Student Project">
+                    <div>Poster design</div>
+                    <p>Irena Vangelovska</p>
+                </div></ng-template>
+            <ng-template carouselSlide>
+                <div class="student-project">
+                    <img src="../../../assets/graphic-design/project6.png"
+                        class="responsive" alt="Student Project">
+                    <div>Packaging design</div>
+                    <p>Elena Cvetanoska</p>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="student-project">
+                    <img src="../../../assets/graphic-design/project7.png"
+                        class="responsive" alt="Student Project">
+                    <div>Cover design</div>
+                    <p>Tatjana Simonova</p>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="student-project">
+                    <img src="../../../assets/graphic-design/project8.png"
+                        class="responsive" alt="Student Project">
+                    <div>Packaging design</div>
+                    <p>Viktorija Mirchevska</p>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="student-project">
+                    <img src="../../../assets/graphic-design/project9.png"
+                        class="responsive" alt="Student Project">
+                    <div>Label design</div>
+                    <p>Frosina Volcheska</p>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="student-project">
+                    <img src="../../../assets/graphic-design/project10.png"
+                        class="responsive" alt="Student Project">
+                    <div>Catalogue design</div>
+                    <p>Jenny Neziri</p>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="student-project">
+                    <img src="../../../assets/graphic-design/project11.png"
+                        class="responsive" alt="Student Project">
+                    <div>iStock photographies</div>
+                    <p>Viktorija Mirchevska</p>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="student-project">
+                    <img src="../../../assets/graphic-design/project12.png"
+                        class="responsive" alt="Student Project">
+                    <div>Packaging design</div>
+                    <p>Tatjana Simonova</p>
+                </div>
+            </ng-template>
+
+        </owl-carousel-o>
+    </div>
+
+    <app-register-company></app-register-company>
+    <div class="speed-networking">
+        <div class="speed-networking-title">
+            Speed networking with our students
+        </div>
+        <div class="secondary-text">
+            We will help you to build a well-connected professional network!
+            Upon registering, you will be invited to a "Meet and Greet"
+            session where you will be
+            introduced to the community.<br><br><br>
+
+            Your Bootcamp Calendar includes Speed Networking sessions,
+            seminars, sports events, and beach trips
+            where you will build your network and practice your professional
+            pitch.
+
+        </div>
+    </div>
+
+
+    <app-community></app-community>
+
+
+    <app-questions-and-answers [questions]="questions"
+        [titleColor]="titleColor" [questionColor]="questionColor"
+        [mainBackground]=" mainBackground" [accordionBg]="accordionBg"></app-questions-and-answers>
+    <app-footer [subscribeBorder]="subscribeBorder" [arrowBg]="arrowBg"></app-footer>
+</div>

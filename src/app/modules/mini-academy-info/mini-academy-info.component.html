@@ -1,0 +1,34 @@
+<div class="blue-section d-none d-lg-block">
+    <div class="section-container">
+        <h4>{{blueListInfo}}</h4>
+        <ul>
+            <li *ngFor="let blue of array_of_blue_list"> <p>{{blue}}</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="for-who">
+    <div class="d-flex align-items-center"><img src="assets/mini-academies/lamb.svg" class="mr-2" alt="Lamb"><h3>{{forWhoTitle}}</h3></div>
+    <ul>
+        <li *ngFor="let forWho of array_of_for_who">
+            <p>{{forWho}}</p>
+        </li>
+    </ul>
+</div>
+
+<div class="time section-container">
+    <h3>Времетраење:</h3>
+    <ul>
+        <li *ngFor="let time of array_of_time">
+            <p>{{time}}</p>
+        </li>
+    </ul>
+    <div class="language">
+        <img src="assets/mini-academies/lamb.svg" alt="Lamb">
+        <p class="time-small-p">Мини Академијата ќе се одвива на македонски јазик, но потребно е
+            основно познавање на англиски јазик за разбирање на дел од
+            материјалите кои се користат.
+        </p>
+    </div>
+</div>

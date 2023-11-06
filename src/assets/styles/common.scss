@@ -1,0 +1,95 @@
+.container-section {
+  padding: 0px 120px;
+}
+.page-title {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 42px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 120%;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 120%;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 120%;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 120%;
+}
+
+h6 {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 120%;
+}
+
+p {
+  font-size: 18px;
+  font-family: "Cabin";
+  line-height: 120%;
+}
+
+.cabin {
+  font-family: "Cabin";
+}
+
+.color-grey {
+  color: #777777;
+}
+
+.fixed-navbar-padding {
+  padding-top: 93.5px;
+
+  @media only screen and (max-width: 991.98px) {
+    padding-top: 54px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  h2 {
+    font-size: 24px;
+    line-height: 22px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  h5 {
+    font-size: 14px;
+  }
+  h6 {
+    font-size: 12px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .container-section {
+    padding: 0px 16px;
+  }
+}
+
+@media only screen and (min-width: 1918px) {
+  .container-section {
+    padding: 0px 220px;
+  }
+}

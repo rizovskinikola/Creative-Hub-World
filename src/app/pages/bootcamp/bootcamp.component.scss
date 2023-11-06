@@ -1,0 +1,340 @@
+.page-bg {
+  background-image: url("~src/assets/bootcamp/page-bg.png");
+  background-size: cover;
+}
+
+.header-bg {
+  background: url("~src/assets/bootcamp/header-bg.png");
+  background-size: cover;
+
+  .title-img {
+    position: absolute;
+    top: 50px;
+    left: 0;
+  }
+
+  .header-images {
+    img {
+      width: fit-content;
+      height: fit-content;
+    }
+
+    .merged-title-img {
+      margin-top: -30px;
+    }
+
+    .right-header-img {
+      margin-top: -50px;
+    }
+  }
+
+
+  .bootcamp-title {
+    font-size: 82px;
+    line-height: 82px;
+    font-weight: 300;
+    color: #FFFFFF;
+    padding-top: 100px;
+    position: relative;
+    margin-bottom: 50px;
+    z-index: 1;
+
+    .green-title-circle, .pink-title-circle {
+      z-index: -1;
+      position: absolute;
+    }
+
+    .green-title-circle {
+      top: 0;
+      left: -60px;
+    }
+
+    .pink-title-circle {
+      top: -30px;
+      left: 0;
+    }
+
+    span {
+      position: relative;
+      z-index: 1;
+
+      hr {
+        background-color: #EF5DA8;
+        height: 35px;
+        width: 100%;
+        position: absolute;
+        top: 15px;
+        right: 0;
+        z-index: -1;
+        border: 0;
+      }
+    }
+  }
+}
+
+.scroll-down {
+  width: 100%;
+  height: 70px;
+  flex-direction: row;
+  box-sizing: border-box;
+  place-content: center;
+  align-items: center;
+
+  .horizontal-line {
+    background-image: url(~src/assets/bootcamp/black-line.svg);
+    background-size: 100% 100%;
+    width: 156px;
+    height: 100%;
+  }
+
+  .scroll-down-arrow {
+    background-image: url(~src/assets/bootcamp/black-arrow-down.svg);
+    background-size: 100% 100%;
+    width: 42px;
+    height: 20px;
+    margin: 17px 19px 0;
+    cursor: pointer;
+
+    @-moz-keyframes pulsate-down {
+      0%, 20%, 50%, 80%, 100% {
+        -moz-transform: translateY(0);
+        transform: translateY(0);
+      }
+      40% {
+        -moz-transform: translateY(-30px);
+        transform: translateY(-30px);
+      }
+      60% {
+        -moz-transform: translateY(-15px);
+        transform: translateY(-15px);
+      }
+    }
+    @-webkit-keyframes pulsate-down {
+      0%, 20%, 50%, 80%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+      }
+      40% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+      }
+      60% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+      }
+    }
+    @keyframes pulsate-down {
+      0%, 20%, 50%, 80%, 100% {
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+      }
+      40% {
+        -moz-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+      }
+      60% {
+        -moz-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+      }
+    }
+
+    &.pulsate-down {
+      -moz-animation: pulsate-down 3s infinite;
+      -webkit-animation: pulsate-down 3s infinite;
+      animation: pulsate-down 3s infinite;
+    }
+  }
+
+  .second-horizontal-line {
+    background-image: url(~src/assets/bootcamp/black-line.svg);
+    background-size: 100% 100%;
+    width: 156px;
+    height: 100%;
+  }
+}
+
+.our-bootcamp-title {
+  color: #434141;
+  font-weight: 300;
+  width: fit-content;
+  z-index: 1;
+}
+
+.our-bootcamp-rectangle {
+  position: absolute;
+  right: -10px;
+  transform: translateY(-50%);
+  top: 50%;
+  z-index: -1;
+}
+
+.learn-block {
+  margin-top: 240px;
+  margin-bottom: 100px;
+
+  .learn-text {
+    h5 {
+      background: linear-gradient(231.38deg, #5DA0EF 34.17%, #44FF78 119.03%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 42px;
+      line-height: 50px;
+      margin-bottom: 46px;
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 22px;
+      margin: 0;
+      color: #C2C2C2;
+    }
+  }
+
+  .learn-bg {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50px;
+    z-index: -1;
+    height: 80%;
+  }
+}
+
+.recent-guests-text {
+  background: linear-gradient(231.38deg, #5DA0EF 34.17%, #44FF78 119.03%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 32px;
+  line-height: 38px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.recent-guests-wrapper {
+  height: 392px;
+  background: linear-gradient(228.56deg, rgba(79, 211, 174, 0) 27.86%, #5CA4EA 53.09%, rgba(78, 214, 171, 0) 75.36%);
+  padding: 2.5px;
+  border-radius: 29.0878px 29.0878px 5.81757px 5.81757px;
+  box-shadow: 27.63344383239746px 18.907093048095703px 28.118242263793945px 0 #5DA0EF1F;
+  width: min-content;
+
+  .recent-guests-inner {
+    height: 371px;
+    padding: 10px;
+    background: #FBFAF5;
+    border-radius: 26.5878px 26.5878px 3.31757px 3.31757px;
+
+    p {
+      font-size: 16px;
+      line-height: 140%;
+      color: #434141;
+    }
+  }
+}
+
+.networking {
+  margin-top: 130px;
+
+  .networking-title {
+    position: absolute;
+    background: linear-gradient(223.57deg, #EF5DA8 46.58%, #FFDA44 110.23%);
+    border-radius: 0 51px 51px 0;
+    height: 150px;
+    width: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 50px;
+
+    p {
+      font-size: 32px;
+      line-height: 32px;
+      color: #1D1A42;
+    }
+  }
+
+  .networking-map {
+    height: 740px;
+    background-image: url("~src/assets/bootcamp/world-map.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.get-started-text {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  color: #F4F3EC;
+}
+
+.get-started-btn {
+  background: linear-gradient(231.38deg, #5DA0EF 34.17%, #44FF78 119.03%);
+  border-radius: 12px;
+  padding: 5.5px 32px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 139.5%;
+  color: #1D1A42;
+  border: none;
+  cursor: pointer;
+}
+
+.get-started-bg {
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  top: 145px;
+  width: 100%;
+  height: 57%;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+@media only screen and (max-width: 1200px) {
+  .networking-map {
+    background-size: contain !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    width: unset;
+  }
+
+  .bootcamp-title {
+    font-size: 63px !important;
+  }
+
+  .learn-bg {
+    display: none;
+  }
+
+  .networking-map {
+    height: 540px;
+  }
+
+  .get-started {
+    margin-top: 30px;
+
+    .get-started-bg {
+      top: 0 !important;
+      height: 100% !important;
+    }
+
+    .get-started-text-block {
+      padding: 30px 0;
+    }
+  }
+}

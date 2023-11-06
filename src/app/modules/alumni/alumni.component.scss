@@ -1,0 +1,61 @@
+.alumni
+{
+    margin: 5% 0%;
+}
+.alumni-text
+{
+    background: #FFBD11;
+    border-radius: 76px 0px 0px 0px;
+    color: #434141;
+    width: 70%;
+    margin-left: 28%;
+    padding: 2% 0% 4% 2%;
+}
+.alumni-text h2
+{
+    font-weight: 500;
+}
+.companies
+{
+    border-radius: 18px;
+    padding: 2%;
+    margin-top: -5%;
+    width: 80%;
+}
+
+// .companies img
+// {
+//     width: 50%;
+// }
+
+@media only screen and (max-width: 992px) {
+    .container
+    {
+        padding: 0 !important;
+    }
+    .companies
+    {
+        width: 90%;
+        border-radius: 0% 18px 18px 0%;
+        padding: 5% 0%;
+    }
+    .companies img 
+    {
+        width: 15% !important;
+    }
+    .alumni-text
+    {
+        width: 85%;
+        margin-left: 10%;
+        text-align: right;
+        padding: 5% 5% 5% 0%;
+    }
+    .alumni-text h2 
+    {
+        line-height: 21.87px;
+    }
+    .alumni
+    {
+        margin: 10% 0%;
+    }
+}

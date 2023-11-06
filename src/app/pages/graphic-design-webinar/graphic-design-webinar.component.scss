@@ -1,0 +1,81 @@
+h2 {
+    font-size: 32px;
+    line-height: 38px;
+}
+h3 {
+    font-size: 24px;
+    line-height: 29px;
+}
+.sticky-card {
+    width: 25%;
+    background: #555555;
+    border-radius: 18px;
+    position: sticky;
+    top: 20%;
+    right: 10%;
+    float: right;
+    padding: 3%;
+    color: white;
+
+    img {
+        margin-right: 5px;
+    }
+}
+
+input {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 8px;
+    border: none;
+    width: 95%;
+    font-family: Cabin;
+    margin: 2% 0%;
+    height: 25px;
+}
+label {
+    color: #dbdbdb;
+    font-size: 18px;
+    line-height: 139.5%;
+    font-family: Cabin;
+}
+.register-btn
+{
+    width: 100%;
+    background: #FFBD11;
+    border-radius: 12px;
+    padding: 8px 32px;
+    color: #2B2B2B;
+    text-align: center;
+    border: none;
+    font-family: Cabin;
+    font-weight: 900;
+    font-size: 20px;
+    margin: 2% 0%;
+}
+.register-btn:hover
+{
+    cursor: pointer;
+}
+@media only screen and (max-width: 992px) {
+    h2 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .sticky-card {
+        width: 85%;
+        background: #555555;
+        border-radius: 18px;
+        padding: 5%;
+        color: white;
+        position: relative;
+        float: none;
+        top: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -70%;
+        img {
+            margin-right: 5px;
+        }
+    }
+}

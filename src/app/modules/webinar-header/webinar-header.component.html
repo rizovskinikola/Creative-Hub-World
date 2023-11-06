@@ -1,0 +1,24 @@
+<div class="header" [style.background]="headerBackground">
+    <div class="header-inner" >
+        <div class="logo d-flex align-items-center">
+            <img src="assets/ch-logo.svg" alt="Creative Hub Logo">
+            <span class="cabin">| Successful career <b class="cabin">made possible.</b></span>
+        </div>
+        <div class="over-title">Free webinar: </div>
+        <h1 [innerHTML]="array_of_header_info[0].header_title">
+        </h1>
+        <h3 class="cabin">{{array_of_header_info[0].list_title}}</h3>
+        <ul *ngFor="let learning_item of array_of_list">
+            
+            <li><p>{{learning_item}}</p></li>
+        </ul>
+
+        <!-- <div class="scroll-down">
+            <p class="m-0">Scroll for more info</p>
+            <img src="assets/webinars/scroll-down.svg" alt="Scroll down">
+        </div> -->
+
+    </div>
+</div>
+ 
+

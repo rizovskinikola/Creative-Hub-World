@@ -1,0 +1,61 @@
+<!-- FORM -->
+
+<div class="form-title"><span>READY TO ENROLL NOW?</span></div>
+<!-- <div class="form-text"><span>FRONT END ACADEMY</span> Application form</div> -->
+<div class="form-bg">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12 radio bootcamp">
+                <form [formGroup]="academyForm">
+                    <input class="cabin" label="Just Bootcamp  $11999  " name="money" type="radio" id="male" name="gender"
+                        value="Just academy" checked>
+                    <input class="cabin" label="EU Certified 13999 €" name="money" type="radio" id="female" name="gender"
+                        value="EU certified">
+                    <input class="cabin" label="All access 14999 €" name="money" type="radio" id="other" name="gender"
+                        value="other">
+                </form>
+            </div>
+
+            <div class=" col-md-4 radio">
+                <form>
+                    <input class="cabin" label="16-18" type="radio" id="male" name="gender" value="Just academy"
+                        checked>
+                    <input class="cabin" label="18-35" type="radio" id="female" name="gender" value="EU certified">
+                    <input class="cabin" label="35+" type="radio" id="female" name="gender" value="EU certified">
+                </form>
+            </div>
+
+            <div class="offset-md-1  col-md-7 radio">
+                <form>
+                    <input class="cabin" label="Career improvement" name="money" type="radio" id="male" name="gender"
+                        value="Just academy" checked>
+                    <input class="cabin" label="Employment / Intership" name="money" type="radio" id="female"
+                        name="gender" value="EU certified">
+                    <input class="cabin" label="New skills" name="money" type="radio" id="other" name="gender"
+                        value="other">
+                </form>
+            </div>
+
+        </div><!-- row-end -->
+
+
+
+
+    </div><!-- container-end -->
+</div>
+<div style="width: 100%; position: relative;">
+
+    <div class="line">
+
+    </div>
+    <div class="col-md-12 form-btns-desktop">
+        <button class="ask-btn cabin" >I want to ask a question</button>
+        <button class="signup-btn cabin">I want to sign up</button>
+    </div>
+
+    <div class="col-md-12 form-btns-mobile">
+        <button class="ask-btn cabin">Ask a question</button>
+        <button class="signup-btn cabin">Enroll now</button>
+    </div>
+</div>

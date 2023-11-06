@@ -1,0 +1,42 @@
+.page-wrapper {
+  padding-top: 100px;
+  background: #D7D7D7 url("~src/assets/news/page-bg.png");
+}
+
+.container {
+  padding: 0;
+}
+
+.category-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #2B2B2B;
+}
+
+.title-hr {
+  background-color: #808080;
+  width: 290px;
+  height: 1px;
+  border: none;
+  margin: 9px 0 17px;
+}
+
+.article {
+  width: 48%;
+
+}
+
+
+@media only screen and (max-width: 767px) {
+  .article {
+    width: 100%;
+  }
+
+  .page-wrapper {
+    padding-top: 65px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

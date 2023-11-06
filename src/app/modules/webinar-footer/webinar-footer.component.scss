@@ -1,0 +1,48 @@
+.footer-wrapper {
+    color: white;
+    padding: 1% 5%;
+    p {
+        margin: 0;
+        color: #d5d5d5;
+    }
+    h3 {
+        margin: 2% 0%;
+    }
+    a {
+        border-radius: 12px;
+        padding: 8px 16px;
+        text-decoration: none;
+        font-family: Cabin;
+        color: white;
+    }
+}
+.footer-media {
+    display: flex;
+    justify-content: center;
+    a {
+        margin: 2% 1% 0% 1%;
+    }
+}
+.copyright {
+    color: #434141;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: Cabin;
+    text-align: center;
+    padding-bottom: 2%;
+}
+.to-academy-btn
+{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+@media only screen and (max-width: 992px) {
+    .footer-wrapper {
+        padding: 5%;
+    }
+    .to-academy-btn {
+        text-align: center;
+        font-size: 18px;
+    }
+}

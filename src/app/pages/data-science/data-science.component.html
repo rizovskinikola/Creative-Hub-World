@@ -1,0 +1,973 @@
+<app-navbar></app-navbar>
+<div class="main-bg fixed-navbar-padding">
+
+    <div class="header position-relative">
+        <div class="header-blur">
+            <div class="header-blur-inner">
+                <div>
+                    Data science Bootcamp
+                </div>
+                <h4 class="cabin">
+                    If you're looking to switch careers or take your data skills to the next level, our professional
+                    Data Science Bootcamp is perfect for you. With over 150 hours of course content, we'll teach you how
+                    to solve <br> real-world problems with data. So whether you're a business analyst, statistician,
+                    engineer, or scientist join us and become a data scientist today!
+                </h4>
+                <span (click)="goDown1()">Secure your place</span>
+            </div>
+        </div>
+        <img src="../../../assets/data-science/header-circle.png" class="circle-img d-none d-lg-block"
+            alt="Circle header">
+        <div class="text-center mt-7 mt-lg-11"><span class="language">English speaking</span></div>
+        <div class="header-bottom">
+            <!-- <p class="cabin d-none d-lg-block">Career possibilities: </p> -->
+            <div class="possibilities d-flex">
+                <p class="possibilities-left d-none d-lg-block">
+                    Career possibilities: <br> <br>
+                    Data Scientist | Data Integration Specialist <br>
+                    Data Analytics | Business Intelligence</p>
+                <div class="d-block d-lg-flex justify-content-between possibilities-right align-items-center ms-3 ms-lg-0 mt-5 mt-lg-0">
+                    <div class="possibilities-item possibilities-mobile-1 mt-3"><img
+                            src="../../../assets/data-science/send.svg" class="possibilities-img" alt="Send">
+                        <p> Beginner friendly</p>
+                    </div>
+                    <div class="possibilities-item possibilities-mobile-2 mt-3"><img
+                            src="../../../assets/data-science/work.svg" class="possibilities-img" alt="Send">
+                        <p>Guaranteed job/intership</p>
+                    </div>
+                    <div class="possibilities-item possibilities-mobile-3 mt-3"><img
+                            src="../../../assets/data-science/settings.svg" class="possibilities-img" alt="Send">
+                        <p>Practical work</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down d-none d-lg-flex mb-5">
+            <div class="horizontal-line"></div>
+            <div class="scroll-down-arrow pulsate-down"></div>
+            <div class="second-horizontal-line"></div>
+        </div>
+    </div>
+
+    <div class="subjects-wrapper my-5">
+        <div class="yellow"></div>
+        <div class="pink"></div>
+        <div class="blue"></div>
+        <div class="subjects">
+            <div class="container text-center">
+                <img src="../../../assets/data-science/subjects.png" class="responsive d-none d-lg-block"
+                    alt="Data science subjects">
+                <img src="../../../assets/data-science/subjects-mobile.png" class=" d-block d-lg-none"
+                    alt="Data science subjects">
+            </div>
+        </div>
+        <div class="text-right">
+            <div class="blue-1"><br></div>
+            <div class="pink-1"></div>
+            <div class="yellow-1"></div>
+        </div>
+    </div>
+    <!-- overview -->
+    <div class="overview">
+        <div class="overview-blur">
+            <div class="overview-inner">
+                <div>
+                    Data Science overview
+                </div>
+                <h4>
+                    Learners will gain an overview of the skills required to be a data scientist. <br> <br>
+
+                    In the Fundamentals phase they learn how to clean, analyse and visualise data as well as how to
+                    effectively
+                    communicate the findings. <br> <br>
+
+                    During the final module of Machine Learning, students solve real-world problems by building
+                    regression,
+                    classification and unsupervised learning algorithms in Python. This involves data exploration
+                    insight
+                    building, improving and communicating models from a raw and unstructured dataset.
+
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="benefits my-5">
+        <div class="benefits-bg">
+        <div class="benefits-text">
+            What are the benefits of studying  at<span> Creative Hub?</span>
+            <div class="secondary-text">
+                Because we have a personalized approach  for each student, and it's not
+                everything...
+            </div>
+        </div>
+        <div class="gradient-elements">
+        </div>
+        <div class="bubble-holder">
+            <div class="expert-mentors bubble">
+                Expert <br> mentors
+            </div>
+
+            <div class="perfomance bubble">
+                Performance <br>
+                oriented system <br>
+                approach
+            </div>
+            <div class="certificates bubble">
+                International <br>
+                certificates
+            </div>
+
+            <div class="student-care bubble">
+                24/7 student<br>
+                care
+            </div>
+            <div class="community bubble">
+                Community of <br>
+                like-minded <br>
+                individuals
+            </div>
+        </div>
+        </div>
+
+        <div class="questions">
+            <div class="who-is-it cabin">
+                <span class="header-question cabin">Who is it for?</span>
+                <div class="horizontal-line">
+
+                </div> <br>
+                This course is for anybody seeking to alter their career and begin a new one in the field of data
+                science. Whether you have prior experience or not, you'll be given 38 weeks to master all there is to
+                know about data and create an job-ready project.
+            </div>
+            <div class="what-you-need cabin">
+
+                <span class="header-question cabin"> What you need?</span>
+                <div class="horizontal-line">
+                </div> <br>
+                A burning desire to get started. A goal plan that you will want to achieve for yourself in the following
+                year, with a committed partner like us at your side.
+            </div>
+        </div>
+    </div>
+
+    <div class="up-work">
+        <div class="upwork-text-holder">
+            <!-- <img src="../../../assets/graphic-design/upwork-logo.svg"><br> -->
+            <span class="cabin">
+                How much does a <br>
+                Junior Data Scientist make?
+
+
+            </span>
+
+            <div class="radio-buttons">
+                <mat-radio-group>
+                    <mat-radio-button value="20"> $65K / yr</mat-radio-button>
+
+                    <mat-radio-button value="35"> $80K / yr </mat-radio-button>
+
+                    <mat-radio-button value="75"> $100K+ / yr</mat-radio-button>
+                </mat-radio-group>
+            </div>
+
+            <div class="find-out-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <span> Find out</span>
+            </div>
+            <app-upwork-lead-data-science></app-upwork-lead-data-science>
+        </div>
+    </div>
+    <!-- <div class="free-course">
+        <div class="free-course-title">
+            Start with a FREE Course, <br>
+            then enroll in the Bootcamp
+        </div>
+        <div class="books-bg">
+
+            <div class="career-holder">
+                <div class="text">
+
+
+                    <div class="career-title cabin">
+                        Start your career as a data scientist
+                    </div>
+                    <div class="career-text cabin">
+                        We understand that the Bootcamp is an investment of time and money, which is why we want you to
+                        be 100% sure that this is the career you wish to pursue! We've put up a FREE introductory course
+                        to assist you in making your decision. Meet the mentor, feel the program's intensity and get a
+                        project assignment to do a image object detection and network analysis of social media on your
+                        own.
+
+                    </div>
+                    <div class="lear-more-btn cabin">
+                        Learn more
+                    </div>
+                </div>
+                <div class="kick-off-wrapper">
+                    <div class="kick-off">
+                        <div class="next-kickoffs">
+                            <img src="../../../assets/data-science/calendar.svg" alt="Calendar">
+                            <span class="cabin">Next kickoffs</span>
+                        </div>
+                        <div class="kickoff-date cabin">
+                            28<span class="cabin">th</span>March, 2022
+                        </div>
+                        <div class="apply-now-btn cabin" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                            Apply now
+                        </div>
+                        <div class="limited-capacity cabin">
+                            Limited capacity
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <app-free-coruse-data-science></app-free-coruse-data-science>
+        </div>
+        <div class="free-course-info">
+            <div class="two-weeks item">
+                <img src="../../../assets/data-science/Time%20Circle.svg" width="32px" height="32px" alt="Time Circle">
+                <span>2 weeks</span>
+            </div>
+            <div class="ten-hours item">
+                <img src="../../../assets/data-science/Play.svg" width="32px" height="32px" alt="Play">
+                <span>6 hours</span>
+            </div>
+
+            <div class="online item">
+                <img src="../../../assets/data-science/Video.svg" width="32px" height="32px" alt="Video">
+                <span>Online</span>
+
+            </div>
+
+
+            <div class="homework item">
+                <img src="../../../assets/data-science/Tick%20Square.svg" width="32px" height="32px" alt="Square">
+                <span>10 hours</span>
+
+            </div>
+
+            <div class="certificate item">
+                <img src="../../../assets/data-science/Wallet.svg" width="32px" height="32px" alt="Wallet">
+                <span>*Get a certificate upon completion</span>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="meet-your-instructor">
+        <div class="instructor-main-text d-block d-lg-none">
+            Meet your instructor
+        </div>
+        <div class="instructor-bg">
+            <div class="holder">
+                <div class="instructor-text-holder">
+                    <div class="instructor-main-text d-none d-lg-block">
+                        Meet your instructor
+                    </div>
+                    <div class="instructor-description">
+                        <div class="name">
+                            Boshko
+                        </div>
+                        <div class="adobe">
+                            ML  and NLP Researcher
+                        </div>
+                        <div class="desc">
+                            ML and NLP Research Assistant with experience in problem solving using data and algorithms.
+                        </div>
+                    </div>
+                </div>
+                <div class="instructor-img">
+                    <img  [lazyLoad]="image3" class="responsive"
+                        alt="Creative Hub instructor">
+                </div>
+            </div>
+        </div>
+        <div class="instructor-box-shadow"></div>
+    </div>
+
+
+    <div class="what-you-learn d-none d-lg-flex justify-content-center align-items-center">
+        <div>WHAT YOU'LL <br> <span>LEARN</span></div>
+    </div>
+    <div class="text-center d-block d-lg-none" style="margin-top: 55%;"><img
+            src="../../../assets/data-science/what-you-learn-inside-mobile.png" class="responsive w-100"
+            alt="What you'll learn">
+    </div>
+    <div class="subjects-bg">
+        <div class="container mt-5 mt-lg-10">
+
+            <div class="d-block d-lg-flex justify-content-center">
+                <div class="program-subjects-gradient">
+                    <div class="program-subjects-card">
+                        <h3 class="cabin">Introduction to Data Science</h3>
+                        <ul>
+                            <li>Basic concepts & terminology</li>
+                            <li>Online webinars</li>
+                            <li>Overview of data science</li>
+                            <li>Guide to statistics</li>
+                            <li>Guide to calculus</li>
+                            <li>Collection of articles</li>
+                            <li>SQL exercises</li>
+                            <li>Workshop 1 – Advanced Excel 1</li>
+                            <li>Workshop 2 – Advanced Excel 2</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="program-subjects-gradient">
+                    <div class="program-subjects-card">
+                        <h3 class="cabin">SQL</h3>
+                        <ul>
+                            <li>SQL environment setup</li>
+                            <li>SQL data types</li>
+                            <li>Basics of SQL query statements</li>
+                            <li>Querying data</li>
+                            <li>Data grouping and computing aggregates</li>
+                            <li>Subqueries</li>
+                            <li>Table joins</li>
+                            <li>Window functions in SQL</li>
+                            <li>Rollups and cubes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="program-subjects-gradient">
+                    <div class="program-subjects-card">
+                        <h3 class="cabin">Data Warehouse</h3>
+                        <ul class="cabin">
+                            <li>Data warehouse concepts and architectures</li>
+                            <li>Multidimensional data – representation and manipulation</li>
+                            <li>Data warehouse design methodologies</li>
+                            <li>Data integration concepts</li>
+                            <li>Architectures, features, and details of data integration tools</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-block d-lg-flex justify-content-center">
+                <div class="program-subjects-gradient">
+                    <div class="program-subjects-card">
+                        <h3 class="cabin">Power BI</h3>
+                        <ul>
+                            <li>Get started with Power BI</li>
+                            <li>Connect to external data, clean, and transform</li>
+                            <li>Data relationships and calculations</li>
+                            <li>Explore your time-based data</li>
+                            <li>Data visualizations</li>
+                            <li>R integration in Power BI Desktop</li>
+                            <li>Create and configure a dashboard</li>
+                            <li>Create custom Q&A suggestions</li>
+                            <li>Introduction & calculation of DAX</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="program-subjects-gradient">
+                    <div class="program-subjects-card">
+                        <h3 class="cabin">Statistics</h3>
+                        <ul>
+                            <li>Descriptive statistics fundamentals</li>
+                            <li>Inferential statistics fundamentals</li>
+                            <li>Confidence intervals</li>
+                            <li>Hypothesis testing</li>
+                            <li>Simple linear regression</li>
+                            <li>Diagnostics and remedial measures</li>
+                            <li>Multiple linear regression</li>
+                            <li>Modeling and model selection</li>
+                            <li>Logistic regression model</li>
+                            <li>Linear mixed model</li>
+                            <li>Poisson regression model</li>
+                            <li>Ordered logic models</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="program-subjects-gradient">
+                    <div class="program-subjects-card">
+                        <h3 class="cabin">Integration 1&2</h3>
+                        <ul class="cabin">
+                            <li>Integration data with Excel, SQL</li>
+                            <li>Creating Data Warehouse cube</li>
+                            <li>Loading data from database into Power BI</li>
+                            <li>Using statistics and DAX formulas</li>
+                            <li>Integration of SQL, Data Warehouse into Python</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="d-block d-lg-flex justify-content-center">
+                <div class="program-subjects-gradient">
+                    <div class="program-subjects-card">
+                        <h3 class="cabin">Python</h3>
+                        <ul>
+                            <li>Intro to Python</li>
+                            <li>Basic syntax, data types, variable declarations, conditions, loops, strings</li>
+                            <li>Data set in Python</li>
+                            <li>Working with lists, tuples, and ranges</li>
+                            <li>Functions, modules, and object-oriented programming in Python</li>
+                            <li>Classes, class instances, objects, constructors</li>
+                            <li>Class attributes and methods, access modifiers</li>
+                            <li>Getters, setters, and properties</li>
+                            <li>Inheritance</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="program-subjects-gradient">
+                    <div class="program-subjects-card">
+                        <h3 class="cabin">Machine Learning</h3>
+                        <ul>
+                            <li>Intro to machine learning</li>
+                            <li>Classification algorithms</li>
+                            <li>Logistic regression</li>
+                            <li>Support vector machines</li>
+                            <li>Decision tree learning</li>
+                            <li>K-nearest neighbor</li>
+                            <li>Data preprocessing.</li>
+                            <li>Data compression with dimensionality reduction</li>
+                            <li>Model evaluation and hyperparameter tuning</li>
+                            <li>Handling missing data</li>
+                            <li>Handling categorical data and properties</li>
+                            <li>Partitioning a dataset into train and test data</li>
+                            <li>Performance evaluation metrics</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="program-subjects-gradient">
+                    <div class="program-subjects-card">
+                        <h3 class="cabin">Big Data</h3>
+                        <ul class="cabin">
+                            <li>Introduction to big data</li>
+                            <li>Characteristics of big data & scalability</li>
+                            <li>Distributed big data systems</li>
+                            <li>Relational databases vs. distributed file systems</li>
+                            <li>Getting started with Hadoop</li>
+                            <li>Hadoop Distributed File System (HDFS)</li>
+                            <li>HDFS architecture, tuning parameters, performance and robustness</li>
+                            <li>Map reduce, tuning a mapper, tuning a reducer</li>
+                            <li>Using cache for lookups</li>
+                            <li>Hive</li>
+                            <li>Workshop Week & Final project</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="instructor-relative">
+        <div class="colours-top d-none d-lg-block"></div>
+        <div class="leading-instructor">
+            <div class="leading-instructor-wrapper">
+                <div class="leading-instructor-left">
+                    <h1>
+                        Learn From Industry
+                        Leading Instructors
+                    </h1>
+                    <p>Mentor-guided learning not only helps you build skills faster, but also enables career growth.
+                        Our
+                        mentors
+                        are industry leaders, so you’ll elarn from the best there are. </p>
+                </div>
+                <div class="leading-instructor-right d-none d-lg-block">
+                    <img  [lazyLoad]="image12" class="responsive instructor-girl"
+                        alt="Creative Hub Instructor">
+                </div>
+            </div>
+        </div>
+        <img src="../../../assets/data-science/colours-bottom.png" class="colours-bottom d-none d-lg-block"
+            alt="Colors">
+    </div>
+    <!-- instructors -->
+    <div class="container instructors d-none d-lg-block">
+        <h2 class="instructors-title">your instructors</h2>
+        <div class="row">
+
+            <div class="col-md-3">
+                <div class="instructor-card">
+                    <img [lazyLoad]="image4" class="responsive"
+                        alt="Creative Hub Instructor">
+                    <div class="instructor-name">Afrim</div>
+                    <div class="instructor-info">Master of Computer Science and engineering with over 15 years of
+                        experience.</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="instructor-card">
+                    <img [lazyLoad]="image5" class="responsive"
+                        alt="Creative Hub Instructor">
+                    <div class="instructor-name">Agon</div>
+                    <div class="instructor-info">Co-founder and Software Architect at NeoX LLX .</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="instructor-card">
+                    <img  [lazyLoad]="image6" class="responsive"
+                        alt="Creative Hub Instructor">
+                    <div class="instructor-name">Betim</div>
+                    <div class="instructor-info">Data Warehouse and Group Solutions Senior Specialist.</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="instructor-card">
+                    <img  [lazyLoad]="image7" class="responsive"
+                        alt="Creative Hub Instructor">
+                    <div class="instructor-name">Getoar</div>
+                    <div class="instructor-info">Data Integration Analytics Team Lead. 5+ years experience in the
+                        banking industry, with focus on data management.</div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-3">
+                <div class="instructor-card">
+                    <img  [lazyLoad]="image8" class="responsive"
+                        alt="Creative Hub Instructor">
+                    <div class="instructor-name">Ivanna</div>
+                    <div class="instructor-info">15 years of experience in market intelligence, monitoring & analytics,
+                        product development and marketing.</div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="instructor-card">
+                    <img  [lazyLoad]="image9" class="responsive"
+                        alt="Creative Hub Instructor">
+                    <div class="instructor-name">Lion</div>
+                    <div class="instructor-info">Data integration specialist with 4+ years of experience.</div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="instructor-card">
+                    <img  [lazyLoad]="image10" class="responsive"
+                        alt="Creative Hub Instructor">
+                    <div class="instructor-name">Gorjan</div>
+                    <div class="instructor-info"> Data Scientist at Enetra, with experience at the research institute Jožef Stefan, and 3 years of experience in the field.
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="instructor-card">
+                    <img  [lazyLoad]="image11" class="responsive"
+                        alt="Creative Hub Instructor">
+                    <div class="instructor-name">Boshko</div>
+                    <div class="instructor-info">ML and NLP Research Assistant with experience in problem solving using data and algorithms.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="d-block d-lg-none carusel-instructors">
+        <owl-carousel-o [options]="secondCustomOptions">
+            <ng-template carouselSlide>
+                <div class="instructor-card">
+                    <img [lazyLoad]="image4" class="responsive"
+                        alt="Creative Hub Instructor">
+                    <div class="instructor-name">Afrim</div>
+                    <div class="instructor-info">Master of Computer Science and engineering with over 15 years of
+                        experience.</div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="instructor-card">
+                    <img [lazyLoad]="image5" class="responsive"
+                        alt="Creative Hub Instructor">
+                    <div class="instructor-name">Agon</div>
+                    <div class="instructor-info">Co-founder and Software Architect at NeoX LLX .</div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="instructor-card">
+                    <img  [lazyLoad]="image6" class="responsive"
+                        alt="Creative Hub Instructor">
+                    <div class="instructor-name">Betim</div>
+                    <div class="instructor-info">Data Warehouse and Group Solutions Senior Specialist.</div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="instructor-card">
+                    <img [lazyLoad]="image7" class="responsive"
+                        alt="Creative Hub Instructor">
+                    <div class="instructor-name">Getoar</div>
+                    <div class="instructor-info">Data Integration Analytics Team Lead. 5+ years experience in the
+                        banking industry, with focus on data management.</div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="instructor-card">
+                    <img [lazyLoad]="image8" class="responsive"
+                        alt="Creative Hub Instructor">
+                    <div class="instructor-name">Ivanna</div>
+                    <div class="instructor-info">15 years of experience in market intelligence, monitoring & analytics,
+                        product development and marketing.</div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="instructor-card">
+                    <img  class="responsive"  [lazyLoad]="image9"
+                        alt="Creative Hub Instructor">
+                    <div class="instructor-name">Lion</div>
+                    <div class="instructor-info">Data integration specialist with 4+ years of experience.</div>
+                </div>
+            </ng-template>
+
+            <ng-template carouselSlide>
+                <div class="instructor-card">
+                    <img  [lazyLoad]="image10"  class="responsive"
+                        alt="Creative Hub Instructor">
+                    <div class="instructor-name">Gorjan</div>
+                    <div class="instructor-info">Data Scientist at Enetra, with experience at the research institute Jožef Stefan, and 3 years of experience in the field.
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="instructor-card">
+                    <img  [lazyLoad]="image11" class="responsive"
+                        alt="Creative Hub Instructor">
+                    <div class="instructor-name">Boshko</div>
+                    <div class="instructor-info">ML and NLP Research Assistant with experience in problem solving using data and algorithms.
+                    </div>
+                </div>
+            </ng-template>
+        </owl-carousel-o>
+    </div>
+    <div class="container">
+        <div class="instructors-bg"></div>
+    </div>
+
+    <div class="pick-your-next-cohort">
+        <div class="pick-your-next-cohort-title">
+            SELECT YOUR BOOTCAMP
+        </div>
+
+        <div class="cohort-holder-bg">
+            <div class="cohort-wrapper">
+                <div class="cohort">
+                    <div class="left ">
+                        <img src="../../../assets/front-end/Video-gradient-icon.svg" class="video-icon" alt="Gradient"> <span
+                            class="online-text"> Online </span>
+                        <img src="../../../assets/front-end/Play-gradient-icon.svg" class="play-icon" alt="Gradient"> <span
+                            class="lessons-text"> 20hrs a month </span>
+
+                        <div class="bottom">
+                            <img src="../../../assets/front-end/Calendar-gradient-icon.svg" class="date-icon" alt="Gradient">
+                            <div class="next-cohort">
+                                <span class="date cabin">
+                                    April, 2022
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="right-holder">
+                            <img src="../../../assets/front-end/Wallet-gardient-icon.svg" class="video-icon" alt="Gradient">
+                            <div class="right-price">
+                                $ 416 <br>
+                                <span class="per-month">
+                                    per month
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="bottom-right d-none d-lg-flex" (click)="goDown1()">
+                            <span class="cabin">
+                                Enroll now!
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="bottom-right d-flex d-lg-none" (click)="goDown1()" >
+                        <span class="cabin">
+                            Enroll now!
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cohort-wrapper">
+                <div class="cohort">
+                    <div class="left">
+                        <img src="../../../assets/front-end/Video-gradient-icon.svg" class="video-icon" alt="Gradient"> <span
+                            class="online-text"> Online </span>
+                        <img src="../../../assets/front-end/Play-gradient-icon.svg" class="play-icon" alt="Gradient"> <span
+                            class="lessons-text"> 20hrs a month</span>
+
+                        <div class="bottom">
+                            <img src="../../../assets/front-end/Calendar-gradient-icon.svg" class="date-icon" alt="Gradient">
+                            <div class="next-cohort">
+                                <span class="date cabin">
+                                    May, 2022
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="right-holder">
+                            <img src="../../../assets/front-end/Wallet-gardient-icon.svg" class="video-icon" alt="Gradient">
+                            <div class="right-price">
+                                $ 416 <br>
+                                <span class="per-month">
+                                    per month
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="bottom-right d-none d-lg-flex" (click)="goDown1()">
+                            <span class="cabin">
+                                Enroll now!
+                            </span>
+                        </div>
+                    </div>
+                    <div class="bottom-right d-flex d-lg-none" (click)="goDown1()">
+                        <span class="cabin">
+                            Enroll now!
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <app-porto-montenegro [levarageColor]="levarageColor"></app-porto-montenegro>
+
+    <!-- <div class="learning-week-title d-none d-lg-block">
+        <h1 class="m-0">Your typical learning week</h1>
+    </div>
+    <div class="week-img d-none d-lg-block"><img  [lazyLoad]="image17" class="w-100 responsive"
+            alt="Learing Week"></div> -->
+    <app-pricing [array_of_pricing_header]="array_of_pricing_header" [array_of_pricing]="array_of_pricing"
+        [array_of_bootcamp]="array_of_bootcamp" [array_of_cpd]="array_of_cpd" [pricingTextBg]="pricingTextBg"
+        [array_of_transformation]="array_of_transformation" [from_where]="from_where"
+        [workoutSessionColor]="workoutSessionColor" [annualPricingBg]="annualPricingBg" [payJustAcademy]="payJustAcademy" [payTravelAcademy]="payTravelAcademy" [payTotalAcademy]="payTotalAcademy"></app-pricing>
+    <!-- <app-calculator [choose_bg]="'rgba(255, 234, 180, 1)'" [borderBottomCalc]="borderBottomCalc"
+        [borders_bg]="'linear-gradient(231.38deg, rgba(255, 107, 59, 1) 34.17%, rgba(239, 69, 38, 1) 119.03%)'"
+        [arrayOfInstallments]="arrayOfInstallments" [arrayOfAccademy]="arrayOfAccademy" ></app-calculator> -->
+    <div class="our-students-wrapper">
+        <div class="container">
+            <div class="our-students-title">Our students</div>
+            <owl-carousel-o [options]="customOptions" class="firstCarousel">
+                <ng-template carouselSlide>
+                    <div class="text-center">
+                        <img  [lazyLoad]="image2" class="responsive" alt="Creative Hub Student">
+                    </div>
+                    <div class="d-flex">
+                        <img src="../../../assets/data-science/quotes.svg" class="responsive quote-1 d-none d-lg-block"
+                            alt="Quotes">
+                        <div class="quotes">
+                            <p> “I have always been passionate about Data Science and I have worked with Data before
+                                joining
+                                the
+                                Bootcamp. I decided to enroll because I wanted to strengthen my knowledge and that is
+                                exactly
+                                what happened. The projects I was working on were real, I met professionals in the
+                                field,
+                                and I
+                                implemented everything that I learned when we did an analysis on the US demographics.”
+                            </p>
+                        </div>
+                        <img src="../../../assets/data-science/quotes.svg" class="responsive quote-2 d-none d-lg-block"
+                            alt="Quotes">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="text-center">
+                        <img [lazyLoad]="image1" class="responsive"
+                            alt="Creative Hub Student">
+                    </div>
+                    <div class="d-flex">
+                        <img src="../../../assets/data-science/quotes.svg" class="responsive quote-1 d-none d-lg-block"
+                            alt="Quotes">
+                        <div class="quotes">
+                            <p> “My name is Arbnor Hetemi and I am a junior data scientist with experience in project
+                                work
+                                and freelance jobs.
+                                I signed up for Creative Hub Data Science Bootcamp to update my knowledge and
+                                future-proof
+                                my career in data science.”
+                            </p>
+                        </div>
+                        <img src="../../../assets/data-science/quotes.svg" class="responsive quote-2 d-none d-lg-block"
+                            alt="Quotes">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="text-center">
+                        <img [lazyLoad]="image14" class="responsive" alt="Creative Hub Student">
+                    </div>
+                    <div class="d-flex">
+                        <img src="../../../assets/data-science/quotes.svg" class="responsive quote-1 d-none d-lg-block"
+                            alt="Quotes">
+                        <div class="quotes">
+                            <p> “Data Science is the profession of the future and that is why at the age of 17 I decided
+                                to
+                                start a career in this field. I have learned a lot in Bootcamp and with the help of the
+                                team, I started with my internship right after finishing it. ”
+                            </p>
+                        </div>
+                        <img src="../../../assets/data-science/quotes.svg" class="responsive quote-2 d-none d-lg-block"
+                            alt="Quotes">
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+    <div class="container my-5 portfolios">
+        <h1 class="portoflios-title ms-3 ms-lg-0">Student portfolios / Projects</h1>
+        <p class="ms-3 ms-lg-0" style="color: #D5D5D5;">Check out our students’ personal projects as they showcase what
+            they are passionate
+            about.</p>
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <div class="portfolio-card">
+                    <div class="portfolio-inner">
+                        <img  [lazyLoad]="image15" class="w-100" alt="Student Portfolio">
+                        <div class="portfolio-text">
+                            <p style="font-weight: 700;">Data Project with Behamics</p>
+                            <p>The latest Bootcamp project our students did was with “Behamics”, an NYC company that is
+                                combining Artificial Intelligence with Behavioral Science to prevent cart abandonment
+                                and
+                                product
+                                returns in eCommerce.</p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="portfolio-card">
+                    <div class="portfolio-inner">
+                        <img  [lazyLoad]="image16" class="w-100" alt="Student Portfolio">
+                        <div class="portfolio-text">
+                            <p style="font-weight: 700;">KPI Retail Dashboard</p>
+                            <p>After the first lesson of Power BI, the students got a task to create a dashboard using a
+                                dataset from a given company. They worked with various coefficients and for each, they
+                                created appropriate measures for comparison with previous periods.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolios-bg"></div>
+
+    <div class="container my-10">
+        <div class="hyped-title">Why data Science is so hyped?</div>
+        <div class="hyped-wrapper d-block d-lg-flex justify-content-evenly">
+            <div class="hyped-text">
+                <h1>
+                    2.7M
+                </h1>
+                <div>Data science and analytics job openings are expected to grow to at least 2.7
+                    million by end of 2020</div>
+            </div>
+            <div class="hyped-text">
+                <h1>
+                    65%
+                </h1>
+                <div>
+                    Of companies are struggling to analyse the data they store even though 89% agree that being able to
+                    analyse it would give them an advantage</div>
+            </div>
+            <div class="hyped-text">
+                <h1>
+                    0.5%
+                </h1>
+                <div>
+                    Less than 0.5% of global created data is ever used</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="journey-bg">
+        <div class="container">
+            <div class="journey">
+                <div class="journey-left">
+                    <div>
+                        Get started on your <br>
+                        data science career <br>
+                        journey today
+                    </div>
+                    <button>Enroll now</button>
+                </div>
+                <div><img  [lazyLoad]="image13" class="responsive"
+                        alt="Creative Hub Student">
+                </div>
+            </div>
+        </div>
+    </div>
+    <app-alumni [companiesBg]="companiesBg"></app-alumni>
+    <div class="get-hired">
+        <div class="get-hired-text">
+            <img src="../../../assets/data-science/get-hired-text.png" alt="get hired">
+
+            <div class="get-hired-secondary-text">
+                After the graduation join our <strong>HIRING PLATFORM!</strong><br>
+                <div class="second">
+                    And connect with <strong>100+</strong> hiring companies
+                </div>
+            </div>
+
+
+            <div class="register cabin  d-none d-lg-flex" data-bs-toggle="modal" data-bs-target="#exampleModal12">
+                Register your company
+            </div>
+        </div>
+        <div class="get-hired-img">
+        </div>
+        <div class="register d-flex d-lg-none" data-bs-toggle="modal" data-bs-target="#exampleModal12">
+            Register your company
+        </div>
+    </div>
+    <app-register-company></app-register-company>
+    <h1 class="speed-title d-none d-lg-block">
+        Speed networking with our students
+    </h1>
+    <p class="speed-text d-none d-lg-block">
+        We will help you to build a well-connected professional network!
+        Upon registering, you will be invited to a "Meet and Greet" session where you will be
+        introduced to the community. <br> <br>
+
+        Your Bootcamp Calendar includes Speed Networking sessions, seminars, sports events, and beach trips where you
+        will build your network and practice your professional pitch.
+    </p>
+    <div class="d-none d-lg-block">
+        <img src="../../../assets/data-science/meet-bg.png" class="w-100" alt="Party">
+        <img src="../../../assets/data-science/meet-and-greet.svg" class="meet-img" alt="Meet and greet">
+    </div>
+
+    <div class="fb-group-wrapper container">
+        <div class="d-flex justify-content-between fb-group-inner">
+            <div class="d-flex flex-column">
+                <h2>Creative Hub community</h2>
+                <p class="join-fb">Join our Facebook group with over 1,600 students</p>
+                <a href="https://www.facebook.com/groups/1002769804004993/" target="blank"
+                    class="btn d-flex align-items-center justify-content-between fb-button">
+                    <div class="d-flex align-items-center">
+                        <img class="me-3" src="../../../assets/reusable/fb_icon.png" alt="Facebook icon" />
+                        <span class="cabin">Go to Facebook group</span>
+                    </div>
+                    <div>
+                        <img class="justify-self-end" src="../../../assets/reusable/right_arrow.png" alt="Right arrow" />
+                    </div>
+
+                </a>
+                <div class="d-none d-lg-block joined-text">
+                    <img src="../../../assets/reusable/fb_joined.png" alt="Facebook" />
+                    <p><b>250+ people</b> joined in the last 30 days</p>
+                </div>
+            </div>
+            <img class="fb-community-img d-none d-lg-block img-fluid"
+                src="../../../assets/reusable/fb_community_img.png" alt="Community" />
+        </div>
+    </div>
+
+    <div style="max-width: 100%;" id="thisForm">
+        <app-sign-up-data></app-sign-up-data>
+    </div>
+    <app-questions-and-answers [questions]="questions" [borderColor]="borderColor" [titleColor]="titleColor"
+        [questionColor]="questionColor" [mainBackground]=" mainBackground" [accordionBg]="accordionBg">
+    </app-questions-and-answers>
+    <app-footer [subscribeBorder]="subscribeBorder" [arrowBg]="arrowBg"></app-footer>
+</div><!-- whole bg end -->

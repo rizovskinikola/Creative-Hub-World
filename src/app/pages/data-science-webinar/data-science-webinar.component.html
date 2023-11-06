@@ -1,0 +1,83 @@
+<div class="d-flex d-lg-block flex-column">
+    <div class="sticky-card order-2">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex"> <img src="assets/webinars/Video.svg"
+                    alt="Video">
+                <p>Online</p></div>
+            <div class="d-flex">
+                <img src="assets/webinars/Calendar.svg" alt="Calendar">
+                <p>05.05.2022</p>
+            </div>
+            <div class="d-flex">
+                <img src="assets/webinars/Time.svg" alt="Time">
+                <p>7:00 PM (EST)</p>
+            </div>
+        </div>
+        <form method="POST" action="https://akoskarova.activehosted.com/proc.php" id="_form_93_" class="_form _form_93 _inline-form  _dark" novalidate>
+          <input type="hidden" name="u" value="93" />
+          <input type="hidden" name="f" value="93" />
+          <input type="hidden" name="s" />
+          <input type="hidden" name="c" value="0" />
+          <input type="hidden" name="m" value="0" />
+          <input type="hidden" name="act" value="sub" />
+          <input type="hidden" name="v" value="2" />
+          <input type="hidden" name="or" value="ea749d10074b5306e9d066ab4e9dbbc4" />
+          <div class="_form-content">
+            <div class="_form_element _x55458350 _full_width " >
+              <label for="fullname" class="_form-label">
+                Full Name
+              </label>
+              <div class="_field-wrapper">
+                <input type="text" id="fullname" name="fullname" placeholder="e.g Robin Barkley" required/>
+              </div>
+              <!--  This STARTS the Custom Objects section  -->
+              </div>
+              <div class="_form_element _x43580332 _full_width " >
+                <label for="email" class="_form-label">
+                  Email*
+                </label>
+                <div class="_field-wrapper">
+                  <input type="text" id="email" name="email" placeholder="e.g michael@outlook.com" required/>
+                </div>
+                <!--  This STARTS the Custom Objects section  -->
+                </div>
+                <div class="_form_element _field9 _full_width " >
+                  <label for="field[9]" class="_form-label">
+                    Phone*
+                  </label>
+                  <div class="_field-wrapper">
+                    <input type="text" id="field[9]" name="field[9]" value="" placeholder="" required/>
+                  </div>
+                </div>
+                <div class="_button-wrapper _full_width">
+                  <button id="_form_93_submit" class="_submit register-btn" type="submit">
+                    Submit
+                  </button>
+                </div>
+                <div class="_clear-element">
+                </div>
+              </div>
+              <div class="_form-thank-you" style="display:none;">
+              </div>
+            </form>
+    </div>
+    <div class="order-1">
+      <app-webinar-header [headerBackground]="headerBackground"
+          [array_of_header_info]="array_of_header_info"
+          [array_of_list]="array_of_list">
+      </app-webinar-header>
+  </div>
+  <div class="order-3">
+      <app-webinar-container [lecturerImg]="lecturerImg"
+          [array_of_lecturer_card_info]="array_of_lecturer_card_info"
+          [array_of_skills_list]="array_of_skills_list"
+          [array_of_testemonial]="array_of_testemonial"
+          [array_of_benefits]="array_of_benefits" [didYouKnow]="didYouKnow"
+          [firstListTitle]="firstListTitle"
+          [array_of_requirements]="array_of_requirements"></app-webinar-container>
+  </div>
+</div>
+
+
+<app-webinar-footer [footerBg]="footerBg" [linkToAcademy]="linkToAcademy"
+    [goToBg]="goToBg" [whichAcademy]="whichAcademy" [helpText]="helpText"></app-webinar-footer>

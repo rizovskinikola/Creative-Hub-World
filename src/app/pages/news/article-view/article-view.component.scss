@@ -1,0 +1,152 @@
+* {
+  font-family: Cabin, sans-serif;
+}
+
+.container {
+  padding: 0;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  padding-top: 100px;
+  background: #D7D7D7 url("~src/assets/news/page-bg.png");
+
+  .article-wrapper {
+    max-width: 800px;
+    margin: auto;
+
+    .article-title {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 39px;
+      color: #555555;
+    }
+
+    hr {
+      background-color: #9B9B9B;
+      border: none;
+      width: 100%;
+      height: 1px;
+    }
+
+    .article-datetime {
+      p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        color: #808080;
+        margin: 0;
+      }
+    }
+
+    .article-text {
+      color: #606060;
+
+      ::ng-deep img {
+        width: 100%;
+        height: auto;
+        border-radius: 14px;
+      }
+    }
+
+    .social-icons > img {
+      cursor: pointer;
+    }
+
+    .article-tag {
+      margin-right: 12px;
+      padding: 8px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      color: #555555;
+      background: #FFFFFF;
+      border: 1px solid #AAAAAA;
+      box-sizing: border-box;
+      border-radius: 8px;
+    }
+
+    .article-buttons {
+      margin-top: 32px;
+
+      button {
+        display: flex;
+        align-items: center;
+        padding: 9px 16px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #555555;
+        cursor: pointer;
+        background: #FFFFFF;
+        border: 1px solid #AAAAAA;
+        box-sizing: border-box;
+        border-radius: 8px;
+
+        &.next-btn {
+          img {
+            margin-left: 40px;
+          }
+        }
+
+        &.prev-btn {
+          img {
+            margin-right: 40px;
+          }
+        }
+
+        &:hover {
+          box-shadow: 0 12px 37px rgba(170, 170, 170, 0.8);
+        }
+      }
+    }
+  }
+
+  .similar-articles {
+    .similar-article {
+      width: 48%;
+    }
+
+    h3 {
+      margin-top: 61px;
+      margin-bottom: 9px;
+      font-family: 'Bebas Neue', sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 24px;
+      color: #2B2B2B;
+    }
+
+    hr {
+      background-color: #808080;
+      width: 290px;
+      height: 1px;
+      border: none;
+      margin: 0 0 27px;
+    }
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .page-wrapper {
+    padding-top: 65px;
+  }
+
+  .article-wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .similar-articles {
+    h3 {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .similar-article {
+      width: 100% !important;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}

@@ -1,0 +1,399 @@
+<app-navbar [from_where]="from_where"></app-navbar>
+<div class="bg">
+
+    <div class="header">
+
+        <div class="container-section">
+            <div class="header-left">
+                <h1>
+                    Customizable training
+                    plans that strengthen <br>
+                    <span>Employer Brand</span>
+                </h1>
+                <h3>
+                    Tailored solutions with ongoing support to motivate
+                    employees
+                    and attract new ones.
+                </h3>
+                <button (click)="goDown1()">Contact us</button>
+                <img src="assets/enterprise/header-mobile-img.png"
+                    class="d-block d-lg-none" alt="">
+            </div>
+
+            <div class="percent">
+                <div class="percent-number">41%</div>
+                <div>
+                    <h4>of employees quit jobs because of lack of career
+                        development </h4>
+                    <h5>*source McKinsey </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-section section-m cultivate">
+        <h3>Cultivate a desirable workplace</h3>
+        <p>Career development direction and strong company culture are key
+            factors for top performing employees searching for opportunities.
+            Our tailor made solutions improve your ability to:</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="cultivate-card">
+                    <img src="assets/enterprise/attach.svg" alt="">
+                    <h4>Attract top talent</h4>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cultivate-card">
+                    <img src="assets/enterprise/love.svg" alt="">
+                    <h4>Retain key personnel</h4>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cultivate-card">
+                    <img src="assets/enterprise/graph.svg" alt="">
+                    <h4>Improve employee efficiency</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-section section-m awareness">
+        <h2>Brand awareness strategy</h2>
+        <h4>Once training plans have been developed for current employees, we
+            shift focus to prospective ones. With a jointly developed marketing
+            plan to showcase your brand value, increase your ability to
+            continually grow and improve your talent pool.
+        </h4>
+    </div>
+    <div class="container-section section-m courses">
+        <owl-carousel-o [options]="customOptions">
+            <ng-template carouselSlide>
+                <a
+                    href="https://creativehubacademy.co/assets/excel-data-analysis.pdf">
+                    <div class="course-card">
+                        <img src="assets/enterprise/excel.png" alt="Excel & Data
+                            Analysis">
+                        <h3>Excel & Data Analysis</h3>
+                        <p>Learn to organize data to focus on actionable
+                            insights.</p>
+                        <div> <a>Learn more <img
+                                    src="assets/enterprise/arrow.svg" alt=""></a></div>
+                    </div>
+                </a>
+            </ng-template>
+            <ng-template carouselSlide>
+                <a
+                    href="https://creativehubacademy.co/assets/intro-data-science.pdf">
+                    <div class="course-card">
+                        <img src="assets/enterprise/intro-data-science.png"
+                            alt="Excel & Data
+                            Analysis">
+                        <h3>Intro to Data Science</h3>
+                        <p>Learn to analyze data to highlight patterns and
+                            trends.</p>
+                        <div> <a href="">Learn more <img
+                                    src="assets/enterprise/arrow.svg" alt=""></a></div>
+                    </div>
+                </a>
+            </ng-template>
+            <ng-template carouselSlide>
+                <a
+                    href="https://creativehubacademy.co/assets/intro-to-bussiness-analysis.pdf">
+                    <div class="course-card">
+                        <img src="assets/enterprise/bussiness.png" alt="Excel &
+                            Data
+                            Analysis">
+                        <h3>Intro to Business Analysis</h3>
+                        <p>Learn to identify business needs and determine
+                            business
+                            solutions.</p>
+                        <div> <a href="">Learn more <img
+                                    src="assets/enterprise/arrow.svg" alt=""></a></div>
+                    </div>
+                </a>
+            </ng-template>
+            <!-- <ng-template carouselSlide>
+                <div class="course-card">
+                    <img src="assets/enterprise/react.png" alt="Excel & Data
+                        Analysis">
+                    <h3>React</h3>
+                    <p>Learn to create native mobile apps using the React
+                        framework.</p>
+                    <div> <a href="">Learn more <img
+                                src="assets/enterprise/arrow.svg" alt=""></a></div>
+                </div>
+            </ng-template> -->
+        </owl-carousel-o>
+    </div>
+
+    <div class="perfect-for-wrapper section-m">
+        <div class="container-section">
+            <h4>Perfect for:</h4>
+            <div class="d-flex justify-content-between flex-column flex-lg-row
+                flex-wrap">
+
+                <div class="d-flex align-items-center my-3 my-lg-0">
+                    <img src="assets/enterprise/fintech.svg" class="me-2"
+                        alt="">
+                    <h3>Fintech</h3>
+                </div>
+                <div class="d-flex align-items-center my-3 my-lg-0">
+                    <img src="assets/enterprise/bank.svg" class="me-2" alt="">
+                    <h3>Banking Institutions</h3>
+                </div>
+
+
+                <div class="d-flex align-items-center my-3 my-lg-0">
+                    <img src="assets/enterprise/university.svg" class="me-2"
+                        alt="">
+                    <h3>Universities</h3>
+                </div>
+                <div class="d-flex align-items-center my-3 my-lg-0">
+                    <img src="assets/enterprise/insurtech.svg" class="me-2"
+                        alt="">
+                    <h3>Insurtech</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-section section-m monitor">
+        <div>
+            <h2>Monitor key performance indicators</h2>
+            <p>Access reporting of individual employee progress along with
+                company-wide performance metrics at all stages. With a focus on
+                development at the core skill level, your company can be alerted
+                to
+                and address current shortcomings, or plan for future strategic
+                challenges.
+            </p>
+        </div>
+        <img src="assets/enterprise/monitor.png" alt="Monitor">
+    </div>
+
+    <div class="container-section section-m solutions">
+        <div>
+            <h2>Solutions tailored to you</h2>
+            <p>Let’s discuss and understand your business objectives to custom
+                build a solution aligned perfectly with your needs.</p>
+            <button (click)="goDown1()">Contact us</button>
+        </div>
+    </div>
+
+
+    <div class="satisfied-clients">
+        <div class="">
+            <owl-carousel-o [options]="satisfiedOptions">
+                <ng-template carouselSlide>
+                    <div class="clients-words">
+                        <p>“Working with Creative Hub has helped us advance our
+                            employees skills and thus improve the processes.
+                            <br> <br>
+                            What I really liked is their pre & post assessment
+                            strategy. At the end of the training I got a clear
+                            report of the skills that my staff possesses.
+                            Working with Creative Hub after the training on our
+                            Employer Branding strategy was another thing that
+                            makes me recommend this company. <br> <br>
+
+                            They will provide you with the tools to make your
+                            employer brand more attractive through the
+                            investments that you are making in your employees.“
+                            <br> <br>
+                            <span>Vancho Tolomanosi</span>
+                            <br><br>CEO at VJVIT
+                        </p>
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="clients-words">
+                        <p>“Creative Hub did not only train our staff on
+                            Business Analysis and Data, but also helped us
+                            position our Employer Branding strategy and leverage
+                            on our talent development investment. <br> <br>
+
+                            This helped us not only to retain our current
+                            employees with effective training and development,
+                            but also to attract talent in a cost-effective way
+                            through our Employer Brand.“
+                            <br> <br>
+                            <span>Robert Brahms</span>
+                            <br>CEO at VPI Recovery Professionals
+                        </p>
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+    </div>
+
+    <div class="container-section section-m">
+        <div class="arijana">
+            <img src="assets/enterprise/arijana.png" alt="">
+            <div>
+                <p class="fst-italic">“The core of a company’s purpose is to
+                    make
+                    revenues and bring in
+                    profits. Revenues are made by the human capital that works
+                    in
+                    the company. Advancing the skills of the human capital is
+                    the
+                    only investment that pays long term.“ </p>
+                <p class="text-end fw-bold">-Arijana Koskarova</p>
+                <p class="text-end">Co-founder of Creative Hub, member of Forbes
+                    Business Council
+                </p>
+            </div>
+        </div>
+        <div class="forbes">
+            <h4>As in Forbes.com</h4>
+            <div class="d-lg-flex d-block">
+                <a
+                    href="https://www.forbes.com/sites/forbesbusinesscouncil/2022/05/17/16-high-level-metrics-every-business-should-track/?sh=c775c6ec4600"
+                    target="_blank">
+                    <div class="forbes-card">
+                        <img src="assets/enterprise/forbes1.png" alt="Forbes">
+                        <h4>16 High-Level Metrics Every Business Should Track</h4>
+                        <div class="d-flex align-items-center
+                            justify-content-end">
+                            <p>Click and read more on</p>
+                            <img src="assets/enterprise/forbes.png" class="ms-2"
+                                alt="Forbes">
+                            <img src="assets/enterprise/arrow.svg" class="ms-2"
+                                alt="Forbes">
+                        </div>
+                    </div>
+                </a>
+                <a
+                    href="https://www.forbes.com/sites/forbesbusinesscouncil/2022/08/09/the-importance-of-performance-management/?sh=46f421ea6c7b"
+                    target="_blank">
+                    <div class="forbes-card">
+                        <img src="assets/enterprise/forbes2.png" alt="Forbes">
+                        <h4>The Importance of Performance Management</h4>
+                        <div class="d-flex align-items-center
+                            justify-content-end">
+                            <p>Click and read more on</p>
+                            <img src="assets/enterprise/forbes.png" class="ms-2"
+                                alt="Forbes">
+                            <img src="assets/enterprise/arrow.svg" class="ms-2"
+                                alt="Forbes">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-m contact-us" id="contactUsForm">
+
+        <div class="form-wrapper">
+            <link rel="stylesheet" type="text/css"
+                href="https://unpkg.com/intl-tel-input@17.0.18/build/css/intlTelInput.min.css"/>
+            <form method="POST"
+                action="https://akoskarova.activehosted.com/proc.php"
+                id="_form_262_" class="_form _form_262 _inline-form _dark"
+                novalidate>
+                <input type="hidden" name="u" value="262" />
+                <input type="hidden" name="f" value="262" />
+                <input type="hidden" name="s" />
+                <input type="hidden" name="c" value="0" />
+                <input type="hidden" name="m" value="0" />
+                <input type="hidden" name="act" value="sub" />
+                <input type="hidden" name="v" value="2" />
+                <input type="hidden" name="or"
+                    value="c1fe98b33713c4c232af570c2f553242" />
+                <div class="_form-content">
+                    <div class="_form_element _x32863805 _full_width _clear">
+                        <div class="contact-us-title">
+                            Contact Us
+                        </div>
+                    </div>
+                    <div class="_form_element _x56753962 _full_width _clear">
+                        <p class="form-p">
+                            Get in touch to discuss cutting edge enterprise
+                            training solutions to improve your Employer Brand
+                            and strengthen your employee talent pool.
+                        </p>
+                    </div>
+                    <div class="form-inner">
+                        <div class="_form_element _x17562197 _full_width ">
+                            <label for="fullname" class="_form-label">
+                                Name and surname
+                            </label>
+                            <div class="_field-wrapper">
+                                <input type="text" id="fullname" name="fullname"
+                                    placeholder="e.g Robin Barkley" required />
+                            </div>
+                        </div>
+                        <div class="_form_element _x55332817 _full_width ">
+                            <label for="email" class="_form-label">
+                                E-mail
+                            </label>
+                            <div class="_field-wrapper">
+                                <input type="text" id="email" name="email"
+                                    placeholder="e.g robin@mail.com" required/>
+                            </div>
+                        </div>
+                        <div class="_form_element _x58228635 _full_width ">
+                            <label for="field[7]" class="_form-label">
+                                Company
+                            </label>
+                            <div class="_field-wrapper">
+                                <input type="text" id="field[7]" name="field[7]"
+                                    value="" placeholder="Company name" required
+                                    />
+                            </div>
+                        </div>
+                        <div class="_form_element _x93315162 _full_width ">
+                            <label for="phone" class="_form-label">
+                                Phone number
+                            </label>
+                            <div class="_field-wrapper">
+                                <input type="text" id="phone" name="phone"
+                                    placeholder="Phone Number"
+                                    required />
+                            </div>
+                        </div>
+                        <div class="_form_element _x01800529 _full_width ">
+                            <label for="field[8]" class="_form-label">
+                                How can we help?
+                            </label>
+                            <div class="_field-wrapper">
+                                <textarea id="field[8]" name="field[8]"
+                                    placeholder=""></textarea>
+                            </div>
+                        </div>
+                        <div class="_button-wrapper _full_width ">
+                            <button id="_form_262_submit" class="_submit"
+                                type="submit">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                    <div class="_clear-element">
+                    </div>
+                </div>
+                <div class="_form-thank-you" style="display:none;">
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="d-flex">
+            <a href="https://www.facebook.com/creativehubmiami/"><img
+                    src="assets/enterprise/facebook.svg"
+                    class="responsive" alt="Facebook logo"></a>
+            <a
+                href="https://www.linkedin.com/company/creative-hub-academy/"><img
+                    src="assets/enterprise/linkedin.svg"
+                    class="responsive" alt="Linkedin Logo"></a>
+            <a href="https://www.instagram.com/creativehubmiami/"><img
+                    src="assets/enterprise/insta.svg"
+                    class="responsive" alt="Instagram Logo"></a>
+        </div>
+        <p>© Copyright 2022 Creative Hub</p>
+    </footer>
+</div> <!-- BG Container -->

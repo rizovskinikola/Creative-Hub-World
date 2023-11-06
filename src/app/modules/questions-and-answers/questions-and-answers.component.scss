@@ -1,0 +1,96 @@
+.qa-wrapper
+{
+  width: 60%;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+.card-title {
+    font-size: 43px;
+    font-weight: 900;
+    margin-bottom: 32px;
+    margin-bottom: 41px !important;
+  }
+
+  .question {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    font-family: Cabin;
+  }
+  
+  .answer {
+    font-family: Cabin;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(162, 162, 162);
+  }
+  
+  .accordion {
+    background: transparent;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #434141;
+    border-radius: 16px;
+    padding: 0;
+  
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    font-weight: bold;
+    float: right;
+    font-size: 35px;
+    margin-bottom: auto;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .accordion-item {
+    position: relative;
+    padding: 2px;
+    box-shadow: 0 3px 14px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border-bottom: 1px solid rgba(93, 160, 239, 1);
+  }
+  
+  .accordion-item-inner {
+    padding: 12px 8px;
+    position: relative;
+    border-radius: 6px;
+  }
+  
+  .panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  
+  @media only screen and (max-width: 992px) {
+    .card-title {
+      font-size: 24px;
+    }
+  
+    .cards p {
+      font-size: 14px;
+    }
+      .qa-wrapper 
+      {
+          width: 80% !important;
+          margin-left: 10% !important;
+      }
+  }
+  

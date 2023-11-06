@@ -1,0 +1,86 @@
+<div class="mentor">
+    <div class="section-container">
+        <div class="d-flex align-items-start">
+            <img [src]="mentorImg" class="mentor-img" alt="Mentor">
+            <div class="mentor-info">
+                <h4>Ментор: <br class="d-block d-lg-none"> <span>{{mentorName}}</span></h4>
+                <img [src]="mentorSkillsImg" alt="">
+                <ul class="d-none d-lg-block">
+                    <li *ngFor="let skill of array_of_mentor_skills">
+                        {{skill}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="d-block d-lg-none">
+            <li *ngFor="let skill of array_of_mentor_skills">
+                {{skill}}
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="section-container program-detials">
+    <h2>
+        Детална програма:
+    </h2>
+    <ul>
+        <li *ngFor="let program of array_of_program">{{program}}</li>
+    </ul>
+
+</div>
+<div class="details-p"><img src="assets/mini-academies/lamb.svg" alt="Lamb"><p>
+        {{programParagraph}} </p></div>
+<div class="section-container">
+    <div class="price-includes">
+        <h2>Во цената се вклучени:</h2>
+        <ul>
+            <li *ngFor="let include of array_of_price_includes">
+                <img src="assets/mini-academies/yellow-thick.svg" alt="Yellow
+                    thick">
+                {{include}}
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="section-container">
+    <h2>Регистрација:</h2>
+    <div class="registration">
+        <div class="registration-left">
+            <!-- <p [innerHTML]="firstDate"></p> -->
+            <p [innerHTML]="secondDate"></p>
+            <p [innerHTML]="thirdDate" style="border: none;" class="price-mobile"></p>
+        </div>
+
+        <div class="registration-right">
+            <!-- <p><b>499 €</b></p> -->
+            <p><b>599 €</b></p>
+            <p style="border: none;" class="price-mobile"><b>799 €</b></p>
+        </div>
+    </div>
+    <h3>
+        Специјална понуда
+    </h3>
+    <div class="certificate">
+        <div class="certificate-left">
+            <p>{{certificateText}}</p>
+            <img [src]="certificateImage" alt="Certificate">
+        </div>
+        <div class="certificate-right">
+            <div>899 €</div>
+            <h6>*цената е иста без разлика од датумот на пријава</h6>
+        </div>
+
+    </div>
+    <div class="certificate-info">
+        <!-- <p>За овој сертификат дополнително се вклучени уште 5 часа со ментор.
+        </p> -->
+        <h6>Плаќањето може да се изврши на 8 рати без камата преку Креатив Хаб.
+            <br>
+            За уплати во готово следи попуст од 5%. <br>
+            Донеси пријател и двајцата добијте по 10% попуст.
+        </h6>
+        <div>
+            <button (click)="scrollToTop()">Пријави се</button>
+        </div>
+    </div>
+</div>

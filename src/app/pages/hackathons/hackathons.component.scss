@@ -1,0 +1,339 @@
+.page-bg {
+  background-image: url("../../../assets/hackathons/page-bg.png");
+  background-size: cover;
+}
+
+.header {
+  background: radial-gradient(28.87% 47.55% at 50% 86.69%, #650000 0%, #000000 100%);
+
+  h1 {
+    text-align: center;
+    font-size: 42px;
+    line-height: 50px;
+    color: #FFFFFF;
+    padding-top: 170px;
+    margin-bottom: 32px;
+    margin-top: 0;
+
+    span {
+      margin-left: 5px;
+      color: #FFBD11;
+    }
+  }
+
+  p {
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #D5D5D5;
+    margin-top: 0;
+    margin-bottom: 64px;
+  }
+
+  .deep-dive-btn {
+    background: #FFFFFF;
+    box-shadow: 0 24px 25px -12px rgba(1, 0, 0, 0.78);
+    border-radius: 12px;
+    padding: 5.5px 58px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 139.5%;
+    color: #000000;
+    margin-bottom: 240px;
+  }
+}
+
+.our-partners {
+  position: absolute;
+  left: 0;
+  top: -70px;
+  padding-right: 100px;
+  padding-top: 21px;
+  background: #FFBD11;
+  border-radius: 0 76px 76px 0;
+  width: 328px;
+  height: 300px;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 42px;
+  color: #000000;
+  text-align: right;
+}
+
+.empowering-block {
+  height: 100%;
+  background: #000000;
+  border-radius: 19px 0 0 19px;
+  width: 90%;
+  margin-left: auto;
+
+  .empowering-text {
+    padding-left: 48px;
+    padding-top: 43px;
+    padding-bottom: 65px;
+
+    p {
+      text-align: left;
+    }
+
+    p:first-child {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 29px;
+      color: #F1689F;
+      margin-bottom: 32px;
+      margin-top: 0;
+    }
+
+    p:nth-child(2) {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 22px;
+      color: #BABABA;
+      margin: 0;
+    }
+  }
+
+  .header-logos {
+    img {
+      position: absolute;
+    }
+
+    .fiver {
+      left: 0;
+      top: 32px;
+    }
+
+    .upwork {
+      left: 202px;
+      top: -38px;
+    }
+
+    .freelance {
+      left: 102px;
+      top: 190px;
+    }
+
+    .orange {
+      top: 125px;
+      left: 306px;
+    }
+  }
+}
+
+.our-chapters {
+  h2 {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 42px;
+    color: #2B2B2B;
+    margin-top: 97px;
+    margin-bottom: 32px;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 22px;
+    color: #808080;
+    margin-bottom: 62px;
+  }
+}
+
+.chapter-card-wrapper {
+  width: fit-content;
+  height: 685px;
+  background: linear-gradient(228.56deg, rgba(239, 93, 93, 0) 27.86%, #EF5D5D 53.09%, rgba(242, 130, 130, 0) 75.36%);
+  box-shadow: 57px 39px 58px 0 #5400412B;
+  border-radius: 71px 71px 24px 24px;
+  padding: 5px;
+
+  .chapter-card-inner {
+    height: 645px;
+    border-radius: 66px 66px 19px 19px;
+    background: #FBFAF5;
+    padding: 20px;
+
+    .chapter-title {
+      max-width: 340px;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 140%;
+      color: #434141;
+    }
+
+    .chapter-desc {
+      max-width: 340px;
+      font-size: 18px;
+      line-height: 22px;
+      color: #606060;
+    }
+  }
+}
+
+.your-company-box {
+  width: fit-content;
+  margin-top: 140px;
+  margin-bottom: 87px;
+
+  img {
+    border-radius: 38px 38px 0 0;
+  }
+
+  .your-company-text {
+    position: absolute;
+    left: 100px;
+    top: 60px;
+    width: 50%;
+
+    .your-company-img {
+      -webkit-border-radius: 38px;
+      -moz-border-radius: 38px;
+      border-radius: 38px;
+    }
+
+    .your-company-title {
+      font-weight: bold;
+      font-size: 42px;
+      line-height: 59px;
+      color: #FFFFFF;
+      margin-bottom: 32px;
+      margin-top: 0;
+    }
+
+    .your-company-desc {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      color: #FFFFFF;
+      margin-bottom: 32px;
+      margin-top: 0;
+    }
+
+    .your-company-btn {
+      background: #FFFFFF;
+      box-shadow: 0 14px 29px -13px #7C2717;
+      border-radius: 8px;
+      padding: 12px 87px;
+
+      p {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        background: linear-gradient(162.44deg, #FF6B3B 0%, #EF4526 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.hire-text {
+  margin-top: 80px;
+  height: min-content;
+  width: max-content;
+
+  img {
+    position: absolute;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 42px;
+    color: #272727;
+    margin: 0;
+  }
+
+  .second-text {
+    margin-left: 60px;
+  }
+
+  span {
+    color: #F85B32;
+  }
+
+  .left-top-border {
+    left: -20px;
+    top: -12px;
+  }
+
+  .left-bottom-border {
+    transform: rotate(-90deg);
+    bottom: -5px;
+    left: 40px;
+  }
+
+  .right-top-border {
+    transform: rotate(90deg);
+    right: 90px;
+    top: -12px;
+  }
+
+  .right-bottom-border {
+    transform: rotate(180deg);
+    right: -20px;
+    bottom: -5px;
+  }
+}
+
+.hire-box {
+  margin-left: 20px;
+
+  .hire-desc {
+    font-size: 18px;
+    line-height: 22px;
+    color: #555555;
+    margin-top: 32px;
+    margin-bottom: 180px;
+  }
+
+  .hire-btn {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 139.5%;
+    background: linear-gradient(162.44deg, #FE693A 0%, #F34F2B 100%);
+    box-shadow: 0 10px 14px rgba(185, 34, 0, 0.22);
+    border-radius: 12px;
+    color: #FFFFFF;
+    padding: 5.5px 24.5px;
+  }
+}
+
+@media only screen and (max-width: 1367px) {
+  .header-logos {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1075px) {
+  .empowering-text {
+    width: 100% !important;
+  }
+
+  .your-company-title {
+    font-size: 24px !important;
+  }
+
+  .your-company-desc {
+    font-size: 20px !important;
+  }
+}
+
+@media only screen and (max-width: 920px) {
+  .your-company-img {
+    height: 380px !important;
+  }
+
+  .your-company-text {
+    width: 90% !important;
+    left: 30px !important;
+  }
+}
+
+
+@media only screen and (max-width: 445px) {
+  .your-company-img {
+    height: 450px !important;
+  }
+}

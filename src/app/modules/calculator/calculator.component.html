@@ -1,0 +1,49 @@
+<!-- CALCULATOR -->
+<div class="calc-main" [style.border-bottom]="borderBottomCalc">
+
+
+    <div class="calculator-title">
+        <span [ngStyle]="{'background' : choose_bg}">CALCULATOR</span>
+        <br>
+        <!-- <p>for monthly expenses</p> -->
+    
+        <div class="line" [ngStyle]="{'background' : borders_bg}">
+    
+        </div>
+    </div>
+    
+    <div class="container" style="padding-top: 50px;">
+        <div class="row">
+            <div class="col-md-7 choose-academy">
+                <p><b class="cabin">Choose Bootcamp</b></p>
+                <div [ngStyle]="{'background' : choose_bg}">
+                    <span class="cabin" [ngStyle]="currentAcademy === academy.name ? {'color' : choose_bg} : {'color' : 'white'}"
+                    [ngClass]="currentAcademy === academy.name ? 'active' : ' ' "
+                        *ngFor="let academy of arrayOfAccademy" (click)="calcAcademy(academy)">
+                        {{academy.name}}{{academy.price}}</span>
+                </div>
+            </div>
+            <div class="col-md-5 choose-installments">
+                <p class="cabin">Choose installments: </p>
+                <div [ngStyle]="{'background' : choose_bg}">
+                    <span class="cabin" *ngFor="let installments of arrayOfInstallments"
+                    [ngStyle]="currentInstallments === installments.month ? {'color' : choose_bg} : {'color' : 'white'}"
+                        [ngClass]="currentInstallments === installments.month ? 'active' : ' ' "
+                        (click)="calcInstallment(installments)">
+                        {{installments.month}}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="price-calculator">
+        <p [style.border]="borderBottomCalc"> <span class="cabin">Monthly expenses:</span> $ {{currentMonthPrice | number:'1.2-2'}} </p>
+    </div>
+    
+    </div>
+    <!-- <div class="col-md-12 text-center">
+        <div class="btn btn-dark" style="margin-top: 5%">Enroll now</div>
+    </div> -->
+    <!-- CALCULATOR -->
+    

@@ -1,0 +1,155 @@
+@import "~node_modules/bootstrap/scss/functions";
+@import "~node_modules/bootstrap/scss/variables";
+@import "~node_modules/bootstrap/scss/utilities";
+@import "~node_modules/bootstrap/scss/bootstrap-grid";
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: ($spacer * .25), //4px
+  2: ($spacer * .5), //8px
+  3: $spacer, //16px
+  4: ($spacer * 1.5), //24px
+  5: ($spacer * 2), //32px
+  6: ($spacer * 3), //48px
+  7: ($spacer * 4), //64px
+  8: ($spacer * 5), //80px
+  9: ($spacer * 6.25), //100px
+  10: ($spacer * 7.5), //120px
+  11: ($spacer * 9.375) //150px
+);
+
+
+$utilities: map-merge(
+    $utilities,
+    (
+      "margin": (
+        responsive: true,
+        property: margin,
+        class: m,
+        values: map-merge($spacers, (auto: auto))
+      ),
+      "margin-x": (
+        responsive: true,
+        property: margin-right margin-left,
+        class: mx,
+        values: map-merge($spacers, (auto: auto))
+      ),
+      "margin-y": (
+        responsive: true,
+        property: margin-top margin-bottom,
+        class: my,
+        values: map-merge($spacers, (auto: auto))
+      ),
+      "margin-top": (
+        responsive: true,
+        property: margin-top,
+        class: mt,
+        values: map-merge($spacers, (auto: auto))
+      ),
+      "margin-end": (
+        responsive: true,
+        property: margin-right,
+        class: me,
+        values: map-merge($spacers, (auto: auto))
+      ),
+      "margin-bottom": (
+        responsive: true,
+        property: margin-bottom,
+        class: mb,
+        values: map-merge($spacers, (auto: auto))
+      ),
+      "margin-start": (
+        responsive: true,
+        property: margin-left,
+        class: ms,
+        values: map-merge($spacers, (auto: auto))
+      ),
+      // Negative margin utilities
+      "negative-margin": (
+        responsive: true,
+        property: margin,
+        class: m,
+        values: $negative-spacers
+      ),
+      "negative-margin-x": (
+        responsive: true,
+        property: margin-right margin-left,
+        class: mx,
+        values: $negative-spacers
+      ),
+      "negative-margin-y": (
+        responsive: true,
+        property: margin-top margin-bottom,
+        class: my,
+        values: $negative-spacers
+      ),
+      "negative-margin-top": (
+        responsive: true,
+        property: margin-top,
+        class: mt,
+        values: $negative-spacers
+      ),
+      "negative-margin-end": (
+        responsive: true,
+        property: margin-right,
+        class: me,
+        values: $negative-spacers
+      ),
+      "negative-margin-bottom": (
+        responsive: true,
+        property: margin-bottom,
+        class: mb,
+        values: $negative-spacers
+      ),
+      "negative-margin-start": (
+        responsive: true,
+        property: margin-left,
+        class: ms,
+        values: $negative-spacers
+      ),
+      // Padding utilities
+      "padding": (
+        responsive: true,
+        property: padding,
+        class: p,
+        values: $spacers
+      ),
+      "padding-x": (
+        responsive: true,
+        property: padding-right padding-left,
+        class: px,
+        values: $spacers
+      ),
+      "padding-y": (
+        responsive: true,
+        property: padding-top padding-bottom,
+        class: py,
+        values: $spacers
+      ),
+      "padding-top": (
+        responsive: true,
+        property: padding-top,
+        class: pt,
+        values: $spacers
+      ),
+      "padding-end": (
+        responsive: true,
+        property: padding-right,
+        class: pe,
+        values: $spacers
+      ),
+      "padding-bottom": (
+        responsive: true,
+        property: padding-bottom,
+        class: pb,
+        values: $spacers
+      ),
+      "padding-start": (
+        responsive: true,
+        property: padding-left,
+        class: ps,
+        values: $spacers
+      ),
+    )
+);

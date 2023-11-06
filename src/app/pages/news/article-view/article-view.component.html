@@ -1,0 +1,59 @@
+<div class="page-wrapper">
+  <app-navbar></app-navbar>
+
+  <app-page-loader *ngIf="fetchingArticle || !article"></app-page-loader>
+
+  <div class="article-wrapper" *ngIf="!fetchingArticle && article">
+    <h1 class="article-title">{{article.title}}</h1>
+    <hr>
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="d-flex flex-column article-datetime">
+        <p>{{formatDate(article.published)}}</p>
+        <p>{{article.timeToRead}} mins read</p>
+      </div>
+      <div class="social-icons d-flex gap-2">
+        <img (click)="shareOnFacebook()" src="assets/news/fb.png" alt="Facebook icon"/>
+        <img (click)="shareOnTwitter()" src="assets/news/twitter.png" alt="Twitter icon"/>
+        <img (click)="shareOnLinkedIn()" src="assets/news/linked-in.png" alt="Linkedin icon"/>
+        <img (click)="copyToClipboard()" src="assets/news/link.png" alt="Link icon"/>
+      </div>
+    </div>
+
+    <div class="article-text" [innerHTML]="articleHTML"></div>
+
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="d-flex">
+        <ng-container *ngFor="let tag of article.tags">
+          <div class="article-tag">{{tag}}</div>
+        </ng-container>
+      </div>
+      <div class="social-icons d-flex gap-2">
+        <img (click)="shareOnFacebook()" src="assets/news/fb.png" alt="Facebook icon"/>
+        <img (click)="shareOnTwitter()" src="assets/news/twitter.png" alt="Twitter icon"/>
+        <img (click)="shareOnLinkedIn()" src="assets/news/linked-in.png" alt="Linkedin icon"/>
+        <img (click)="copyToClipboard()" src="assets/news/link.png" alt="Link icon"/>
+      </div>
+    </div>
+
+    <div *ngIf="articlesInCategory.length > 1" class="d-flex justify-content-between article-buttons">
+      <button class="prev-btn" (click)="prevArticle()">
+        <img src="assets/news/left-arrow.png" alt="Left arrow"/> Previous story
+      </button>
+      <button class="next-btn" (click)="nextArticle()">
+        Next story <img src="assets/news/right-arrow.png" alt="Right arrow"/>
+      </button>
+    </div>
+  </div>
+
+  <div class="container similar-articles" *ngIf="similarArticles?.length">
+    <h3>Similar stories</h3>
+    <hr>
+    <div class="d-flex flex-wrap gap-3">
+      <ng-container *ngFor="let article of similarArticles">
+        <app-article class="similar-article" [article]="article"></app-article>
+      </ng-container>
+    </div>
+  </div>
+
+  <app-footer [subscribeBorder]="footerBorder" [arrowBg]="arrowBg"></app-footer>
+</div>

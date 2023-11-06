@@ -1,0 +1,26 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { CommunityGuidelinesComponent } from './community-guidelines.component';
+import {RouterModule, Routes} from "@angular/router";
+import { FooterModule } from 'src/app/modules/footer/footer.module';
+import { NavbarModule } from 'src/app/modules/navbar/navbar.module';
+
+const routes: Routes = [{
+  path: '',
+  component: CommunityGuidelinesComponent 
+}]
+
+@NgModule({
+  declarations: [
+    CommunityGuidelinesComponent
+  ],
+  imports: [
+    CommonModule,
+    RouterModule.forChild(routes),
+    FooterModule,
+    NavbarModule
+    
+
+  ]
+})
+export class CommunityGuidelinesModule { }

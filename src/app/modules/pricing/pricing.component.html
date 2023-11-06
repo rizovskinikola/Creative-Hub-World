@@ -1,0 +1,286 @@
+<div class="pricing-main-holder mobile-hide">
+    <div class="pricing-list-holder">
+        <div class="pricing-text">
+            <div class="pricing-text-gradient-wrapper" [style.background]="annualPricingBg">
+                <div class="pricing-text-wrapper" [style.background]="pricingTextBg" >
+                    total value
+                </div>
+            </div>
+
+        </div>
+        <div class="piricing-list-wrapper">
+            <div class="pricing-box">
+                <div class="pricing-title"
+                    [ngStyle]="from_where === 'data-science' ? {'color' : '#ffffff'} : {'color' : '#000000'} ">
+                    {{array_of_pricing_header[0].pricing_name}}
+                </div>
+                <div class="classes">
+                    <span>
+                        {{array_of_pricing_header[0].pricing_classes}} classes
+                    </span>
+                </div>
+                <div class="price"
+                    [ngStyle]="from_where === 'data-science' ? {'color' : '#ffffff'} : {'color' : '#000000'} ">
+                    ${{array_of_pricing_header[0].pricing_price}}
+                </div>
+                <!-- <div class="pricing-desc">
+                    /monthly
+                </div> -->
+            </div>
+            <div class="pricing-box middle-pricing">
+                <div class="pricing-title">
+                    {{array_of_pricing_header[1].pricing_name}}
+                </div>
+                <div class="classes">
+                    <span>
+                        {{array_of_pricing_header[1].pricing_classes}} classes
+                    </span>
+                </div>
+                <div class="price">
+                    ${{array_of_pricing_header[1].pricing_price}}
+                </div>
+                <!-- <div class="pricing-desc"
+                    [ngStyle]="from_where === 'data-science' ? {'color' : '#000000'} : {'color' : '#808080'} ">
+                    /monthly
+                </div> -->
+                <div class="most-popular">
+                    <span>
+                        Most popular
+                    </span>
+                </div>
+            </div>
+            <div class="pricing-box">
+                <div class="pricing-title"
+                    [ngStyle]="from_where === 'data-science' ? {'color' : '#ffffff'} : {'color' : '#000000'} ">
+                    Total&nbsp;Transformation
+                </div>
+                <div class="d-flex justify-content-center  align-items-center">
+                    <div class="classes ">
+                        <span>
+                            {{array_of_pricing_header[2].pricing_classes}} classes
+                        </span>
+                    </div>
+                    <span [style.color]="workoutSessionColor" class="workout-sessions cabin">+64 workout sessions</span>
+                </div>
+                <div class="price"
+                    [ngStyle]="from_where === 'data-science' ? {'color' : '#ffffff'} : {'color' : '#000000'} ">
+                    ${{array_of_pricing_header[2].pricing_price}}
+                </div>
+                <!-- <div class="pricing-desc">
+                    /monthly
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- <div class="pricing-perfect-wrapper"
+        [ngStyle]="from_where === 'front-end' ? {'background' : 'black'} : {'background' : 'white'} ">
+        <div class="pricing-perfect">
+            <div class="pricing-perfect-left">This is perfect for the person who wants to...</div>
+            <div class="pricing-perfect-right">
+                <div>...start a new career.</div>
+                <div class="perfect-border">...upgrade their career and get 1 on 1 deep dive mentoring.</div>
+                <div> ...get international experience and join the total transformation program.</div>
+            </div>
+        </div>
+    </div> -->
+    <div class="pricing-table"
+        [ngStyle]="from_where === 'graphic-design' ? {'height' : 950+'px'} : from_where === 'digital-marketing' ? {'height' : 690+'px'} : {'height' : 836+'px'} ">
+        <div class="pricing-table-holder">
+            <div class="pricing-element" *ngFor="let pricing of array_of_pricing">
+                <div class="pricing-name">
+                    {{pricing.pricing_name}}
+                </div>
+            </div>
+
+
+        </div>
+        <div class="tick-holder"
+            [ngStyle]="from_where === 'graphic-design' ? {'height' : 918+'px'} : from_where === 'digital-marketing' ? {'height' : 670+'px'} : {'height' : 807 +'px'} ">
+            <div class="ticks-for" *ngFor="let pricing of array_of_pricing">
+                <div class="ticks-row">
+                    <div class="tick">
+                        <img *ngIf="pricing.just_bootcamp"
+                            [src]="from_where === 'data-science' ?  '../../../assets/data-science/Tick-Square-data-icon.svg' : from_where === 'front-end' ?  '../../../assets/front-end/Tick-Square-front-icon.svg' : from_where === 'digital-marketing' ?  '../../../assets/digital-marketing/thick-square-digital.svg' :  '../../../assets/pricing/Tick-Square.svg'">
+                        <img *ngIf="!pricing.just_bootcamp"
+                            [src]="from_where === 'data-science' ?  '../../../assets/data-science/x-icon-data-icon.svg' : from_where === 'front-end' ?  '../../../assets/front-end/x-icon-front-icon.svg' : from_where === 'digital-marketing' ?  '../../../assets/digital-marketing/x-icon-digital.svg' : '../../../assets/pricing/x-icon.svg'">
+                    </div>
+                    <div class="tick middle">
+                        <img *ngIf="pricing.cpd_certified"
+                            [src]="from_where === 'data-science' ?  '../../../assets/data-science/Tick-Square-data-icon.svg' : from_where === 'front-end' ?  '../../../assets/front-end/Tick-Square-front-icon.svg' : from_where === 'digital-marketing' ?  '../../../assets/digital-marketing/thick-square-digital.svg' :  '../../../assets/pricing/Tick-Square.svg'">
+                        <img *ngIf="!pricing.cpd_certified"
+                            [src]="from_where === 'data-science' ?  '../../../assets/data-science/x-icon-data-icon.svg' : from_where === 'front-end' ?  '../../../assets/front-end/x-icon-front-icon.svg' : from_where === 'digital-marketing' ?  '../../../assets/digital-marketing/x-icon-digital.svg' : '../../../assets/pricing/x-icon.svg'">
+
+                    </div>
+                    <div class="tick">
+                        <img *ngIf="pricing.total_transformation"
+                            [src]="from_where === 'data-science' ?  '../../../assets/data-science/Tick-Square-data-icon.svg' : from_where === 'front-end' ?  '../../../assets/front-end/Tick-Square-front-icon.svg' : from_where === 'digital-marketing' ?  '../../../assets/digital-marketing/thick-square-digital.svg' :  '../../../assets/pricing/Tick-Square.svg'">
+                        <img *ngIf="!pricing.total_transformation"
+                            [src]="from_where === 'data-science' ?  '../../../assets/data-science/x-icon-data-icon.svg' : from_where === 'front-end' ?  '../../../assets/front-end/x-icon-front-icon.svg' : from_where === 'digital-marketing' ?  '../../../assets/digital-marketing/x-icon-digital.svg' : '../../../assets/pricing/x-icon.svg'">
+
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <a [href]="payJustAcademy" target="_blank"><button>Pay upfront</button></a>
+                <a [href]="payTravelAcademy" target="_blank"><button >Pay upfront</button></a>
+                <a [href]="payTotalAcademy" target="_blank"><button>Pay upfront</button></a>
+            </div>
+            <div class="best-offer"
+                [ngStyle]="from_where === 'data-science' ? {'background' : 'url(../../../assets/data-science/best-option-data-science.svg)', 'top': -450+'px' } : from_where === 'front-end' ? {'background' : 'url(../../../assets/front-end/best-option-front-end.svg)', 'top': -460+'px'} : from_where === 'digital-marketing' ? {'background' : 'url(../../../assets/digital-marketing/best-offer-digital.svg)' , 'top': -526+'px'} : {'background' : 'url(../../../assets/pricing/price-best-option.svg)', 'top': -393+'px'} ">
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="pricing-cost-holder">
+            <div class="pricing-cost-wrapper" [style.background]="annualPricingBg">
+                <div class="pricing-cost-inner" [style.background]="pricingTextBg">
+                    <div class="cost-left">Total cost</div>
+                    <div class="cost-right d-flex">
+                        <div>${{array_of_pricing_header[0].pricing_price_full}}</div>
+                        <div>${{array_of_pricing_header[1].pricing_price_full}}</div>
+                        <div>${{array_of_pricing_header[2].pricing_price_full}}</div>
+                    </div>
+                </div>
+        </div>
+    </div> -->
+
+    <div class="installments-plan" [style.background]="pricingTextBg">
+        <div class="installments-wrapper">
+            <div class="installments-left">
+                Installments plan
+            </div>
+            <div class="installments-right">
+                <div class="easy-payments">
+                    <p>Program Deposit: $400</p>
+                    <div>
+                        <p>3 easy payments of</p> <br>
+                        <span>${{array_of_pricing_header[0].pricing_price_full}}</span>
+                    </div>
+                </div>
+                <div class="easy-payments">
+                    <p>Program Deposit: $400</p>
+                    <div>
+                        <p>3 easy payments of</p> <br>
+                        <span>${{array_of_pricing_header[1].pricing_price_full}}</span>
+                    </div>
+                </div>
+                <div class="easy-payments">
+                    <p>Program Deposit: $400</p>
+                    <div>
+                        <p>3 easy payments of</p> <br>
+                        <span>${{array_of_pricing_header[2].pricing_price_full}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="fw-bold text-end">Save $450 when you pay upfront. Use code UPFRONT upon checkout.</p>
+    </div>
+</div>
+
+<div class="pricing-main-holder-mobile mobile-show">
+
+    <div class="dark-pricing">
+        <div class="text-holder">
+            <div class="offer-title">
+                {{array_of_pricing_header[0].pricing_name}}
+            </div>
+            <!-- <div class="offer-classes">
+                <span> {{array_of_pricing_header[0].pricing_classes}} classes</span>
+            </div> -->
+            <p>3 easy payments of </p>
+            <div class="offer-price">
+                ${{array_of_pricing_header[0].pricing_price_full}}
+            </div>
+            <!-- <div class="offer-desc">
+                /monthly
+            </div> -->
+            <p>Program Deposit: $400</p>
+        </div>
+
+
+        <div class="offers">
+            <div class="offer" *ngFor="let offer_name of array_of_bootcamp">
+                <span>
+                    {{offer_name}}
+                </span>
+            </div>
+        </div>
+        <h2>TOTAL COST: ${{array_of_pricing_header[0].pricing_price}}</h2>
+        <p> for payment on installments</p>
+        
+    </div>
+    <a [href]="payJustAcademy" target="_blank"><button class="pay-upfront">Pay upfront</button></a>
+    <div class="most-popular"
+        [ngStyle]="from_where === 'data-science' ? {'background' : '#FF9473'} : from_where === 'digital-marketing' ? {'background' : '#E6E6E6'} : {'background' : '#DDC6FF'} ">
+        <div class="text-holder">
+            <div class="most-popular">
+                <span>
+                    Most popular
+                </span>
+            </div>
+            <div class="offer-title">
+                {{array_of_pricing_header[1].pricing_name}}
+            </div>
+            <!-- <div class="offer-classes">
+                <span>{{array_of_pricing_header[1].pricing_classes}} classes</span>
+            </div> -->
+            <p>3 easy payments of </p>
+            <div class="offer-price">
+                ${{array_of_pricing_header[1].pricing_price_full}}
+            </div>
+            <!-- <div class="offer-desc">
+                /monthly
+            </div> -->
+            <p>Program Deposit: $400</p>
+        </div>
+
+        <div class="offers">
+            <div class="offer" *ngFor="let offer_name of array_of_cpd">
+                <span>
+                    {{offer_name}}
+                    <span *ngIf="offer_name === 'Photography class'">
+                        (only for Miami-based students)
+                    </span>
+                </span>
+            </div>
+        </div>
+        <h2 style="color: black;">TOTAL COST: ${{array_of_pricing_header[1].pricing_price}}</h2>
+        <p> for payment on installments</p>
+    </div>
+    <a [href]="payTravelAcademy" target="_blank"><button class="pay-upfront">Pay upfrontt</button></a>
+    <div class="dark-pricing">
+        <div class="text-holder">
+            <div class="offer-title">
+                {{array_of_pricing_header[2].pricing_name}}
+            </div>
+            <!-- <div class="offer-classes">
+                <span>
+                    {{array_of_pricing_header[2].pricing_classes}} classes
+
+                </span>
+            </div> -->
+            <p>3 easy payments of </p>
+            <div class="offer-price">
+                ${{array_of_pricing_header[2].pricing_price_full}}
+            </div>
+            <!-- <div class="offer-desc">
+                /monthly
+            </div> -->
+            <p>Program Deposit: $400</p>
+        </div>
+
+        <div class="offers">
+            <div class="offer" *ngFor="let offer_name of array_of_transformation">
+                <span>
+                    {{offer_name}}
+                    <span *ngIf="offer_name === 'Photography class'">
+                        (only for Miami-based students)
+                    </span>
+                </span>
+            </div>
+        </div>
+        <h2>TOTAL COST: ${{array_of_pricing_header[0].pricing_price}}</h2>
+        <p> for payment on installments</p>
+    </div>
+    <a [href]="payTotalAcademy" target="_blank"><button class="pay-upfront">Pay upfront</button></a>
+</div>

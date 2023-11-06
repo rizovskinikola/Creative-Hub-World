@@ -1,0 +1,227 @@
+.form-bg
+{
+    padding: 5% 0%;
+    background: #F8F8F8;
+}
+.form-title
+{
+    width: 100%;
+    height: 30px;
+    border-bottom: 4px solid rgb(146, 128, 224);
+    text-align: center;
+    margin-top: 5%;
+}
+
+.form-title span
+{
+     font-size: 43px;
+     border: 4px solid rgb(146, 128, 224) ;
+     background: white;
+     border-radius: 10px;
+     color: black;
+     font-weight: 900;
+     padding: 1%;
+
+}
+
+.form-text
+{
+    color: #606060;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 6%;
+    padding-bottom: 3%;
+}
+
+.form-text span
+{
+    font-size: 26px;
+    font-weight: 900;
+}
+
+
+.name
+{
+    font-size: 18px;
+    font-weight: 700;
+    color: #606060;
+    padding-top: 3%;
+}
+
+.radio {
+	background: #222625;
+	padding: 1%;
+	border-radius: 10px;
+	position: relative;
+    text-align: center;
+    margin-top: 2% ;
+    
+}
+
+.radio input {
+	width: auto;
+	height: 100%;
+	appearance: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 10px;
+	padding: 1%;
+	background: #222625;
+	color: white;
+	font-size: 16px;
+	transition: all 100ms linear;
+}
+.bootcamp input{
+    width: 32%;
+}
+
+.radio input:checked {
+	background: #F8F8F8;
+	color: #222625;
+	box-shadow: 0 1px 1px #0000002e;
+	text-shadow: 0 1px 0px #79485f7a;
+}
+
+.radio input:before {
+	content: attr(label);
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+.form-btns-desktop
+{
+    width: 100%;
+     height: 30px;
+       text-align: center;
+       position: relative;
+       border: 4px solid transparent;
+       border-radius: 32px;
+       background-clip: padding-box;
+       margin-bottom: 15px;
+       margin-top: -3%;
+}
+/* .form-btns-desktop:after {
+    position: absolute;
+    top: 38px; bottom: -20px;
+    left: -4px; right: -4px;
+    background: linear-gradient(90deg, rgba(0,255,224,1) 0%, rgba(0,209,255,1) 35%, rgba(250,0,255,1) 100%);
+    content: '';
+    z-index: -1;
+    border-radius: 32px;
+  } */
+
+  .form-btns-mobile
+  {
+      display: none;
+  }
+
+  .ask-btn
+{
+    padding: 1% 10%;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-weight: 500;
+    margin: 1%;
+}
+
+.signup-btn
+{
+    padding: 1% 10%;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 1%;
+}
+
+
+  .submit-info
+  {
+    font-size: 12px;
+    text-align: center;
+    width: 50%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .line {
+    position: absolute;
+    height: 4px;
+    top: 43px;
+    background: linear-gradient(90deg, rgba(0,255,224,1) 0%, rgba(0,209,255,1) 35%, rgba(250,0,255,1) 100%);
+    content: '';
+    border-radius: 32px;
+    width: 100%;
+  }
+  @media only screen and (max-width: 600px) {
+    .bootcamp input{
+        margin: auto;
+    }
+    .form-title
+    {
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+
+    .form-title span 
+    {
+        font-size: 24px;
+    } 
+
+    .form-text
+    {
+        display: grid;
+    }
+
+    .form-btns-desktop
+    {
+        display: none;
+    }
+
+    .form-btns-mobile  
+    {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    margin-top: 5%;
+    position: relative;
+    border: 4px solid transparent;
+    border-radius: 32px;
+    background-clip: padding-box;
+    margin-bottom: 15px;
+    display: block;
+    }
+    .container{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .row{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    /* .form-btns-mobile:after 
+    {
+    position: absolute;
+    top: 20px; bottom: 0px;
+    left: -4px; right: -4px;
+    background: linear-gradient(90deg, rgba(0,255,224,1) 0%, rgba(0,209,255,1) 35%, rgba(250,0,255,1) 100%);
+    content: '';
+    z-index: -1;
+    border-radius: 32px;
+    } */
+
+    .line{
+        top: 20px;
+    }
+    .radio
+    {
+        display: grid;
+    }
+
+
+  }

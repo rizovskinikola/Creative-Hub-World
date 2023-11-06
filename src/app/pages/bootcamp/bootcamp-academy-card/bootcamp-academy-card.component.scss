@@ -1,0 +1,78 @@
+.bootcamp-card-wrapper {
+  padding: 4.6px;
+  box-shadow: 27.625896453857422px 27.625896453857422px 46.04315948486328px 0 #5A007129;
+  border-radius: 88px 88px 28px 28px;
+  width: fit-content;
+
+  .bootcamp-card-inner {
+    background: #FBFAF5;
+    border-radius: 84px 84px 24px 24px;
+    padding: 24px;
+
+    img {
+      width: fit-content;
+      height: fit-content;
+    }
+
+    .academy-rating {
+      border-radius: 16.1151px;
+      font-size: 20px;
+      line-height: 190.5%;
+      text-align: center;
+      color: #FFE1F8;
+      padding: 4.5px 13px 4.5px 15px;
+    }
+
+    .academy-name {
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 190.5%;
+      color: #434141;
+      margin-bottom: 24px;
+    }
+
+    .academy-desc {
+      p {
+        font-size: 18px;
+        line-height: 22px;
+        color: #808080;
+      }
+
+      .check-now-btn{
+        background: transparent;
+        border: none;
+        padding: 0;
+        margin-top: 13px;
+        cursor: pointer;
+      }
+    }
+
+    .academy-hr {
+      background: #FFBD11;
+      border-radius: 16px;
+      border: none;
+      width: 100%;
+      height: 6px;
+    }
+
+    .academy-price {
+      font-weight: bold;
+      font-size: 92px;
+      line-height: 112px;
+      color: #434141;
+      margin: 16px 0;
+      text-align: center;
+    }
+
+    .apply-now-btn {
+      border-radius: 12px;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 139.5%;
+      color: #FFFFFF;
+      border: none;
+      cursor: pointer;
+      padding: 5.5px 0;
+    }
+  }
+}

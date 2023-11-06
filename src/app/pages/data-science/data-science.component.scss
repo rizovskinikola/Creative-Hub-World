@@ -1,0 +1,1920 @@
+.main-bg {
+    background: url(../../../assets/data-science/bg.svg), rgba(29, 26, 66, 1);
+    overflow-x: hidden !important;
+}
+//header
+.header {
+    background-image: url(../../../assets/data-science/header-bg.svg);
+    background-size: 100% 80%;
+    padding-top: 7%;
+    background-repeat: no-repeat;
+}
+.header-blur {
+    width: 30%;
+    // background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 59px;
+    padding: 2px;
+    position: relative;
+    margin-left: 10%;
+}
+.header-blur-inner {
+    background: radial-gradient(69.56% 69.56% at 0% 0%, rgba(175, 172, 224, 0.72) 0%, rgba(0, 0, 0, 0) 100%),
+        linear-gradient(
+            241.25deg,
+            rgba(110, 108, 145, 0.42) 4.4%,
+            rgba(83, 80, 132, 0.546) 61.77%,
+            rgba(85, 84, 113, 0.245) 119.94%
+        );
+    background-blend-mode: overlay, normal;
+    backdrop-filter: blur(16px);
+    border-radius: 59px;
+    padding: 7%;
+    position: relative;
+    box-shadow: inset 4px 5px 23px rgb(249 214 255 / 43%), inset -18px -26px 32px rgb(255 68 214 / 41%),
+        inset 0px 18px 26px rgb(255 255 255 / 35%);
+}
+.header-blur-inner div {
+    font-weight: bold;
+    font-size: 71px;
+    line-height: 71px;
+    color: rgba(174, 212, 255, 0.71);
+}
+.header-blur-inner h4 {
+    color: #d0e6ff;
+}
+.header-blur-inner span {
+    background: #13b5e4;
+    border-radius: 12px;
+    position: absolute;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 3% 20%;
+    bottom: -5%;
+    left: 15%;
+}
+.header-blur-inner span:hover {
+    cursor: pointer;
+}
+.circle-img {
+    position: absolute;
+    right: 0;
+    top: 10%;
+}
+.language {
+    background: #6c658d;
+    border-radius: 13px;
+    color: #cecdea;
+    padding: 1%;
+    font-size: 20px;
+    font-family: Cabin;
+    margin-left: 0.5% !important;
+}
+.header-bottom {
+    color: white;
+}
+.possibilities-left {
+    width: 30%;
+    background: #ffbd11;
+    border-radius: 0px 76px 238.5px 0px;
+    padding: 2% 0%;
+    padding-left: 10%;
+    margin-right: 4%;
+    color: black;
+    font-weight: 700;
+}
+.possibilities-right {
+    width: 46%;
+}
+.possibilities-img {
+    height: 50%;
+}
+.possibilities-item {
+    border: 1.5px solid #d5d5d5;
+    box-sizing: border-box;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+.possibilities-item p {
+    margin: 0;
+}
+.scroll-down {
+    width: 100%;
+    height: 70px;
+    flex-direction: row;
+    box-sizing: border-box;
+    place-content: center;
+    align-items: center;
+    .horizontal-line {
+        background-image: url(../../../assets/graphic-design/horizontal-gradient-line.svg);
+        background-size: 100% 100%;
+        width: 156px;
+        height: 100%;
+    }
+    .scroll-down-arrow {
+        background-image: url(../../../assets/graphic-design/scroll-down-arrow.svg);
+        background-size: 100% 100%;
+        width: 42px;
+        height: 20px;
+        margin: 0 19px;
+        margin-top: 17px;
+        cursor: pointer;
+    }
+    .second-horizontal-line {
+        background-image: url(../../../assets/graphic-design/horizontal-gradient-line2.svg);
+        background-size: 100% 100%;
+        width: 156px;
+        height: 100%;
+    }
+}
+// overview
+.overview {
+    background: url(../../../assets/data-science/overview-bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5% 0%;
+    margin: 5% 0%;
+    background-position: top;
+}
+.overview-blur {
+    width: 70%;
+    margin-left: 15%;
+    // background: radial-gradient(69.56% 69.56% at 0% 0%, rgba(175, 172, 224, 0.72) 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(241.25deg, rgba(110, 108, 145, 0.42) 4.4%, rgba(83, 80, 132, 0.546) 61.77%, rgba(85, 84, 113, 0.245) 119.94%);
+    background-blend-mode: overlay, normal;
+    box-shadow: inset 4px 5px 23px rgb(249 214 255 / 43%), inset -18px -26px 32px rgb(255 68 214 / 41%),
+        inset 0px 18px 26px rgb(255 255 255 / 35%);
+    backdrop-filter: blur(41px);
+    border-radius: 59px;
+    padding: 3%;
+}
+.overview-inner div {
+    font-weight: bold;
+    font-size: 71px;
+    line-height: 71px;
+    color: #aed4ff;
+}
+.overview-inner h4 {
+    color: #d0e6ff;
+    font-family: Cabin;
+}
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    .benefits-bg {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 5%;
+    }
+    .benefits-text {
+        width: 100%;
+        margin: auto;
+        padding-left: 150px;
+        font-size: 42px;
+        line-height: 50px;
+        color: #d5d5d5;
+        font-family: Bebas Neue;
+        position: relative;
+        top: -25px;
+        font-weight: 400;
+        padding-bottom: 5%;
+        span {
+            font-family: Bebas Neue;
+            background: linear-gradient(231.38deg, rgba(255, 107, 59, 1) 34.17%, rgba(239, 69, 38, 1) 119.03%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 42px;
+            line-height: 50px;
+            font-weight: 700;
+        }
+        .secondary-text {
+            font-family: Cabin;
+            font-size: 24px;
+            line-height: 29px;
+            color: #d5d5d5;
+            margin-top: 11px;
+            font-weight: 400;
+        }
+    }
+    // .gradient-elements{
+    //     width: 50%;
+    //     height: 445px !important;
+    //     height: auto;
+    //     background:url(../../../assets/graphic-design/gradient-elements.png) ;
+    //     background-size: 100% 100%;
+    //     margin-bottom: 45px;
+    // }
+
+    .bubble-holder {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 185px;
+        padding: 0 200px;
+        margin-bottom: 100px;
+        .bubble {
+            width: 20%;
+            height: 100%;
+            flex-direction: row;
+            box-sizing: border-box;
+            display: flex;
+            place-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 700;
+            color: white;
+            font-family: Cabin;
+        }
+        .expert-mentors {
+            background: url(../../../assets/data-science/bubble-expert-mentor.svg);
+            background-size: 100% 100%;
+        }
+        .perfomance {
+            background: url(../../../assets/data-science/bubble-perfomance.svg);
+            background-size: 100% 100%;
+        }
+        .certificates {
+            background: url(../../../assets/data-science/bubble-certificates.svg);
+            background-size: 100% 100%;
+        }
+        .student-care {
+            background: url(../../../assets/data-science/bubble-care.svg);
+            background-size: 100% 100%;
+        }
+        .community {
+            background: url(../../../assets/data-science/bubble-community.svg);
+            background-size: 100% 100%;
+        }
+    }
+    .questions {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0 200px;
+        font-size: 18px;
+        color: white;
+        font-weight: 100;
+        .who-is-it {
+            width: calc(50% - 15px);
+            margin-right: 15px;
+        }
+        .what-you-need {
+            width: 50%;
+        }
+        .header-question {
+            font-weight: 700;
+        }
+        .horizontal-line {
+            background-image: url(../../../assets/graphic-design/lines-under-question.svg);
+            background-size: 100% 100%;
+            width: 185px;
+            height: 5px;
+        }
+    }
+}
+// upwork
+.up-work {
+    background: url(../../../assets/data-science/upwork-bg.svg);
+    background-size: 100% 100%;
+    height: 369px;
+    border-radius: 30px;
+    width: 80%;
+    margin: 5% auto;
+    .upwork-text-holder {
+        padding-top: 63px;
+        padding-left: 100px;
+        img {
+            width: 86px;
+            height: 61px;
+        }
+        span {
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 59.2px;
+            color: #ffffff;
+        }
+    }
+    .radio-buttons {
+        margin-top: 18px;
+        font-size: 18px;
+        line-height: 22px;
+        color: #ffffff;
+        mat-radio-group {
+            mat-radio-button {
+                margin-right: 50px;
+            }
+        }
+    }
+    .find-out-btn {
+        background: #ffffff;
+        cursor: pointer;
+        text-align: center;
+        border-radius: 8px;
+        height: 53px;
+        width: 185px;
+        display: flex;
+        place-content: center;
+        align-items: center;
+        margin-top: 50px;
+        span {
+            background: linear-gradient(139.31deg, rgba(255, 107, 59, 1) -7.14%, rgba(239, 69, 38, 1) 99.28%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 24px;
+            line-height: 29px;
+            font-family: Cabin;
+        }
+    }
+}
+// free-course
+.free-course {
+    width: 100%;
+    padding-top: 5%;
+    .free-course-title {
+        font-size: 64px;
+        line-height: 64px;
+        font-weight: bold;
+        font-family: Bebas Neue;
+        margin: auto;
+        text-align: center;
+        background: linear-gradient(223.57deg, rgba(93, 160, 239, 1) 46.58%, rgba(68, 255, 120, 1) 110.23%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .books-bg {
+        background: url(../../../assets/data-science/books-bg.png), rgba(29, 26, 66, 1);
+        height: 410px;
+        background-size: 100% 100%;
+        position: relative;
+        padding-top: 55px;
+        .career-holder {
+            background: radial-gradient(69.56% 69.56% at 0% 0%, rgba(175, 172, 224, 0.72) 0%, rgba(0, 0, 0, 0) 100%),
+                linear-gradient(
+                    241.25deg,
+                    rgba(110, 108, 145, 0.42) 4.4%,
+                    rgba(83, 80, 132, 0.546) 61.77%,
+                    rgba(85, 84, 113, 0.245) 119.94%
+                );
+            background-blend-mode: overlay, normal;
+            box-shadow: inset 0px 14px 26px rgba(255, 255, 255, 0.25), inset 0px -13px 29px rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(41px);
+            border-radius: 59px;
+            position: absolute;
+            bottom: 0;
+            width: 50%;
+            left: 20%;
+            padding: 1%;
+            // border-radius: 24px;
+            display: flex;
+            .text {
+                width: 75%;
+                margin-top: 23px;
+                margin-left: 25px;
+            }
+            .career-title {
+                font-weight: 700;
+                font-size: 24px;
+                margin-bottom: 25px;
+                color: white;
+            }
+            .career-text {
+                font-size: 18px;
+                color: white;
+            }
+            .lear-more-btn {
+                margin-top: 16px;
+                background: #ffffff;
+                border-radius: 12px;
+                width: 188px;
+                height: 41px;
+                font-size: 18px;
+                line-height: 139.5%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                color: #2b2b2b;
+                font-weight: bold;
+            }
+            .kick-off-wrapper {
+                position: absolute;
+                right: -110px;
+                top: 23px;
+                background: linear-gradient(
+                    228.56deg,
+                    rgba(239, 93, 168, 0) 27.86%,
+                    rgba(29, 26, 66, 1) 53.09%,
+                    rgba(239, 93, 168, 0) 75.36%
+                );
+                width: 288px;
+                height: 206px;
+                border-radius: 24px;
+                box-shadow: 0px 42px 48px -30px #07245021;
+            }
+            .kick-off {
+                border-radius: 24px;
+                margin: 3px;
+                width: 282px;
+                height: 200px;
+                background: #fbfaf5;
+                .next-kickoffs {
+                    display: flex;
+                    color: #808080;
+                    padding-top: 30px;
+                    position: relative;
+                    left: 15px;
+                    bottom: 10px;
+                    img {
+                        margin-right: 10px;
+                    }
+                    span {
+                        font-size: 18px;
+                        line-height: 22px;
+                        position: relative;
+                        top: 3px;
+                    }
+                }
+                .kickoff-date {
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 38.88px;
+                    color: #434141;
+                    position: relative;
+                    left: 15px;
+                    span {
+                        font-size: 18px;
+                        line-height: 21.87px;
+                        padding-right: 5px;
+                    }
+                }
+                .apply-now-btn {
+                    background: linear-gradient(231.38deg, #000000 34.17%, #818181 119.03%);
+                    color: #ffffff;
+                    font-size: 18px;
+                    line-height: 25px;
+                    text-align: center;
+                    border-radius: 12px;
+                    height: 41px;
+                    width: 264px;
+                    display: flex;
+                    place-content: center;
+                    align-items: center;
+                    margin: auto;
+                    margin-top: 20px;
+                }
+                .apply-now-btn:hover {
+                    cursor: pointer;
+                }
+                .limited-capacity {
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #808080;
+                    position: relative;
+                    left: 15px;
+                    top: 4px;
+                }
+            }
+        }
+    }
+    .free-course-info {
+        display: flex;
+        margin-left: 20%;
+        margin-top: 36px;
+        .item {
+            display: flex;
+            margin-right: 18px;
+            font-size: 18px;
+            line-height: 21.87px;
+            color: white;
+
+            span {
+                position: relative;
+                top: 5px;
+                left: 11px;
+                font-family: Cabin;
+            }
+        }
+    }
+}
+// meet-instruktor
+
+.meet-your-instructor {
+    top: 150px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 150;
+    margin-top: 5%;
+    margin-bottom: 20%;
+    .instructor-bg {
+        background-image: url(../../../assets/data-science/instructor-bg.png);
+        background-size: 100% 100%;
+        width: 100%;
+        height: 279px;
+        position: relative;
+        z-index: 99;
+        .holder {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+
+            .instructor-text-holder {
+                position: relative;
+                margin-top: 1% !important;
+                margin-left: -25% !important;
+                margin-right: 15% !important;
+                .instructor-main-text {
+                    font-family: Bebas Neue;
+                    font-weight: 700;
+                    font-size: 42px;
+                    line-height: 42px;
+                    position: relative;
+                    top: -20px;
+                    background: linear-gradient(231.38deg, rgba(255, 107, 59, 1) 34.17%, rgba(239, 69, 38, 1) 119.03%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+                .instructor-description {
+                    margin-top: 40px;
+
+                    .name {
+                        background: linear-gradient(
+                            231.38deg,
+                            rgba(255, 107, 59, 1) 34.17%,
+                            rgba(239, 69, 38, 1) 119.03%
+                        );
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        font-weight: 700;
+                        font-size: 32px;
+                        line-height: 39px;
+                    }
+                    .adobe {
+                        display: flex;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #555555;
+                        margin-bottom: 17px;
+                        font-family: Cabin;
+                        img {
+                            margin-right: 5px;
+                        }
+                    }
+                    .desc {
+                        color: #555555;
+                        font-size: 18px;
+                        width: 380px;
+                        line-height: 22px;
+                        font-family: Cabin;
+                    }
+                }
+            }
+            .instructor-img {
+                // width: 50%;
+                img {
+                    position: absolute;
+                    top: -140px;
+                }
+            }
+        }
+    }
+    .instructor-box-shadow {
+        background: url(../../../assets/graphic-design/instructor-box-shadow.png), rgba(29, 26, 66, 1);
+        width: 100%;
+        position: absolute;
+        background-repeat: no-repeat;
+        bottom: -55px;
+        height: 122px;
+    }
+}
+// leading instructo
+.instructor-relative {
+    z-index: 1;
+    position: relative;
+}
+.leading-instructor {
+    background-image: url(../../../assets/data-science/instructor-bg.png);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 380px;
+    position: relative;
+    z-index: 3;
+    margin-bottom: 15%;
+    margin-top: 20%;
+}
+.leading-instructor-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0% 5%;
+}
+.leading-instructor-left {
+    margin-right: 5%;
+}
+.leading-instructor-right {
+    margin-left: 5%;
+}
+.colours-top {
+    background: url(../../../assets/data-science/colours-top.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1 !important;
+    height: 93px;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+.colours-bottom {
+    position: absolute;
+    bottom: -5%;
+    max-width: 100%;
+    height: auto;
+    right: 0;
+    z-index: -1;
+}
+.instructor-girl {
+    margin-top: -20%;
+}
+.leading-instructor h1 {
+    background: linear-gradient(231.38deg, rgba(93, 160, 239, 1) 34.17%, rgba(68, 255, 120, 1) 119.03%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.leading-instructor p {
+    color: #555555;
+}
+.leading-instructor-left {
+    width: 30%;
+    margin-top: -10%;
+}
+// subjects
+
+.subjects {
+    background: #f4f3ec;
+    padding: 1%;
+}
+.subjects img {
+    width: 90%;
+    margin-left: 5%;
+}
+
+// instructors
+.instructors {
+    position: relative;
+    z-index: 2;
+}
+.instructors-title {
+    text-align: center;
+    background: linear-gradient(180deg, #5da0ef, #44ff78);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.instructor-card {
+    background: #ffbd11;
+    box-shadow: 27.6334px 18.9071px 28.1182px rgba(93, 160, 239, 0.12);
+    border-radius: 34.4206px 34.4206px 11.6351px 11.6351px;
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    height: 100%;
+    margin-top: 10%;
+}
+.instructor-name,
+.instructor-info {
+    font-family: Cabin;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 3%;
+}
+.instructor-name {
+    font-size: 16px;
+    line-height: 22.4px;
+    color: #434141;
+}
+.instructor-info {
+    font-size: 14px;
+    line-height: 19.6px;
+    font-weight: 400;
+    color: #6d6d6d;
+}
+.instructors-bg {
+    background: rgba(93, 160, 239, 0.6);
+    filter: blur(123px);
+    border-radius: 67px;
+    position: relative;
+    margin-top: -55%;
+    height: 800px;
+    z-index: 1;
+}
+.pick-your-next-cohort {
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    .pick-your-next-cohort-title {
+        text-align: center;
+        font-family: Bebas Neue;
+        font-size: 42px;
+        font-weight: 900;
+        line-height: 42px;
+        margin-bottom: 80px;
+        background: linear-gradient(162.44deg, rgba(93, 160, 239, 1) 0%, rgba(68, 255, 120, 1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .cohort-holder-bg {
+        background: url(../../../assets/data-science/next-cohort-bg.svg);
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        height: 420px;
+        .cohort-wrapper {
+            width: 60%;
+            margin: auto;
+            border-radius: 33px;
+            position: relative;
+            background: linear-gradient(180.57deg, #29c2c0 0.49%, rgba(255, 255, 255, 0) 93.7%);
+            top: -40px;
+            padding: 5px;
+            margin-bottom: 55px;
+            .cohort {
+                display: flex;
+                height: 100%;
+                background: #fbfaf5;
+                border-radius: 33px;
+                padding: 25px 37px;
+                .left {
+                    width: 50%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    .video-icon {
+                        margin-right: 15px;
+                    }
+                    .online-text {
+                        font-family: Cabin;
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 38px;
+                        background: linear-gradient(
+                            231.38deg,
+                            rgba(81, 98, 255, 1) 34.17%,
+                            rgba(119, 141, 255, 1) 119.03%
+                        );
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                    .play-icon {
+                        margin-left: 25px;
+                        margin-right: 15px;
+                    }
+                    .lessons-text {
+                        font-family: Cabin;
+                        font-size: 20px;
+                        line-height: 38px;
+                        color: #a4a4a4;
+                    }
+                    .bottom {
+                        margin-top: 41px;
+                        display: flex;
+                        width: 100%;
+                        align-items: center;
+                        .date-icon {
+                            margin-right: 15px;
+                            width: 40px;
+                        }
+                        .next-cohort {
+                            font-size: 32px;
+                            line-height: 39px;
+                            color: #8f8f8f;
+                        }
+                        .date {
+                            font-size: 32px;
+                            line-height: 39px;
+                            font-weight: 700;
+                            color: #000000;
+                        }
+                    }
+                }
+                .right {
+                    width: 50%;
+
+                    .right-holder {
+                        display: flex;
+                        margin-left: 150px;
+                        align-items: baseline;
+                        img {
+                            margin-right: 15px;
+                        }
+                        .right-price {
+                            font-family: Cabin;
+                            font-size: 40px;
+                            font-weight: 700;
+                            line-height: 52px;
+                            .per-month {
+                                position: relative;
+                                top: -25px;
+                                font-family: Cabin;
+                                font-size: 18px;
+                                line-height: 23.22px;
+                            }
+                        }
+                    }
+                    .bottom-right {
+                        margin-left: 150px;
+                        height: 61px;
+                        background: #000000;
+                        border-radius: 16px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        span {
+                            color: #ffffff;
+                            font-weight: 700;
+                            font-size: 32px;
+                            line-height: 61px;
+                        }
+                    }
+                    .bottom-right:hover {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+// learning-week
+.learning-week-title {
+    color: white;
+    background: linear-gradient(162.44deg, #ff6b3b 0%, #ef4526 100%);
+    border-radius: 48px 0px 0px 0px;
+    width: 28%;
+    margin-left: 70%;
+    padding: 1%;
+    margin-top: 5%;
+}
+.week-img {
+    text-align: center;
+    margin-top: -2%;
+}
+//what you'll learn
+.what-you-learn {
+    background: url(../../../assets/data-science/what-you-learn-bg.svg);
+    background-size: 100% 100%;
+    text-align: center;
+    padding: 11% 0%;
+    margin-top: 5%;
+    margin-bottom: -5%;
+    div {
+        background: url(../../../assets/data-science/what-you-learn-inside.png);
+        background-size: 100% 100%;
+        padding: 6%;
+        // width: 15%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 45px;
+        color: white;
+        font-weight: 700;
+    }
+    span {
+        font-size: 91px;
+        background: linear-gradient(180deg, #5da0ef, #44ff78);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+// program-subjects
+.subjects-bg {
+    background: url(../../../assets/data-science/subjects-bg.svg);
+    background-size: contain;
+}
+.program-subjects-gradient {
+    width: 30%;
+    margin: 1%;
+    // background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: inset 4px 5px 23px rgba(249, 214, 255, 0.43), inset -18px -26px 32px rgba(179, 233, 255, 0.34),
+        inset 32px 33px 35px rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(30px);
+    background-blend-mode: overlay, normal;
+    border-radius: 59px;
+    padding: 2px;
+    position: relative;
+}
+.program-subjects-card {
+    background: radial-gradient(69.56% 69.56% at 0% 0%, rgba(175, 172, 224, 0.55) 0%, rgba(0, 0, 0, 0) 100%),
+        linear-gradient(
+            241.25deg,
+            rgba(110, 108, 148, 0.1) 3.2%,
+            rgba(83, 80, 132, 0.3) 50.77%,
+            rgba(85, 84, 113, 0.1) 119.94%
+        );
+    border-radius: 59px;
+    color: white;
+    padding: 20% 0% 0% 5%;
+    font-family: Cabin;
+    height: 400px;
+}
+.program-subjects-card ul li {
+    font-family: Cabin;
+}
+
+// hyped
+.hyped-title {
+    font-size: 48.655px;
+    line-height: 58px;
+    border: 5px solid #ffbd11;
+    box-sizing: border-box;
+    border-radius: 76px;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+    color: #f6f6f6;
+    padding: 1% 1% 5% 1%;
+    margin-bottom: -5%;
+    position: relative;
+    z-index: 1;
+}
+.hyped-wrapper {
+    background: #52c7bd;
+    border-radius: 16px;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 3%;
+}
+.hyped-text {
+    width: 27%;
+}
+.hyped-text h1 {
+    font-family: Cabin;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 123.5%;
+}
+.hyped-text div {
+    font-family: Cabin;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24.7px;
+}
+// .portfolio
+.portfolios {
+    position: relative;
+    z-index: 2;
+}
+.portoflios-title {
+    background: linear-gradient(180deg, rgba(255, 107, 59, 1), rgba(239, 69, 38, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+.portfolio-card {
+    background: linear-gradient(180deg, #ef5da8 0%, #ffda44 100%);
+    // border-radius: 59px;
+    padding: 2px;
+    position: relative;
+    border-radius: 72px 72px 32px 32px;
+}
+.portfolio-inner {
+    background-color: rgba(29, 26, 66, 1);
+    border-radius: 72px 72px 32px 32px;
+    // padding: 2%;
+}
+.portfolio-text {
+    padding: 2%;
+    text-align: center;
+    color: #d5d5d5;
+}
+.portfolios-bg {
+    background: linear-gradient(223.57deg, #ef5da8 46.58%, #ffda44 110.23%);
+    border-radius: 6px 0px 0px 238.5px;
+    height: 500px;
+    width: 80%;
+    margin-left: 20%;
+    z-index: 1;
+    margin-top: -30%;
+}
+
+// our students
+.our-students-wrapper {
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    margin: 5% 0%;
+    padding: 5% 0%;
+}
+.our-students-title {
+    font-weight: bold;
+    font-size: 157.92px;
+    line-height: 158px;
+    color: #52608e;
+    text-align: center;
+}
+.firstCarousel {
+    ::ng-deep.owl-nav {
+        z-index: 99;
+        bottom: 130px;
+        right: 100px;
+        .owl-prev {
+            position: absolute;
+            left: -8%;
+            top: 50%;
+            border: 2px solid;
+            padding: 0;
+            margin: 0;
+            width: 62px;
+            height: 64px;
+            color: rgba(29, 26, 66, 0) !important;
+            background: linear-gradient(231.38deg, #5da0ef 34.17%, #44ff78 119.03%) !important;
+            border-radius: 0px 10px 10px 0px;
+            .arrow {
+                background-color: rgb(65, 63, 96);
+                width: 100%;
+                height: 100%;
+                border-radius: 0px 10px 10px 0px;
+                img {
+                    position: relative;
+                    top: 25%;
+                }
+            }
+        }
+        .owl-next {
+            position: absolute;
+            right: -8%;
+            top: 50%;
+            border: 2px solid;
+            padding: 0;
+            margin: 0;
+            width: 62px;
+            height: 64px;
+            background: linear-gradient(231.38deg, #5da0ef 34.17%, #44ff78 119.03%) !important;
+            color: rgba(29, 26, 66, 0) !important;
+            border-radius: 10px 0px 0px 10px;
+            .arrow {
+                background-color: rgb(65, 63, 96);
+                width: 100%;
+                height: 100%;
+                border-radius: 10px 0px 0px 10px;
+                img {
+                    position: relative;
+                    top: 25%;
+                }
+            }
+        }
+    }
+}
+.calendly-title {
+    background: linear-gradient(180deg, rgba(255, 107, 59, 1), rgba(239, 69, 38, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-top: 10%;
+}
+.student-name {
+    position: absolute;
+    color: white;
+    font-family: Cabin;
+    font-size: 24px;
+}
+.quotes {
+    color: #d5d5d5;
+    background: radial-gradient(69.56% 69.56% at 0% 0%, #aface0 0%, rgba(0, 0, 0, 0) 100%),
+        linear-gradient(
+            241.25deg,
+            rgba(84, 83, 105, 0.6) 4.4%,
+            rgba(83, 80, 132, 0.78) 61.77%,
+            rgba(85, 84, 113, 0.96) 119.94%
+        );
+    background-blend-mode: overlay, normal;
+    box-shadow: inset 0px 14px 26px rgba(255, 255, 255, 0.65), inset 0px -13px 29px rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(41px);
+    padding: 4%;
+    box-shadow: -1px -14px 0px -1px #ffbd11;
+    margin: 0% 2%;
+    border-radius: 20px 20px 40px 40px;
+}
+.quote-1 {
+    margin-top: -5%;
+    height: 100% !important;
+}
+.quote-2 {
+    margin-top: 5%;
+    height: 100% !important;
+}
+//meet and greet
+
+.speed-title {
+    background: linear-gradient(180deg, rgba(255, 107, 59, 1), rgba(239, 69, 38, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+.speed-text {
+    text-align: center;
+    color: #d5d5d5;
+    width: 50%;
+    margin-left: 25%;
+}
+.meet-img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 15%;
+    margin-top: -15%;
+}
+// journey
+.journey-bg {
+    background-image: url(../../../assets/data-science/journey-bg.svg);
+    background-size: 100% 100%;
+}
+.journey {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.journey-left div {
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 58px;
+    color: #f4f3ec;
+}
+.journey-left button {
+    background: linear-gradient(162.44deg, #ff6b3b 0%, #ef4526 100%);
+    border-radius: 12px;
+    border: none;
+    padding: 4px 32px;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Cabin;
+    margin-top: 5%;
+}
+.journey-left button:hover {
+    cursor: pointer;
+    box-shadow: 7px 4px 20px 1px rgba(0, 0, 0, 0.38);
+}
+.get-hired {
+    display: flex;
+    padding: 0 150px;
+    .get-hired-text {
+        width: 40%;
+        margin-top: 180px;
+        img {
+            margin-bottom: 42px;
+        }
+        .get-hired-secondary-text {
+            font-family: Cabin;
+            font-size: 18px;
+            line-height: 22px;
+            color: #d5d5d5;
+
+            .second {
+                margin-top: 20px;
+                color: #d5d5d5;
+                font-family: Cabin;
+            }
+        }
+        .register {
+            background: linear-gradient(231.38deg, rgba(255, 107, 59, 1) 34.17%, rgba(239, 69, 38, 1) 119.03%);
+            border-radius: 12px;
+            height: 44px;
+            width: 288px;
+            margin-top: 190px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+        }
+        .register:hover {
+            cursor: pointer;
+        }
+    }
+    .get-hired-img {
+        width: 60%;
+        background: url(../../../assets/data-science/hired-bg.svg);
+        background-size: 100% 100%;
+        height: 766px;
+    }
+}
+//  ANIMATIONS
+@-moz-keyframes pulsate-down {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -moz-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -moz-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -moz-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+@-webkit-keyframes pulsate-down {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+@keyframes pulsate-down {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -moz-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+    60% {
+        -moz-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+.pulsate-down {
+    -moz-animation: pulsate-down 3s infinite;
+    -webkit-animation: pulsate-down 3s infinite;
+    animation: pulsate-down 3s infinite;
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        padding: 0 !important;
+    }
+    .header-blur {
+        width: 80%;
+    }
+    .header-blur-inner {
+        padding: 4%;
+    }
+    .header-blur-inner div,
+    .overview-inner div {
+        font-size: 32px;
+        text-align: center;
+    }
+    .header-blur-inner span {
+        font-size: 18px;
+        left: 26%;
+        padding: 2% 7%;
+    }
+    .possibilities-right {
+        width: 56% !important;
+    }
+    .possibilities-mobile-1 {
+        width: 65%;
+        justify-content: start;
+    }
+    .possibilities-mobile-2 {
+        width: 65%;
+        justify-content: start;
+        margin-left: 50%;
+    }
+    .possibilities-mobile-3 {
+        width: 65%;
+        justify-content: start;
+        margin-left: 100%;
+    }
+    .benefits {
+        margin-top: 15% !important;
+        .benefits-text {
+            width: 100%;
+            margin: auto;
+            padding-left: 0px;
+            font-size: 30px;
+            line-height: 30px;
+            padding: 0 17px;
+            span {
+                font-family: Bebas Neue;
+                background: linear-gradient(231.38deg, #5da0ef 34.17%, #44ff78 119.03%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                font-size: 30px;
+                line-height: 30px;
+            }
+            .secondary-text {
+                font-family: Cabin;
+                font-size: 13px;
+                line-height: 16px;
+            }
+        }
+        .gradient-elements {
+            display: none !important;
+        }
+
+        .bubble-holder {
+            padding: 0px;
+            height: initial !important;
+            .bubble {
+                width: 33%;
+                font-size: 12px;
+                line-height: 24px;
+            }
+            .student-care {
+                margin-left: 70px;
+            }
+        }
+        .questions {
+            margin-top: 20%;
+            padding: 0 16px;
+            .who-is-it {
+                position: relative;
+                width: 100%;
+                margin-right: 15px;
+                font-size: 14px;
+                line-height: 17px;
+                margin-bottom: 30px;
+                .horizontal-line {
+                    position: absolute;
+                    left: 0;
+                }
+            }
+            .what-you-need {
+                position: relative;
+                width: 100%;
+                font-size: 14px;
+                line-height: 17px;
+                text-align: right;
+                .horizontal-line {
+                    position: absolute;
+                    right: 0;
+                }
+            }
+            .header-question {
+                font-size: 16px;
+                font-weight: 700;
+                position: relative;
+                top: -10px;
+            }
+            .horizontal-line {
+                position: relative;
+                top: 10px;
+                width: 50%;
+            }
+        }
+    }
+    .meet-your-instructor {
+        top: 0px;
+        .instructor-main-text {
+            margin-top: 33px;
+            font-family: Bebas Neue;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            position: relative;
+            top: 25px;
+            margin-bottom: 30px;
+            background: linear-gradient(231.38deg, rgba(255, 107, 59, 1) 34.17%, rgba(239, 69, 38, 1) 119.03%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-left: 20px;
+        }
+        .instructor-bg {
+            background-image: url(../../../assets/data-science/instructor-mobile-bg.png);
+            height: 367px;
+            .holder {
+                flex-wrap: wrap;
+                .instructor-text-holder {
+                    left: 0px;
+                    position: relative;
+                    width: 90%;
+                    top: 15px;
+                    margin-left: 15% !important;
+                    .instructor-description {
+                        margin-top: 40px;
+
+                        .name {
+                            font-size: 24px;
+                            line-height: 29px;
+                        }
+                        .adobe {
+                            font-size: 12px;
+                            line-height: 14px;
+                        }
+                        .desc {
+                            color: #d5d5d5 !important;
+                            font-size: 14px;
+                            line-height: 17px;
+                            width: 100%;
+                        }
+                    }
+                }
+                .instructor-img {
+                    width: 100%;
+                    img {
+                        position: initial;
+                        margin-top: 35px;
+                        margin-left: 30px;
+                        width: 80%;
+                    }
+                }
+            }
+        }
+        .instructor-box-shadow {
+            // background: url(../../../assets/graphic-design/instructor-box-shadow-mobile.png), rgba(29, 26, 66, 1);
+            bottom: -50px;
+            height: 109px;
+            background-repeat: no-repeat;
+        }
+    }
+    .up-work {
+        background: url(../../../assets/data-science/up-work-mobile.png);
+        background-repeat: no-repeat;
+        height: 415px;
+        width: 90%;
+        margin: 0 5%;
+        margin-top: 15%;
+        .upwork-text-holder {
+            padding: 0 20px;
+            padding-top: 48px;
+            img {
+                width: 86px;
+                height: 61px;
+            }
+            span {
+                font-size: 24px;
+                line-height: 29.16px;
+            }
+        }
+        .radio-buttons {
+            margin-top: 18px;
+            font-size: 18px;
+            line-height: 22px;
+            color: #ffffff;
+            mat-radio-group {
+                display: block;
+                mat-radio-button {
+                    width: 100%;
+                    margin-right: 0px;
+                    margin-bottom: 21px;
+                }
+            }
+        }
+        .find-out-btn {
+            background: #ffffff;
+            box-shadow: 0px 14px 29px -13px rgba(9, 9, 9, 0.42);
+            cursor: pointer;
+            border-radius: 12px;
+            height: 46px;
+            width: 100%;
+            margin-top: 27px;
+            span {
+                background: initial;
+                -webkit-background-clip: initial;
+                -webkit-text-fill-color: initial;
+                color: rgba(255, 107, 59, 1) !important;
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+    }
+    .free-course {
+        padding-top: 5%;
+        .free-course-title {
+            font-size: 32px;
+            line-height: 32px;
+        }
+        .books-bg {
+            background: url(../../../assets/data-science/books-bg-mobile.png), rgba(29, 26, 66, 1);
+            height: 453px;
+            padding-top: 0px;
+            .career-holder {
+                position: absolute;
+                bottom: 0;
+                left: 0px;
+                width: 90%;
+                margin: 0 5%;
+                height: 312px;
+                top: 5%;
+
+                .text {
+                    width: 100%;
+                    margin-top: 23px;
+                    margin-left: 24px;
+                    margin-right: 22px;
+                }
+                .career-title {
+                    font-size: 18px;
+                }
+                .career-text {
+                    font-size: 14px;
+                }
+                .lear-more-btn {
+                    width: 100%;
+                }
+                .kick-off-wrapper {
+                    position: absolute;
+                    right: initial;
+                    top: initial;
+                    bottom: -140px;
+                    width: 90%;
+                    margin: 0 5%;
+                    height: 182px;
+                }
+                .kick-off {
+                    width: 100%;
+                }
+            }
+        }
+        .free-course-info {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 20px;
+            margin-top: 15%;
+            .item {
+                width: 100%;
+                display: flex;
+                margin-right: 0px;
+                margin-bottom: 15px;
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+    }
+    .leading-instructor {
+        background: url(../../../assets/data-science/leading-instructor-bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200px;
+    }
+    .leading-instructor-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .leading-instructor-left {
+        width: 100%;
+        margin-top: 15%;
+    }
+    .instructor-girl {
+        width: 80% !important;
+        margin-left: 10% !important;
+        margin-top: 5%;
+    }
+    .learning-week-title {
+        width: 50%;
+        margin-left: 46%;
+        padding: 3% 0% 3% 4%;
+    }
+    .instructor-card {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 370px;
+    }
+    .instructors-bg {
+        height: 330px !important;
+        margin-top: -75%;
+        z-index: 0;
+    }
+    .carusel-instructors {
+        margin: 10% 0%;
+    }
+
+    .firstCarousel {
+        ::ng-deep.owl-nav {
+            height: 75px;
+            .owl-prev {
+                display: none !important;
+            }
+            .owl-next {
+                display: none !important;
+            }
+        }
+    }
+    .our-students-wrapper {
+        margin-top: 20% !important;
+    }
+    .our-students-title {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .portfolio-card {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 5%;
+    }
+    .portfolios-bg {
+        margin-top: -150%;
+        height: 595px;
+    }
+    .program-subjects-gradient {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    .program-subjects-card {
+        height: 330px;
+        padding-top: 10%;
+        padding-left: 5%;
+    }
+    .pick-your-next-cohort {
+        width: 100%;
+        margin-top: 100px;
+        margin-bottom: 55px;
+        .pick-your-next-cohort-title {
+            font-size: 32px;
+            line-height: 32px;
+            margin-bottom: 60px;
+        }
+        .cohort-holder-bg {
+            background: url(../../../assets/front-end/cohort-bg-mobile.svg);
+            background-size: 100% 100%;
+            height: 100%;
+            .cohort-wrapper {
+                width: 90%;
+                top: 0px;
+                padding: 5px;
+                margin-bottom: 28px;
+                .cohort {
+                    flex-wrap: wrap;
+                    height: 100%;
+                    background: #fbfaf5;
+                    border-radius: 33px;
+                    padding: 25px 55px;
+                    .left {
+                        width: 100%;
+                        display: flex;
+                        flex-wrap: wrap;
+                        .video-icon {
+                            margin-right: 15px;
+                            width: 20px;
+                            height: 20px;
+                            position: relative;
+                            top: 3px;
+                        }
+                        .online-text {
+                            font-size: 16px;
+                            line-height: 30px;
+                        }
+                        .play-icon {
+                            margin-left: 25px;
+                            margin-right: 15px;
+                            position: relative;
+                            top: 3px;
+                            width: 20px;
+                            height: 20px;
+                        }
+                        .lessons-text {
+                            font-size: 16px;
+                            line-height: 30px;
+                        }
+                        .bottom {
+                            margin-top: 26px;
+                            display: flex;
+                            width: 100%;
+                            align-items: center;
+                            margin: 5% 0%;
+                            .date-icon {
+                                margin-right: 15px;
+                                width: 20px;
+                                height: 20px;
+                            }
+                            .next-cohort {
+                                font-size: 24px;
+                                line-height: 30px;
+                                position: relative;
+                            }
+                            .date {
+                                font-size: 24px;
+                                line-height: 30px;
+                            }
+                        }
+                    }
+                    .right {
+                        width: 50%;
+
+                        .right-holder {
+                            display: flex;
+                            margin-left: 0px;
+                            margin-top: 20px;
+                            img {
+                                margin-right: 15px;
+                                width: 20px;
+                                height: 20px;
+                            }
+                            .right-price {
+                                font-size: 20px;
+                                line-height: 26px;
+                                position: relative;
+                                top: -15px;
+                                .per-month {
+                                    position: relative;
+                                    top: -5px;
+                                    font-size: 18px;
+                                    line-height: 23px;
+                                }
+                            }
+                        }
+                    }
+                    .bottom-right {
+                        width: 100%;
+                        height: 61px;
+                        background: #000000;
+                        border-radius: 16px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        span {
+                            color: #ffffff;
+                            font-weight: 700;
+                            line-height: 46px;
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // .subjects-bg
+    // {
+    //     margin-top: 50%;
+    // }
+    .hyped-title {
+        font-size: 32px;
+        line-height: 38px;
+        width: 80%;
+        margin-left: 10%;
+        padding: 2% 2% 6% 2%;
+        margin-top: 15%;
+        line-height: 74px;
+    }
+    .hyped-text {
+        width: 80%;
+        margin-left: 10%;
+        padding: 5% 0%;
+    }
+    .hyped-text h1 {
+        margin: 0;
+    }
+    .journey {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .journey-bg {
+        background-size: 500% 130%;
+        padding-bottom: 5%;
+    }
+    .journey img {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .journey-left button {
+        background: linear-gradient(231.38deg, #5da0ef 34.17%, #44ff78 119.03%);
+    }
+    .alumni {
+        margin-bottom: 0px;
+    }
+    .get-hired {
+        flex-wrap: wrap;
+        padding: 0;
+        .get-hired-text {
+            width: 100%;
+            margin-top: 5%;
+            padding-left: 5%;
+            text-align: center;
+            img {
+                margin-bottom: 42px;
+            }
+            .get-hired-secondary-text {
+                font-family: Cabin;
+                font-size: 18px;
+                line-height: 22px;
+
+                .second {
+                    margin-top: 20px;
+                }
+            }
+        }
+        .get-hired-img {
+            width: 100%;
+            background: url(../../../assets/graphic-design/hired-bg-mobile.png);
+            background-size: 100% 100%;
+            height: 383px;
+        }
+
+        .register {
+            background: linear-gradient(231.38deg, #5da0ef 34.17%, #44ff78 119.03%);
+            border-radius: 12px;
+            height: 44px;
+            width: 100%;
+            margin: 0 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+        }
+    }
+    .calendly-title {
+        margin-top: 20%;
+    }
+}
+
+// community
+.fb-group-wrapper {
+    padding: 3px;
+    background: linear-gradient(180deg, #00ffe0 0%, #00d1ff 47.92%, #fa00ff 100%);
+    border-radius: 42px;
+    margin-bottom: 120px;
+    margin-top: 65px;
+}
+
+.fb-group-inner {
+    background: radial-gradient(116.86% 2358.83% at 3.63% -2.43%, #3b6aff 0%, #002aad 100%);
+    border-radius: 42px;
+    padding: 24px 103px;
+}
+
+.fb-group-inner h2 {
+    color: #ffffff;
+    font-family: Cabin;
+    margin: 0;
+}
+
+.join-fb {
+    color: #d8d8d8;
+    margin-bottom: 24px;
+}
+a {
+    text-decoration: none;
+}
+.fb-button {
+    padding: 8px 16px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    color: #0a0a0a;
+    background: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    border: none;
+}
+
+.joined-text p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    color: #ffffff;
+    margin-bottom: auto;
+    margin-top: auto;
+    margin-left: 24px;
+    font-family: Cabin;
+}
+
+.fb-community-img {
+    margin-top: -60px;
+    margin-bottom: -60px;
+}
+@media only screen and (max-width: 768px) {
+    .fb-group-inner {
+        padding: 0px;
+        div {
+            margin: auto;
+        }
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .instructor-description {
+        margin-top: 0 !important;
+    }
+    .header-blur {
+        margin-left: 16% !important;
+    }
+}
